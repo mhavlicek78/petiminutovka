@@ -1,0 +1,8 @@
+name = "petiminutovka"
+main = "index.js"
+compatibility_date = "2026-11-01"
+workers_dev = true
+
+[[kv_namespaces]]
+binding = "POKROK"
+id = "836ed9780ac4417dbfe3788a02e204fb"
