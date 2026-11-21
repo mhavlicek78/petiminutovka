@@ -1286,4 +1286,247 @@ L.push(
   ]
 }
 );
+L.push(
+{
+  id: "pr1", area: "priroda", title: "Plejtvák obrovský: největší tvor všech dob",
+  text: [
+    "Plejtvák obrovský dorůstá délky kolem 30 metrů a hmotnosti přes 150 tun. Je větší než kterýkoli známý dinosaurus – je to největší živočich, o kterém víme, že kdy žil.",
+    "Přesto se živí drobným krilem (korýši dlouhými pár centimetrů). Nabere obrovské množství vody, kosticemi ji procedí a krill spolkne. Během krmné sezóny takto spořádá denně několik tun potravy. Jeho hluboké zvuky patří k nejhlasitějším ve světě zvířat a pod vodou se šíří na stovky kilometrů.",
+    "Ve 20. století lov velryb téměř vyhubil celé populace, zvlášť v Jižním oceánu, kde byly uloveny statisíce plejtváků. Od roku 1966 je druh mezinárodně chráněn. Populace se pomalu zotavuje, ale stále je zařazen mezi ohrožené druhy."
+  ],
+  takeaway: "~30 m a přes 150 t – největší živočich všech dob, který se živí drobným krilem. Lov ve 20. století ho téměř vyhubil.",
+  evidence: "silné", evidenceNote: "Dobře doložené údaje; maximální rozměry jsou odhady z historických úlovků.",
+  sources: [{ name: "IUCN Red List: Balaenoptera musculus; NOAA Fisheries – Blue Whale" }],
+  quiz: [
+    { q: "Čím se živí plejtvák obrovský?", o: ["Krilem", "Žraloky", "Tuleni", "Řasami z mořského dna"], why: "Kosticemi cedí z vody drobné korýše – kril." },
+    { q: "Od kdy je plejtvák obrovský mezinárodně chráněn?", o: ["Od roku 1966", "Od roku 1866", "Od roku 2016", "Není chráněn"], why: "Komerční lov byl zakázán v roce 1966." },
+    { q: "Jak velký je plejtvák obrovský ve srovnání s dinosaury?", o: ["Větší než kterýkoli známý dinosaurus", "Menší než většina dinosaurů", "Stejně velký jako T. rex", "Srovnání nelze udělat"], why: "Je to největší známý živočich v historii Země." }
+  ],
+  cards: [
+    { f: "Rozměry plejtváka obrovského?", b: "Kolem 30 m a přes 150 t – největší živočich všech dob." },
+    { f: "Od kdy je plejtvák chráněn?", b: "Od roku 1966 (zákaz komerčního lovu)." }
+  ]
+},
+{
+  id: "pr2", area: "priroda", title: "Gepard: rychlost není všechno",
+  text: [
+    "Gepard je nejrychlejší suchozemské zvíře – v krátkém sprintu dosahuje rychlosti kolem 90–100 km/h. Má lehkou kostru, dlouhé nohy, pružnou páteř a ocas, který při ostrých zatáčkách funguje jako kormidlo.",
+    "Studie Wilsona a kol. (2013), která sledovala divoké gepardy obojky s GPS a akcelerometry, ukázala, že o úspěchu lovu rozhoduje víc zrychlení a schopnost prudce zpomalit a změnit směr než nejvyšší rychlost. Typická honička je krátká – obvykle jen kolem 200 metrů.",
+    "Delší sprint gepard nezvládne kvůli přehřátí a vyčerpání. Po úspěšném lovu musí často odpočívat a kořist mu nezřídka ukradnou silnější lvi nebo hyeny. Gepard je dnes zranitelný druh; ve volné přírodě jich žije jen několik tisíc."
+  ],
+  takeaway: "Gepard běží kolem 90–100 km/h, ale lov vyhrává hlavně zrychlením a obratností. Honička trvá jen pár stovek metrů.",
+  evidence: "silné", evidenceNote: "Měření z terénních i laboratorních studií; maximální rychlost se mezi studiemi liší.",
+  sources: [{ name: "Wilson a kol., Locomotion dynamics of hunting in wild cheetahs, Nature 2013", url: "https://doi.org/10.1038/nature12295" }],
+  quiz: [
+    { q: "Co podle studie Wilsona (2013) nejvíc rozhoduje o úspěchu lovu geparda?", o: ["Zrychlení a obratnost", "Jen nejvyšší rychlost", "Síla čelistí", "Barva srsti"], why: "Rychlé zrychlení, brzdění a změna směru byly klíčové." },
+    { q: "Jak dlouhá bývá typická honička geparda?", o: ["Kolem 200 metrů", "Kolem 5 kilometrů", "Kolem 20 metrů", "Celý den"], why: "Sprinty jsou krátké kvůli přehřátí a vyčerpání." },
+    { q: "K čemu slouží gepardovi dlouhý ocas při běhu?", o: ["Jako kormidlo při zatáčkách", "K plašení kořisti", "K chlazení", "Nemá žádnou funkci"], why: "Ocas pomáhá udržet rovnováhu při prudkých změnách směru." }
+  ],
+  cards: [
+    { f: "Rychlost geparda?", b: "Kolem 90–100 km/h v krátkém sprintu." },
+    { f: "Co rozhoduje o úspěchu lovu geparda?", b: "Zrychlení a obratnost víc než maximální rychlost (Wilson 2013)." }
+  ]
+},
+{
+  id: "pr3", area: "priroda", title: "Odkud pochází kyslík, který dýcháme",
+  text: [
+    "Často se říká, že Amazonie je „plíce planety“. Prales sice vyrábí obrovské množství kyslíku fotosyntézou, ale téměř stejné množství zase spotřebují jeho vlastní stromy, zvířata, houby a mikroorganismy při dýchání a rozkladu. Čistý přínos kyslíku z Amazonie do atmosféry je proto blízko nule. Pro klima je ale nenahraditelná – ukládá obrovské množství uhlíku.",
+    "Podle NOAA pochází zhruba polovina kyslíku na Zemi z oceánu, hlavně z drobného fytoplanktonu. Jen jediná mikroskopická sinice Prochlorococcus, nejhojnější fotosyntetizující organismus na planetě, se odhadem podílí až na 20 % kyslíku v biosféře.",
+    "Kyslík v atmosféře se přitom hromadil miliardy let. I kdyby fotosyntéza na chvíli ustala, zásoba ve vzduchu by vydržela velmi dlouho – skutečné riziko úbytku lesů a planktonu je hlavně v uhlíku a klimatu, ne v tom, že bychom se zadusili."
+  ],
+  takeaway: "Asi polovina kyslíku pochází z oceánského planktonu. Amazonie má čistý přínos kyslíku blízko nule, ale je zásadní zásobárnou uhlíku.",
+  evidence: "silné", evidenceNote: "Shoda vědeckých zdrojů; podíly jednotlivých organismů jsou odhady.",
+  sources: [{ name: "NOAA Ocean Service: How much oxygen comes from the ocean?", url: "https://oceanservice.noaa.gov/facts/ocean-oxygen.html" }],
+  quiz: [
+    { q: "Jaký podíl kyslíku na Zemi pochází zhruba z oceánu?", o: ["Asi polovina", "Asi 1 %", "Prakticky všechen", "Žádný"], why: "NOAA uvádí, že asi 50 % kyslíku produkuje oceán, hlavně plankton." },
+    { q: "Proč je čistý přínos kyslíku z Amazonie blízko nule?", o: ["Prales spotřebuje skoro tolik kyslíku, kolik vyrobí", "Stromy v Amazonii nefotosyntetizují", "Kyslík odvane vítr", "Amazonie je poušť"], why: "Dýchání a rozklad spotřebují většinu vyrobeného kyslíku." },
+    { q: "Jak se jmenuje sinice, která je nejhojnějším fotosyntetizujícím organismem?", o: ["Prochlorococcus", "Penicillium", "Escherichia coli", "Plankton obecný"], why: "Prochlorococcus vyrábí odhadem až 20 % kyslíku biosféry." }
+  ],
+  cards: [
+    { f: "Kolik kyslíku pochází z oceánu?", b: "Zhruba polovina, hlavně z fytoplanktonu (NOAA)." },
+    { f: "Je Amazonie „plíce planety“?", b: "Čistý přínos kyslíku je blízko nule; je ale zásadní zásobárnou uhlíku." }
+  ]
+},
+{
+  id: "pr4", area: "priroda", title: "Rybák dlouhoocasý: rekordman v tahu",
+  text: [
+    "Rybák dlouhoocasý váží zhruba 100 gramů, ale každý rok létá mezi hnízdišti v Arktidě a zimovišti u Antarktidy. Díky tomu zažívá víc denního světla než kterýkoli jiný živočich – léto na severu i na jihu.",
+    "Egevang a kol. (2010) připevnili rybákům z Grónska a Islandu miniaturní lokátory vážící jen asi 1,4 gramu. Zjistili, že ptáci neletí přímo, ale po klikaté trase využívající převládající větry, a ročně urazí v průměru asi 70 000 km – nejdelší známý tah ze všech zvířat.",
+    "Rybáci se mohou dožít přes 30 let. Za život tak nalétají kolem 2,4 milionu kilometrů – to odpovídá zhruba třem cestám na Měsíc a zpět."
+  ],
+  takeaway: "Pták o váze ~100 g létá ročně ~70 000 km mezi Arktidou a Antarktidou – za život jako třikrát na Měsíc a zpět.",
+  evidence: "silné", evidenceNote: "Měření pomocí geolokátorů; jednotliví ptáci se liší.",
+  sources: [{ name: "Egevang a kol., Tracking of Arctic terns reveals longest animal migration, PNAS 2010", url: "https://doi.org/10.1073/pnas.0909493107" }],
+  quiz: [
+    { q: "Kolik kilometrů ročně v průměru nalétá rybák dlouhoocasý?", o: ["Asi 70 000 km", "Asi 700 km", "Asi 7 000 km", "Asi 700 000 km"], why: "Egevang (2010) změřil průměr kolem 70 900 km." },
+    { q: "Proč rybáci neletí přímou trasou?", o: ["Využívají převládající větry", "Ztrácejí orientaci", "Hledají staré kamarády", "Letí jen v noci"], why: "Klikatá trasa po větru šetří energii." },
+    { q: "Čím je rybák výjimečný kromě délky tahu?", o: ["Zažívá nejvíc denního světla ze všech živočichů", "Je největší pták", "Nemusí jíst", "Létá pozpátku"], why: "Střídá léto v Arktidě a v Antarktidě." }
+  ],
+  cards: [
+    { f: "Roční tah rybáka dlouhoocasého?", b: "Asi 70 000 km mezi Arktidou a Antarktidou (Egevang 2010)." },
+    { f: "Kolik nalétá rybák za život?", b: "Kolem 2,4 milionu km – zhruba 3× na Měsíc a zpět." }
+  ]
+},
+{
+  id: "pr5", area: "priroda", title: "Žralok grónský: 400 let pod ledem",
+  text: [
+    "Žralok grónský žije ve studených vodách severního Atlantiku a Severního ledového oceánu. Plave velmi pomalu – kolem 1 km/h – a roste jen asi centimetr za rok.",
+    "Jak zjistit věk zvířete, které nemá letokruhy? Nielsen a kol. (2016) využili radiouhlíkovou metodu na čočce oka, která se tvoří už před narozením a během života se nemění. Největší zkoumaná samice měla odhadem 392 let (s nejistotou ±120 let). Žralok grónský je tak nejdéle žijícím známým obratlovcem.",
+    "Pohlavně dospívá teprve kolem 150 let věku. To dělá druh velmi zranitelným: populace, která přijde o dospělé jedince (například jako vedlejší úlovek rybářů), se obnovuje celá staletí."
+  ],
+  takeaway: "Žralok grónský se dožívá odhadem kolem 400 let a dospívá až kolem 150 let – nejdéle žijící známý obratlovec.",
+  evidence: "střední", evidenceNote: "Metoda je inovativní a vědecky uznávaná, ale odhad věku má velkou nejistotu (±120 let).",
+  sources: [{ name: "Nielsen a kol., Eye lens radiocarbon reveals centuries of longevity in the Greenland shark, Science 2016", url: "https://doi.org/10.1126/science.aaf1703" }],
+  quiz: [
+    { q: "Jak se určoval věk žraloků grónských?", o: ["Radiouhlíkovou metodou z čočky oka", "Počítáním zubů", "Podle letokruhů v ploutvích", "Podle délky ocasu"], why: "Oční čočka se tvoří před narozením a nemění se." },
+    { q: "Kolem kolika let žralok grónský pohlavně dospívá?", o: ["Kolem 150 let", "Kolem 5 let", "Kolem 30 let", "Nikdy"], why: "Pozdní dospívání dělá druh velmi zranitelným." },
+    { q: "Proč je síla důkazů vedena jako „střední“?", o: ["Odhad věku má velkou nejistotu", "Žraloky nikdo neviděl", "Studie byla vyvrácena", "Žraloci žijí jen 20 let"], why: "Odhad 392 let má rozpětí ±120 let." }
+  ],
+  cards: [
+    { f: "Věk žraloka grónského?", b: "Odhadem kolem 400 let (392 ± 120) – nejdéle žijící známý obratlovec." },
+    { f: "Proč je žralok grónský zranitelný?", b: "Dospívá až kolem 150 let, populace se obnovuje staletí." }
+  ]
+},
+{
+  id: "pr6", area: "priroda", title: "Pět velkých vymírání",
+  text: [
+    "V historii Země došlo k pěti hromadným vymíráním, při kterých během geologicky krátké doby zmizela velká část druhů.",
+    "Největší bylo permské vymírání zhruba před 252 miliony let – zaniklo odhadem kolem 90 % mořských druhů a velká část suchozemských. Hlavní příčinou byly obrovské sopečné erupce na Sibiři, které vyvolaly prudké oteplení, okyselení oceánů a úbytek kyslíku ve vodě.",
+    "Nejznámější je vymírání na konci křídy před 66 miliony let, kdy zmizeli neptačí dinosauři a zhruba tři čtvrtiny druhů. Příčinou byl dopad asteroidu o průměru kolem 10 km v místě dnešního kráteru Chicxulub v Mexiku. Ptáci jsou přitom potomci dinosaurů, kteří katastrofu přežili. Řada vědců dnes mluví o probíhajícím šestém vymírání, které způsobuje člověk."
+  ],
+  takeaway: "Největší vymírání: perm (~252 mil. let, ~90 % mořských druhů). Dinosaury vyhubil asteroid Chicxulub před 66 mil. let – ptáci jsou jejich potomci.",
+  evidence: "silné", evidenceNote: "Vědecký konsenzus; podíly vymřelých druhů jsou odhady.",
+  sources: [{ name: "Encyclopaedia Britannica: Mass extinction; Schulte a kol., Science 2010 (Chicxulub)" }],
+  quiz: [
+    { q: "Které vymírání bylo největší?", o: ["Permské (~252 mil. let)", "Na konci křídy", "Ve středověku", "Ordovické bylo jediné"], why: "Na konci permu zaniklo kolem 90 % mořských druhů." },
+    { q: "Co vyhubilo neptačí dinosaury?", o: ["Dopad asteroidu (Chicxulub)", "Doba ledová", "Lidé", "Nedostatek trávy"], why: "Asteroid o průměru ~10 km dopadl před 66 miliony let." },
+    { q: "Kteří živočichové jsou potomky dinosaurů?", o: ["Ptáci", "Krokodýli", "Savci", "Žraloci"], why: "Ptáci jsou linie dinosaurů, která přežila." }
+  ],
+  cards: [
+    { f: "Největší hromadné vymírání?", b: "Permské, ~252 mil. let, ~90 % mořských druhů (sibiřský vulkanismus)." },
+    { f: "Konec dinosaurů?", b: "Asteroid Chicxulub, 66 mil. let; přežili ptačí dinosauři." }
+  ]
+},
+
+{
+  id: "vn1", area: "vynalezy", title: "Bratři Wrightové: 12 sekund, které změnily svět",
+  text: [
+    "Dne 17. prosince 1903 u Kitty Hawk v Severní Karolíně vzlétl Orville Wright v letounu Flyer. První let trval 12 sekund a měřil asi 37 metrů – kratší než rozpětí křídel dnešního dopravního letadla. Čtvrtý let toho dne s Wilburem za řízením trval 59 sekund a měřil asi 260 metrů.",
+    "Wrightové byli majitelé obchodu s jízdními koly, ne vědci s titulem. Jejich klíčový přínos nebyl motor, ale řízení: vymysleli systém ovládání ve třech osách (kroucení křídel, výškovka, směrovka), který v principu používají letadla dodnes. Postavili si i vlastní aerodynamický tunel a přepočítali nepřesná data svých předchůdců.",
+    "Od prvního letu k přistání na Měsíci uběhlo jen 66 let."
+  ],
+  takeaway: "17. 12. 1903: první řízený motorový let (12 s, 37 m). Klíčem bylo řízení ve třech osách, ne motor.",
+  evidence: "silné", evidenceNote: "Dobře zdokumentovaná historie.",
+  sources: [{ name: "Smithsonian National Air and Space Museum: The Wright Brothers" }],
+  quiz: [
+    { q: "Jak dlouho trval první let bratří Wrightů?", o: ["12 sekund", "12 minut", "2 hodiny", "1 sekundu"], why: "První let 17. 12. 1903 trval 12 sekund a měřil asi 37 m." },
+    { q: "Co bylo hlavním přínosem Wrightů?", o: ["Systém řízení ve třech osách", "Vynález spalovacího motoru", "Proudový motor", "Vrtulník"], why: "Řiditelnost byla klíčový problém, který vyřešili." },
+    { q: "Čím se bratři Wrightové původně živili?", o: ["Měli obchod s jízdními koly", "Byli profesoři fyziky", "Byli námořníci", "Byli bankéři"], why: "Zkušenosti z výroby kol využili při stavbě letadla." }
+  ],
+  cards: [
+    { f: "První řízený motorový let?", b: "17. 12. 1903, Kitty Hawk, Orville Wright – 12 s, 37 m." },
+    { f: "Hlavní přínos Wrightů?", b: "Řízení ve třech osách (kroucení křídel, výškovka, směrovka)." }
+  ]
+},
+{
+  id: "vn2", area: "vynalezy", title: "Telefon: závod o hodiny",
+  text: [
+    "Dne 14. února 1876 podal Alexander Graham Bell na americkém patentovém úřadu žádost o patent na telefon. Téhož dne podal Elisha Gray předběžné oznámení (caveat) na podobné zařízení. Bell patent získal 7. března 1876 a spor o prvenství se táhl roky.",
+    "Do historie se zapsal také Ital Antonio Meucci, který na zařízení pro přenos hlasu pracoval už o desetiletí dříve, ale neměl peníze na obnovení předběžné patentové ochrany. Americká Sněmovna reprezentantů v roce 2002 jeho přínos oficiálně uznala.",
+    "První srozumitelná věta po telefonu zazněla 10. března 1876, kdy Bell zavolal na svého asistenta: „Pane Watsone, pojďte sem, chci vás vidět.“"
+  ],
+  takeaway: "Bell podal patent 14. 2. 1876 – v týž den jako Gray. Prvenství se dodnes diskutuje i kvůli Meuccimu.",
+  evidence: "silné", evidenceNote: "Data jsou doložená; otázka „skutečného“ vynálezce je historiky diskutovaná.",
+  sources: [{ name: "Library of Congress: Alexander Graham Bell Papers; US House Resolution 269 (2002)" }],
+  quiz: [
+    { q: "Kdo podal oznámení o podobném vynálezu ve stejný den jako Bell?", o: ["Elisha Gray", "Thomas Edison", "Nikola Tesla", "Guglielmo Marconi"], why: "Gray podal caveat 14. 2. 1876, stejně jako Bell svou žádost." },
+    { q: "Čí přínos k telefonu uznala Sněmovna reprezentantů USA v roce 2002?", o: ["Antonia Meucciho", "Thomase Edisona", "Samuela Morse", "Jamese Watta"], why: "Meucci pracoval na přenosu hlasu dřív, ale nemohl si dovolit patent." },
+    { q: "Kdy zazněla první srozumitelná věta po telefonu?", o: ["10. března 1876", "1. ledna 1900", "4. července 1776", "14. února 1850"], why: "Bell zavolal na asistenta Watsona." }
+  ],
+  cards: [
+    { f: "Patent na telefon – kdy a kdo?", b: "Bell podal 14. 2. 1876 (týž den jako Gray), udělen 7. 3. 1876." },
+    { f: "Kdo je „zapomenutý“ vynálezce telefonu?", b: "Antonio Meucci – uznán Sněmovnou reprezentantů USA v roce 2002." }
+  ]
+},
+{
+  id: "vn3", area: "vynalezy", title: "Tranzistor: malý spínač, velká revoluce",
+  text: [
+    "V prosinci 1947 předvedli John Bardeen a Walter Brattain v laboratořích Bell Labs první funkční tranzistor. William Shockley krátce nato navrhl jeho praktičtější podobu. Všichni tři získali v roce 1956 Nobelovu cenu za fyziku.",
+    "Tranzistor je polovodičová součástka, která funguje jako spínač nebo zesilovač. Nahradil elektronky – velké, křehké a energeticky náročné skleněné baňky, kterých měly první počítače tisíce a často se přepalovaly.",
+    "Tranzistor umožnil miniaturizaci: tranzistorová rádia, kalkulačky, počítače a nakonec chytré telefony. Dnešní čipy obsahují desítky miliard tranzistorů a tranzistor je považován za nejvyráběnější lidský výrobek v historii."
+  ],
+  takeaway: "Tranzistor (Bell Labs, 1947) nahradil elektronky a umožnil celou moderní elektroniku. Nobelova cena 1956.",
+  evidence: "silné", evidenceNote: "Dobře zdokumentovaná historie techniky.",
+  sources: [{ name: "NobelPrize.org: The Nobel Prize in Physics 1956; Computer History Museum" }],
+  quiz: [
+    { q: "Kde vznikl první tranzistor?", o: ["V Bell Labs", "V IBM", "V CERNu", "V Applu"], why: "Bardeen a Brattain ho předvedli v Bell Labs v roce 1947." },
+    { q: "Co tranzistor nahradil?", o: ["Elektronky", "Baterie", "Kabely", "Magnetofony"], why: "Elektronky byly velké, křehké a energeticky náročné." },
+    { q: "Kdy získali vynálezci tranzistoru Nobelovu cenu?", o: ["V roce 1956", "V roce 1901", "V roce 1999", "Nezískali ji"], why: "Bardeen, Brattain a Shockley – Nobelova cena za fyziku 1956." }
+  ],
+  cards: [
+    { f: "Vznik tranzistoru?", b: "1947, Bell Labs – Bardeen, Brattain (a Shockley); Nobelova cena 1956." },
+    { f: "Co tranzistor nahradil?", b: "Elektronky – velké, křehké a energeticky náročné." }
+  ]
+},
+{
+  id: "vn4", area: "vynalezy", title: "Edison a žárovka: vynález i systém",
+  text: [
+    "Edison žárovku nevynalezl jako první. Elektrické světlo zkoumala řada vynálezců před ním a Angličan Joseph Swan předváděl funkční žárovku s uhlíkovým vláknem zhruba ve stejné době. Obě firmy se později spojily.",
+    "Edisonův tým v říjnu 1879 otestoval žárovku s uhlíkovým vláknem, která svítila přes 13 hodin. Pak systematicky vyzkoušel tisíce materiálů; vlákno z karbonizovaného bambusu vydrželo přes 1 000 hodin.",
+    "Edisonův skutečný přínos byl celý systém: generátory, rozvodná síť, vypínače, pojistky i elektroměry. V roce 1882 spustil v New Yorku elektrárnu Pearl Street, která dodávala proud domům a firmám. Žárovka bez sítě by byla jen kuriozita."
+  ],
+  takeaway: "Edison nebyl první, kdo žárovku sestrojil. Jeho hlavní přínos byl celý systém výroby a rozvodu elektřiny (Pearl Street, 1882).",
+  evidence: "silné", evidenceNote: "Historický konsenzus; podíl jednotlivých vynálezců se interpretuje různě.",
+  sources: [{ name: "Smithsonian: Edison's Lightbulb; Encyclopaedia Britannica: Joseph Swan" }],
+  quiz: [
+    { q: "Kdo předváděl funkční žárovku s uhlíkovým vláknem zhruba ve stejné době jako Edison?", o: ["Joseph Swan", "Nikola Tesla", "Michael Faraday", "James Watt"], why: "Swan v Anglii; obě firmy se později spojily." },
+    { q: "V čem byl Edisonův hlavní přínos?", o: ["V celém systému výroby a rozvodu elektřiny", "Ve vynálezu elektřiny", "Ve vynálezu baterie", "Ve vynálezu LED"], why: "Elektrárna, síť, pojistky a elektroměry udělaly ze žárovky praktickou věc." },
+    { q: "Z čeho bylo vlákno, které vydrželo přes 1 000 hodin?", o: ["Z karbonizovaného bambusu", "Ze zlata", "Z wolframu", "Z bavlny"], why: "Edisonův tým testoval tisíce materiálů; bambus vyšel nejlépe." }
+  ],
+  cards: [
+    { f: "Byl Edison první, kdo sestrojil žárovku?", b: "Ne – současně např. Joseph Swan; Edisonův přínos byl celý systém." },
+    { f: "Pearl Street (1882)?", b: "Edisonova elektrárna v New Yorku dodávající proud domům a firmám." }
+  ]
+},
+{
+  id: "vn5", area: "vynalezy", title: "World Wide Web: „vágní, ale vzrušující“",
+  text: [
+    "Internet a web nejsou totéž. Internet je síť propojených počítačů, jejíž kořeny sahají k americkému ARPANETu z roku 1969. World Wide Web je služba, která na internetu běží: propojené stránky s odkazy, které otevíráš v prohlížeči.",
+    "Web navrhl Tim Berners-Lee v CERNu u Ženevy. V březnu 1989 sepsal návrh na systém sdílení informací a jeho nadřízený na něj připsal: „Vágní, ale vzrušující“. V roce 1991 spustil první webovou stránku a navrhl i základy, které platí dodnes – HTML, adresy URL a protokol HTTP.",
+    "Klíčové rozhodnutí přišlo 30. dubna 1993: CERN uvolnil technologii webu volně k užití bez poplatků. Právě to umožnilo jeho bleskové rozšíření."
+  ],
+  takeaway: "Web (Berners-Lee, CERN, 1989–1991) není totéž co internet. CERN ho v roce 1993 uvolnil zdarma – a to rozhodlo o jeho úspěchu.",
+  evidence: "silné", evidenceNote: "Dobře zdokumentovaná historie.",
+  sources: [{ name: "CERN: A short history of the Web", url: "https://home.cern/science/computing/birth-web/short-history-web" }],
+  quiz: [
+    { q: "Kde vznikl World Wide Web?", o: ["V CERNu", "V Silicon Valley", "Na MIT", "V Microsoftu"], why: "Tim Berners-Lee ho navrhl v CERNu u Ženevy." },
+    { q: "Jaký je rozdíl mezi internetem a webem?", o: ["Internet je síť, web je služba stránek s odkazy na ní", "Je to totéž", "Web je starší než internet", "Internet funguje jen v USA"], why: "Internet vznikl dřív (ARPANET 1969), web je jedna z jeho služeb." },
+    { q: "Co se stalo 30. dubna 1993?", o: ["CERN uvolnil web volně k užití", "Vznikl Google", "Vyšel první iPhone", "Byl vypnut ARPANET"], why: "Bezplatné uvolnění umožnilo masové rozšíření webu." }
+  ],
+  cards: [
+    { f: "Kdo a kde vytvořil web?", b: "Tim Berners-Lee, CERN; návrh 1989, první stránka 1991." },
+    { f: "Proč se web tak rychle rozšířil?", b: "CERN ho 30. 4. 1993 uvolnil zdarma k užití." }
+  ]
+},
+{
+  id: "vn6", area: "vynalezy", title: "Kontejner: krabice, která změnila obchod",
+  text: [
+    "Ještě v polovině 20. století se zboží nakládalo na lodě kus po kusu – pytle, bedny, sudy. Nakládka i vykládka trvaly dny, potřebovaly armády přístavních dělníků a docházelo ke krádežím i škodám.",
+    "Americký podnikatel v dopravě Malcom McLean přišel s jednoduchým nápadem: přenášet celé ocelové kontejnery z kamionu rovnou na loď. Dne 26. dubna 1956 vyplula z Newarku do Houstonu loď Ideal X s 58 kontejnery. Podle známého propočtu klesly náklady na naložení tuny zboží z 5,86 dolaru na zhruba 16 centů.",
+    "Standardizované kontejnery (20 a 40 stop) se staly základem globálního obchodu. Výrazně zlevnily dopravu, umožnily výrobní řetězce napříč kontinenty a změnily podobu přístavů po celém světě – je to příklad, že převratná inovace nemusí být technologicky složitá."
+  ],
+  takeaway: "McLeanův kontejner (1956) zlevnil nakládku tuny zboží z 5,86 $ na ~0,16 $ a umožnil globální obchod. Jednoduchá inovace, obrovský dopad.",
+  evidence: "silné", evidenceNote: "Historická data; propočet nákladů je často citovaný údaj z roku 1956.",
+  sources: [{ name: "Marc Levinson, The Box: How the Shipping Container Made the World Smaller (2006)" }],
+  quiz: [
+    { q: "Kdo stojí za zavedením kontejnerové přepravy?", o: ["Malcom McLean", "Henry Ford", "Thomas Edison", "Elon Musk"], why: "McLean vyslal první kontejnerovou loď Ideal X v roce 1956." },
+    { q: "Na kolik zhruba klesly náklady na naložení tuny zboží?", o: ["Z 5,86 $ na asi 0,16 $", "Z 1 $ na 0,90 $", "Zůstaly stejné", "Zvýšily se"], why: "Známý propočet z roku 1956 ukazuje pokles o více než 95 %." },
+    { q: "Jaké jsou standardní délky kontejnerů?", o: ["20 a 40 stop", "5 a 10 metrů", "100 a 200 stop", "Každý je jiný"], why: "Standardizace umožnila stejné jeřáby, lodě i vozy po celém světě." }
+  ],
+  cards: [
+    { f: "První kontejnerová loď?", b: "Ideal X, 26. 4. 1956, Newark → Houston, 58 kontejnerů (Malcom McLean)." },
+    { f: "Proč byl kontejner revoluční?", b: "Standardizace a přímá překládka – doprava zboží zlevnila o řády." }
+  ]
+}
+);
 window.LESSONS = L;
