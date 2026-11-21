@@ -1529,4 +1529,256 @@ L.push(
   ]
 }
 );
+L.push(
+{
+  id: "fi1", area: "filozofie", title: "Sókratés: filozof otázek",
+  text: [
+    "Sókratés (asi 470–399 př. n. l.) sám nenapsal ani řádek. Známe ho hlavně z dialogů svého žáka Platóna, takže se dodnes vede debata, co je skutečně Sókratovo a co Platónovo.",
+    "Jeho metodou bylo klást otázky: vyptával se lidí, kteří se považovali za odborníky – na spravedlnost, odvahu, ctnost – a postupně ukazoval rozpory v jejich odpovědích. Tvrdil, že je moudřejší než ostatní jen v tom, že si je vědom své nevědomosti. Podle Platónovy Obrany prohlásil, že nezkoumaný život nestojí za to, aby byl žit.",
+    "V roce 399 př. n. l. byl v Athénách obviněn z bezbožnosti a kažení mládeže a odsouzen k smrti. Možnosti útěku odmítl a vypil jed z bolehlavu. Sókratovská metoda – učit kladením otázek – se dodnes používá ve výuce, koučinku i terapii."
+  ],
+  takeaway: "Sókratés nic nenapsal, znát ho z Platóna. Jeho metoda: klást otázky a odhalovat rozpory. Odsouzen k smrti 399 př. n. l.",
+  evidence: "silné", evidenceNote: "Historicky doložené údaje; obraz Sókratova myšlení je zprostředkovaný Platónem a Xenofóntem.",
+  sources: [{ name: "Stanford Encyclopedia of Philosophy: Socrates", url: "https://plato.stanford.edu/entries/socrates/" }],
+  quiz: [
+    { q: "Odkud o Sókratově myšlení víme nejvíc?", o: ["Z dialogů jeho žáka Platóna", "Z jeho vlastních knih", "Z jeho dopisů", "Z jeho deníku"], why: "Sókratés sám nic nenapsal." },
+    { q: "Co je sókratovská metoda?", o: ["Kladení otázek, které odhalují rozpory", "Dlouhé přednášky", "Memorování textů", "Matematické důkazy"], why: "Dialog a otázky vedou k hlubšímu porozumění." },
+    { q: "Jak Sókratés zemřel?", o: ["Vypil jed z bolehlavu po odsouzení", "Padl v bitvě", "Zemřel stářím ve vyhnanství", "Utonul"], why: "Byl odsouzen v roce 399 př. n. l. a útěk odmítl." }
+  ],
+  cards: [
+    { f: "Proč víme o Sókratovi hlavně nepřímo?", b: "Nic nenapsal; známe ho z Platóna (a Xenofónta)." },
+    { f: "Sókratovská metoda?", b: "Kladení otázek, které odhalují rozpory a vedou k vlastnímu poznání." }
+  ]
+},
+{
+  id: "fi2", area: "filozofie", title: "Stoicismus: co je ve tvé moci",
+  text: [
+    "Stoicismus založil Zénón z Kitia kolem roku 300 př. n. l. v Athénách. Jméno získal podle sloupoví Stoa poikilé, kde Zénón učil. Nejznámějšími stoiky jsou Seneca, bývalý otrok Epiktétos a římský císař Marcus Aurelius.",
+    "Základem je rozlišení, které Epiktétos uvádí hned na začátku své Příručky: některé věci jsou v naší moci (naše úsudky, rozhodnutí a jednání), jiné ne (počasí, chování druhých, výsledek závodu). Zbytečně trpíme, když se trápíme tím, co neovlivníme – energii je lepší věnovat tomu, co ovlivnit můžeme.",
+    "Stoicismus nevolá po potlačování emocí, ale po tom, nenechat se jimi ovládat. Myšlenka, že nás netrápí samotné události, ale naše názory na ně, inspirovala i zakladatele moderní kognitivně-behaviorální terapie Alberta Ellise a Aarona Becka."
+  ],
+  takeaway: "Rozlišuj, co je v tvé moci (úsudky, jednání) a co ne (výsledky, druzí). Energii dávej jen do prvního.",
+  evidence: "silné", evidenceNote: "Shrnutí dochovaných textů a jejich historického vlivu.",
+  sources: [
+    { name: "Epiktétos, Příručka (Encheiridion), kap. 1" },
+    { name: "Stanford Encyclopedia of Philosophy: Stoicism", url: "https://plato.stanford.edu/entries/stoicism/" }
+  ],
+  quiz: [
+    { q: "Podle čeho dostal stoicismus jméno?", o: ["Podle sloupoví Stoa poikilé v Athénách", "Podle filozofa jménem Stoikos", "Podle řeckého slova pro klid", "Podle ostrova Stoa"], why: "Zénón učil pod malovaným sloupovím (stoa)." },
+    { q: "Co je podle Epiktéta v naší moci?", o: ["Naše úsudky a jednání", "Počasí", "Chování druhých lidí", "Výsledek závodu"], why: "Dichotomie kontroly je základ stoické praxe." },
+    { q: "Kterou moderní terapii stoicismus inspiroval?", o: ["Kognitivně-behaviorální terapii", "Psychoanalýzu", "Homeopatii", "Hypnózu"], why: "Ellis a Beck se k myšlenkám stoiků výslovně hlásili." }
+  ],
+  cards: [
+    { f: "Stoická dichotomie kontroly?", b: "V naší moci: úsudky, rozhodnutí, jednání. Mimo ni: výsledky, druzí, okolnosti." },
+    { f: "Tři nejznámější stoici?", b: "Seneca, Epiktétos, Marcus Aurelius." }
+  ]
+},
+{
+  id: "fi3", area: "filozofie", title: "Aristotelés: ctnost jako zlatý střed",
+  text: [
+    "Aristotelés (384–322 př. n. l.), žák Platóna a vychovatel Alexandra Makedonského, se ptal, co je pro člověka nejvyšší dobro. Odpověděl: eudaimonia – často překládáno jako štěstí, přesněji „dobrý, naplněný život“.",
+    "K němu podle Aristotela vedou ctnosti, které leží uprostřed mezi dvěma krajnostmi: statečnost mezi zbabělostí a zbrklostí, štědrost mezi lakotou a marnotratností. Střed přitom není matematický průměr, ale to, co je správné v dané situaci.",
+    "Ctnost se podle něj nezískává poznáním, ale cvikem – stáváme se spravedlivými tím, že jednáme spravedlivě, podobně jako se člověk stává hráčem na nástroj hraním. Známý citát „Jsme tím, co opakovaně děláme…“ ale od Aristotela není: je to parafráze amerického spisovatele Willa Duranta z roku 1926."
+  ],
+  takeaway: "Ctnost je střed mezi krajnostmi a získává se cvikem. Citát „Jsme tím, co opakovaně děláme“ je Durantova parafráze, ne Aristotelés.",
+  evidence: "silné", evidenceNote: "Shrnutí Etiky Níkomachovy; přiřazení citátu Durantovi je doložené.",
+  sources: [
+    { name: "Aristotelés, Etika Níkomachova (kn. II)" },
+    { name: "Will Durant, The Story of Philosophy (1926)" }
+  ],
+  quiz: [
+    { q: "Co je podle Aristotela statečnost?", o: ["Střed mezi zbabělostí a zbrklostí", "Krajnost bez strachu", "Opak moudrosti", "Vrozená vlastnost"], why: "Ctnost leží mezi nedostatkem a přebytkem." },
+    { q: "Jak se podle Aristotela ctnost získává?", o: ["Cvikem a opakovaným jednáním", "Jen čtením knih", "Narozením", "Náhodou"], why: "Stáváme se spravedlivými tím, že jednáme spravedlivě." },
+    { q: "Kdo je autorem citátu „Jsme tím, co opakovaně děláme…“?", o: ["Will Durant (parafráze Aristotela)", "Aristotelés", "Sókratés", "Seneca"], why: "Jde o Durantovo shrnutí Aristotelových myšlenek z roku 1926." }
+  ],
+  cards: [
+    { f: "Aristotelův zlatý střed?", b: "Ctnost leží mezi dvěma krajnostmi (např. statečnost mezi zbabělostí a zbrklostí)." },
+    { f: "„Jsme tím, co opakovaně děláme“ – kdo?", b: "Will Durant (1926), parafráze Aristotela." }
+  ]
+},
+{
+  id: "fi4", area: "filozofie", title: "Occamova břitva",
+  text: [
+    "Occamova břitva je zásada, podle které bychom ze dvou vysvětlení, která stejně dobře odpovídají faktům, měli dát přednost tomu jednoduššímu – s menším počtem předpokladů. Jmenuje se po anglickém františkánském mnichovi a filozofovi Williamu z Ockhamu (asi 1287–1347).",
+    "Zajímavost: nejznámější latinská formulace („entity se nemají množit bez nutnosti“) se v Ockhamových dílech nevyskytuje. Objevuje se až o staletí později, v 17. století. Myšlenka jednoduchosti je ale skutečně jeho a měla ji už i řada starších myslitelů.",
+    "Důležité je, co břitva neříká: není to důkaz, že jednodušší vysvětlení je pravdivé. Je to pracovní pravidlo pro výběr mezi hypotézami. Svět bývá někdy skutečně složitý – břitva jen radí nepřidávat předpoklady, které nic nevysvětlují."
+  ],
+  takeaway: "Ze stejně dobrých vysvětlení volíme to s menším počtem předpokladů. Je to pracovní pravidlo, ne důkaz pravdy.",
+  evidence: "silné", evidenceNote: "Filozofický princip; historické údaje o formulaci jsou doložené.",
+  sources: [{ name: "Stanford Encyclopedia of Philosophy: William of Ockham", url: "https://plato.stanford.edu/entries/ockham/" }],
+  quiz: [
+    { q: "Co říká Occamova břitva?", o: ["Ze stejně dobrých vysvětlení volíme to s menším počtem předpokladů", "Jednodušší vysvětlení je vždy pravdivé", "Složitá vysvětlení jsou lepší", "Nikdy nevěř vědcům"], why: "Je to heuristika pro výběr mezi rovnocennými hypotézami." },
+    { q: "Je nejznámější latinská formulace břitvy přímo v Ockhamových dílech?", o: ["Ne, objevuje se až v 17. století", "Ano, v jeho první knize", "Ano, na jeho náhrobku", "Ockham nikdy neexistoval"], why: "Myšlenka je jeho, konkrétní věta pochází od pozdějších autorů." },
+    { q: "Čím Occamova břitva není?", o: ["Důkazem, že jednodušší vysvětlení je pravdivé", "Pracovním pravidlem", "Pomůckou pro výběr hypotéz", "Filozofickým principem"], why: "Svět bývá někdy složitý; břitva jen radí nepřidávat zbytečné předpoklady." }
+  ],
+  cards: [
+    { f: "Occamova břitva?", b: "Ze stejně dobrých vysvětlení volit to s menším počtem předpokladů." },
+    { f: "Je Occamova břitva důkaz?", b: "Ne, je to pracovní pravidlo, ne záruka pravdy." }
+  ]
+},
+{
+  id: "fi5", area: "filozofie", title: "Descartes: myslím, tedy jsem",
+  text: [
+    "René Descartes (1596–1650) chtěl postavit poznání na zcela pevném základu. Rozhodl se proto pochybovat o všem, o čem se pochybovat dá: o smyslech (mohou klamat), o tom, že nesní, dokonce i o matematice – co když ho klame nějaký zlomyslný démon?",
+    "Jednu věc ale zpochybnit nelze: když pochybuji, myslím, a když myslím, musím existovat. Tuto myšlenku zformuloval v Rozpravě o metodě (1637) francouzsky jako „Je pense, donc je suis“. Známá latinská podoba „Cogito, ergo sum“ se objevuje v jeho Principech filozofie z roku 1644.",
+    "Descartes je považován za otce novověké filozofie. Byl i významný matematik – kartézská souřadnicová soustava (osy x a y) nese jeho jméno. Jeho oddělení mysli a těla (dualismus) je dodnes předmětem debat ve filozofii i neurovědě."
+  ],
+  takeaway: "Metodická pochybnost vede k jediné jistotě: pochybuji, tedy myslím, tedy jsem (Rozprava o metodě, 1637).",
+  evidence: "silné", evidenceNote: "Shrnutí Descartových děl a jejich vlivu.",
+  sources: [{ name: "Stanford Encyclopedia of Philosophy: René Descartes", url: "https://plato.stanford.edu/entries/descartes/" }],
+  quiz: [
+    { q: "Ve kterém díle Descartes poprvé publikoval myšlenku „myslím, tedy jsem“?", o: ["V Rozpravě o metodě (1637)", "V Ústavě", "V Kritice čistého rozumu", "V Bibli"], why: "Francouzsky „Je pense, donc je suis“, 1637." },
+    { q: "Proč se Descartes rozhodl o všem pochybovat?", o: ["Aby našel zcela jistý základ poznání", "Protože byl skeptik ze zásady", "Kvůli sporu s církví", "Ze zábavy"], why: "Metodická pochybnost měla odhalit to, co pochybnosti odolá." },
+    { q: "Který matematický nástroj nese Descartovo jméno?", o: ["Kartézská souřadnicová soustava", "Pythagorova věta", "Eulerovo číslo", "Logaritmus"], why: "Osy x a y – „kartézský“ podle latinského Cartesius." }
+  ],
+  cards: [
+    { f: "„Myslím, tedy jsem“ – kde a kdy?", b: "Descartes, Rozprava o metodě, 1637 (latinsky v Principech 1644)." },
+    { f: "Co je metodická pochybnost?", b: "Pochybovat o všem, co lze, abychom našli to, co pochybnosti odolá." }
+  ]
+},
+{
+  id: "fi6", area: "filozofie", title: "Tramvajové dilema: důsledky, nebo pravidla?",
+  text: [
+    "Rozjetá tramvaj se řítí na pět lidí na kolejích. Můžeš přehodit výhybku – pak zabije jednoho člověka na vedlejší koleji. Uděláš to? Myšlenkový experiment navrhla britská filozofka Philippa Foot v roce 1967, název „trolley problem“ zavedla později Judith Jarvis Thomson.",
+    "Dilema staví proti sobě dva velké přístupy k etice. Utilitarismus (Jeremy Bentham, John Stuart Mill) hodnotí čin podle důsledků – správné je to, co přinese nejvíc dobra nejvíce lidem. Deontologie (Immanuel Kant) zdůrazňuje povinnosti a pravidla: s člověkem se nesmí zacházet jen jako s prostředkem k cíli.",
+    "Většina lidí výhybku přehodí, ale když je místo výhybky potřeba strčit člověka z mostu, aby tramvaj zastavil, většina odmítne – přestože počty jsou stejné. Rozdíl ukazuje, že naše morální intuice nejsou čistě utilitární. Dnes se dilema řeší i v praxi, například při programování samořiditelných aut."
+  ],
+  takeaway: "Utilitarismus hodnotí důsledky, Kant povinnosti a pravidla. Tramvajové dilema (Foot, 1967) ukazuje, že naše intuice kombinují obojí.",
+  evidence: "silné", evidenceNote: "Filozofické koncepty; reakce lidí jsou doložené řadou experimentálních studií.",
+  sources: [
+    { name: "Philippa Foot, The Problem of Abortion and the Doctrine of the Double Effect, Oxford Review 1967" },
+    { name: "Stanford Encyclopedia of Philosophy: Kant's Moral Philosophy", url: "https://plato.stanford.edu/entries/kant-moral/" }
+  ],
+  quiz: [
+    { q: "Kdo navrhl tramvajové dilema?", o: ["Philippa Foot (1967)", "Immanuel Kant", "Sókratés", "John Stuart Mill"], why: "Foot ho popsala v roce 1967, název později zavedla Thomson." },
+    { q: "Podle čeho hodnotí čin utilitarismus?", o: ["Podle důsledků", "Podle úmyslu bohů", "Podle tradice", "Podle zákona"], why: "Správné je to, co přinese nejvíc dobra nejvíce lidem." },
+    { q: "Co ukazuje rozdíl mezi výhybkou a strčením z mostu?", o: ["Naše intuice nejsou čistě utilitární", "Lidé neumí počítat", "Mosty jsou nebezpečné", "Nic"], why: "Při stejných počtech lidé odmítají přímo použít člověka jako prostředek." }
+  ],
+  cards: [
+    { f: "Utilitarismus vs. deontologie?", b: "Utilitarismus: rozhodují důsledky. Deontologie (Kant): rozhodují povinnosti a pravidla." },
+    { f: "Tramvajové dilema – autor?", b: "Philippa Foot, 1967 (název zavedla Judith Jarvis Thomson)." }
+  ]
+},
+
+{
+  id: "sv1", area: "svet", title: "OSN: jak funguje",
+  text: [
+    "Organizace spojených národů vznikla 24. října 1945, po druhé světové válce, s cílem udržovat mír a mezinárodní bezpečnost. Má 193 členských států. Československo patřilo mezi zakládající členy, Česká republika je členem od roku 1993 jako jeden z nástupnických států.",
+    "Valné shromáždění, kde má každý stát jeden hlas, přijímá rezoluce, které jsou ale většinou jen doporučující. Závazná rozhodnutí může přijímat Rada bezpečnosti: má 15 členů, z toho 5 stálých – USA, Rusko, Čína, Velká Británie a Francie – s právem veta. Jediné veto kteréhokoli z nich rozhodnutí zablokuje.",
+    "Pod OSN patří také řada specializovaných organizací – například Světová zdravotnická organizace (WHO), UNICEF, UNESCO nebo Světový potravinový program."
+  ],
+  takeaway: "OSN (1945) má 193 členů. Závazně rozhoduje jen Rada bezpečnosti; 5 stálých členů má právo veta.",
+  evidence: "silné", evidenceNote: "Faktické údaje k roku 2026.",
+  sources: [{ name: "United Nations: About Us; UN Security Council", url: "https://www.un.org/en/about-us" }],
+  quiz: [
+    { q: "Kolik členských států má OSN?", o: ["193", "50", "27", "245"], why: "OSN má 193 členských států." },
+    { q: "Který orgán OSN může přijímat závazná rozhodnutí?", o: ["Rada bezpečnosti", "Valné shromáždění", "UNESCO", "Generální tajemník sám"], why: "Rezoluce Valného shromáždění jsou většinou doporučující." },
+    { q: "Kolik stálých členů s právem veta má Rada bezpečnosti?", o: ["5", "15", "1", "10"], why: "USA, Rusko, Čína, Velká Británie a Francie." }
+  ],
+  cards: [
+    { f: "Stálí členové Rady bezpečnosti OSN?", b: "USA, Rusko, Čína, Velká Británie, Francie – mají právo veta." },
+    { f: "Vznik OSN a počet členů?", b: "24. 10. 1945; 193 členských států." }
+  ]
+},
+{
+  id: "sv2", area: "svet", title: "EU: kdo co dělá (a co je Rada Evropy)",
+  text: [
+    "Evropská unie má 27 členských států; Česko je členem od 1. května 2004. Názvy institucí jsou matoucí, ale jejich role se dá shrnout jednoduše.",
+    "Evropská komise navrhuje zákony a dohlíží na jejich dodržování. Evropský parlament, jediná přímo volená instituce EU, a Rada EU (ministři členských států pro danou oblast) návrhy společně projednávají a schvalují. Evropská rada – setkání hlav států a předsedů vlád – určuje hlavní politický směr, ale zákony nepřijímá.",
+    "Pozor na záměnu: Rada Evropy se sídlem ve Štrasburku není součástí EU. Je to samostatná organizace se 46 členy, která se věnuje lidským právům a demokracii a pod kterou patří Evropský soud pro lidská práva."
+  ],
+  takeaway: "Komise navrhuje, Parlament a Rada EU schvalují, Evropská rada udává směr. Rada Evropy (Štrasburk, 46 členů) není součástí EU.",
+  evidence: "silné", evidenceNote: "Faktické údaje k roku 2026.",
+  sources: [{ name: "European Union: Institutions and bodies", url: "https://european-union.europa.eu/institutions-law-budget/institutions-and-bodies_cs" }],
+  quiz: [
+    { q: "Která instituce EU navrhuje zákony?", o: ["Evropská komise", "Evropská rada", "Rada Evropy", "Evropský soud pro lidská práva"], why: "Komise má právo legislativní iniciativy." },
+    { q: "Je Rada Evropy součástí EU?", o: ["Ne, je to samostatná organizace", "Ano, je to vláda EU", "Ano, je to parlament EU", "Je to jiný název Evropské rady"], why: "Rada Evropy (46 členů) se věnuje lidským právům, sídlí ve Štrasburku." },
+    { q: "Od kdy je Česko členem EU?", o: ["Od 1. května 2004", "Od 1. ledna 1993", "Od roku 1999", "Od roku 2010"], why: "Česko vstoupilo do EU spolu s dalšími devíti zeměmi." }
+  ],
+  cards: [
+    { f: "Hlavní instituce EU a jejich role?", b: "Komise navrhuje · Parlament + Rada EU schvalují · Evropská rada udává směr." },
+    { f: "Rada Evropy vs. Evropská rada?", b: "Rada Evropy = samostatná organizace (46 členů, lidská práva); Evropská rada = summit EU." }
+  ]
+},
+{
+  id: "sv3", area: "svet", title: "NATO a článek 5",
+  text: [
+    "Severoatlantická aliance (NATO) vznikla 4. dubna 1949 podpisem Severoatlantické smlouvy ve Washingtonu. Zakládajících států bylo 12, dnes jich je 32 – nejnovějšími členy jsou Finsko (2023) a Švédsko (2024). Česko je členem od 12. března 1999.",
+    "Jádrem smlouvy je článek 5 o kolektivní obraně: ozbrojený útok na jednoho člena se považuje za útok na všechny. Každý člen pak podnikne kroky, které považuje za nutné – nejde tedy o automatický závazek vyslat vojáky, ale o závazek pomoci.",
+    "Článek 5 byl v historii aktivován jen jednou – po teroristických útocích na USA 11. září 2001. NATO rozhoduje konsenzem, tedy shodou všech členů."
+  ],
+  takeaway: "NATO (1949) má 32 členů, Česko od 1999. Článek 5: útok na jednoho = útok na všechny; aktivován jen jednou, po 11. září 2001.",
+  evidence: "silné", evidenceNote: "Faktické údaje k roku 2026.",
+  sources: [{ name: "NATO: Collective defence and Article 5", url: "https://www.nato.int/cps/en/natohq/topics_110496.htm" }],
+  quiz: [
+    { q: "Kolikrát byl aktivován článek 5 Severoatlantické smlouvy?", o: ["Jednou, po 11. září 2001", "Nikdy", "Desetkrát", "Při každé válce"], why: "Jediná aktivace byla po útocích na USA v roce 2001." },
+    { q: "Od kdy je Česko členem NATO?", o: ["Od 12. března 1999", "Od 1. května 2004", "Od roku 1949", "Od roku 1993"], why: "Spolu s Polskem a Maďarskem v roce 1999." },
+    { q: "Jak NATO přijímá rozhodnutí?", o: ["Konsenzem všech členů", "Prostou většinou", "Rozhoduje jen USA", "Losem"], why: "Rozhodnutí vyžadují shodu všech spojenců." }
+  ],
+  cards: [
+    { f: "Článek 5 NATO?", b: "Útok na jednoho člena = útok na všechny; aktivován jen po 11. 9. 2001." },
+    { f: "NATO – vznik a počet členů?", b: "4. 4. 1949, 12 zakladatelů; dnes 32 (Česko od 1999)." }
+  ]
+},
+{
+  id: "sv4", area: "svet", title: "Jak se volí v Česku",
+  text: [
+    "Do Poslanecké sněmovny se volí 200 poslanců na čtyři roky poměrným systémem: hlasuje se pro kandidátní listiny stran a mandáty se dělí podle podílu hlasů. Do Sněmovny se dostane strana s alespoň 5 % hlasů; pro koalice dvou stran platí hranice 8 % a pro koalice tří a více stran 11 %. Preferenčními hlasy lze posunout konkrétní kandidáty na listině.",
+    "Senát má 81 senátorů volených na šest let většinovým systémem v jednomandátových obvodech. Pokud nikdo nezíská nadpoloviční většinu, koná se druhé kolo mezi dvěma nejúspěšnějšími kandidáty. Každé dva roky se volí třetina Senátu, takže horní komora nikdy není obměněna celá najednou.",
+    "Prezidenta od roku 2013 volí občané přímo, rovněž dvoukolovým systémem, na pět let."
+  ],
+  takeaway: "Sněmovna: 200 poslanců, poměrný systém, hranice 5 % (koalice 8 % / 11 %). Senát: 81 senátorů, většinový systém, třetina každé 2 roky.",
+  evidence: "silné", evidenceNote: "Platný volební systém (stav k roku 2026).",
+  sources: [{ name: "Český statistický úřad – volby.cz; zákon č. 247/1995 Sb., o volbách do Parlamentu ČR" }],
+  quiz: [
+    { q: "Jaký volební systém se používá pro Poslaneckou sněmovnu?", o: ["Poměrný", "Většinový dvoukolový", "Losování", "Nepřímá volba"], why: "Mandáty se dělí podle podílu hlasů stranám." },
+    { q: "Jak často se obměňuje třetina Senátu?", o: ["Každé 2 roky", "Každých 6 let celý", "Každý rok", "Každé 4 roky"], why: "Senátoři jsou voleni na 6 let, třetina každé 2 roky." },
+    { q: "Od kdy volí občané prezidenta přímo?", o: ["Od roku 2013", "Od roku 1990", "Od roku 1993", "Od roku 2004"], why: "Do roku 2013 volil prezidenta parlament." }
+  ],
+  cards: [
+    { f: "Hranice pro vstup do Sněmovny?", b: "5 % pro strany, 8 % pro koalice dvou, 11 % pro koalice tří a více stran." },
+    { f: "Senát ČR – počet a volba?", b: "81 senátorů, 6 let, většinový dvoukolový systém, třetina každé 2 roky." }
+  ]
+},
+{
+  id: "sv5", area: "svet", title: "Centrální banka a inflační cíl",
+  text: [
+    "Česká národní banka (ČNB) má jako hlavní cíl udržovat cenovou stabilitu. Konkrétně cílí inflaci 2 % s tolerančním pásmem ±1 procentní bod. Podobný cíl – 2 % ve střednědobém horizontu – má i Evropská centrální banka pro eurozónu.",
+    "Hlavním nástrojem jsou úrokové sazby. Když inflace roste nad cíl, banka sazby zvyšuje: úvěry zdražují, lidé a firmy méně utrácejí a investují a růst cen se zpomalí. Když je inflace pod cílem nebo ekonomika slábne, sazby snižuje. Účinek se projevuje se zpožděním zhruba jednoho až dvou let.",
+    "Proč 2 %, a ne nula? Mírná inflace dává bance prostor sazby v krizi snížit a snižuje riziko deflace (dlouhodobého poklesu cen), která může ekonomiku zablokovat. Centrální banky jsou nezávislé na vládě, aby měnovou politiku nepodřizovaly krátkodobým politickým cílům."
+  ],
+  takeaway: "ČNB cílí inflaci 2 % (±1 p. b.), hlavním nástrojem jsou úrokové sazby; účinek se projeví s 1–2letým zpožděním.",
+  evidence: "silné", evidenceNote: "Oficiální rámec měnové politiky ČNB a ECB.",
+  sources: [{ name: "Česká národní banka: Měnová politika – inflační cílování", url: "https://www.cnb.cz/cs/menova-politika/" }],
+  quiz: [
+    { q: "Jaký inflační cíl má ČNB?", o: ["2 % ±1 procentní bod", "0 %", "5 %", "10 %"], why: "Cíl 2 % s tolerančním pásmem ±1 p. b." },
+    { q: "Co obvykle udělá centrální banka, když inflace výrazně překračuje cíl?", o: ["Zvýší úrokové sazby", "Sníží úrokové sazby", "Vytiskne víc peněz", "Zakáže zdražování"], why: "Vyšší sazby tlumí poptávku a tím růst cen." },
+    { q: "Proč centrální banky necílí nulovou inflaci?", o: ["Mírná inflace dává prostor v krizi a snižuje riziko deflace", "Nula je technicky nemožná", "Kvůli daním", "Nulová inflace je nezákonná"], why: "Deflace může ekonomiku zablokovat a sazby nelze snadno snižovat pod nulu." }
+  ],
+  cards: [
+    { f: "Inflační cíl ČNB?", b: "2 % s tolerančním pásmem ±1 procentní bod." },
+    { f: "Jak rychle působí změna úrokových sazeb?", b: "Se zpožděním zhruba 1–2 roky." }
+  ]
+},
+{
+  id: "sv6", area: "svet", title: "Mezinárodní soudy: který řeší co",
+  text: [
+    "Mezinárodní soudní dvůr (ICJ) v Haagu je soudní orgán OSN. Rozhoduje spory mezi státy – například o hranice nebo výklad smluv – a vydává posudky. Jednotlivce nesoudí.",
+    "Mezinárodní trestní soud (ICC), také v Haagu, naopak soudí jednotlivce za nejzávažnější zločiny: genocidu, zločiny proti lidskosti, válečné zločiny a zločin agrese. Vznikl na základě Římského statutu z roku 1998 a funguje od roku 2002. Není součástí OSN a jeho pravomoc uznávají jen státy, které statut ratifikovaly.",
+    "V Evropě působí další dva: Evropský soud pro lidská práva ve Štrasburku (patří pod Radu Evropy a rozhoduje stížnosti na porušení Úmluvy o lidských právech) a Soudní dvůr EU v Lucemburku (vykládá a chrání právo Evropské unie)."
+  ],
+  takeaway: "ICJ (Haag) = spory mezi státy; ICC (Haag) = jednotlivci za nejtěžší zločiny; ESLP (Štrasburk) = lidská práva; SDEU (Lucemburk) = právo EU.",
+  evidence: "silné", evidenceNote: "Faktické údaje o institucích.",
+  sources: [{ name: "International Court of Justice; International Criminal Court – About; Evropský soud pro lidská práva" }],
+  quiz: [
+    { q: "Který soud soudí jednotlivce za genocidu a válečné zločiny?", o: ["Mezinárodní trestní soud (ICC)", "Mezinárodní soudní dvůr (ICJ)", "Soudní dvůr EU", "Ústavní soud ČR"], why: "ICC soudí jednotlivce, ICJ řeší spory mezi státy." },
+    { q: "Kde sídlí Evropský soud pro lidská práva?", o: ["Ve Štrasburku", "V Bruselu", "V Haagu", "V Lucemburku"], why: "Patří pod Radu Evropy se sídlem ve Štrasburku." },
+    { q: "Co řeší Mezinárodní soudní dvůr (ICJ)?", o: ["Spory mezi státy", "Trestné činy jednotlivců", "Spory mezi firmami", "Sportovní spory"], why: "ICJ je soudní orgán OSN pro spory mezi státy." }
+  ],
+  cards: [
+    { f: "ICJ vs. ICC?", b: "ICJ: spory mezi státy (orgán OSN). ICC: jednotlivci za nejtěžší zločiny (Římský statut)." },
+    { f: "ESLP vs. Soudní dvůr EU?", b: "ESLP (Štrasburk): lidská práva, Rada Evropy. SDEU (Lucemburk): právo EU." }
+  ]
+}
+);
 window.LESSONS = L;
