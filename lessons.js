@@ -776,4 +776,265 @@ L.push(
   ]
 }
 );
+L.push(
+{
+  id: "sp1", area: "sport", title: "Polarizovaný trénink: 80 % lehce",
+  text: [
+    "Stephen Seiler analyzoval tréninkové deníky špičkových vytrvalců (běžkařů, veslařů, cyklistů) a zjistil podobný vzorec: zhruba 80 % tréninků probíhá v nízké intenzitě (dá se při nich mluvit) a jen asi 20 % ve vysoké. Střední „šedá zóna“ – svižné tempo, které unaví, ale nepřinese největší podnět – se u nich objevuje překvapivě málo.",
+    "Randomizovaná studie Stöggla a Sperlicha (2014) srovnala u rekreačních vytrvalců čtyři modely tréninku po 9 týdnů. Polarizovaný model zlepšil VO₂max a výkon nejvíc.",
+    "Proč to funguje: lehký objem buduje aerobní základ (mitochondrie, kapiláry) a přitom málo unavuje. Díky tomu můžeš intervaly odjet opravdu tvrdě. Častá chyba amatérů je běhat všechno ve středním tempu – každý trénink pak trochu bolí a žádný není skutečně kvalitní."
+  ],
+  takeaway: "Zhruba 80 % tréninku lehce (konverzační tempo), 20 % tvrdě. Vyhýbej se tomu, aby všechno bylo „středně“.",
+  evidence: "střední", evidenceNote: "Silná pozorovací data u elitních sportovců a několik randomizovaných studií; u amatérů s malým objemem může fungovat i jiné rozložení.",
+  sources: [
+    { name: "Seiler, What is best practice for training intensity and duration distribution? Int J Sports Physiol Perform 2010" },
+    { name: "Stöggl & Sperlich, Frontiers in Physiology 2014", url: "https://doi.org/10.3389/fphys.2014.00033" }
+  ],
+  quiz: [
+    { q: "Jaký podíl tréninku vytrvalci v polarizovaném modelu tráví v nízké intenzitě?", o: ["Zhruba 80 %", "Zhruba 20 %", "Zhruba 50 %", "100 %"], why: "Typické rozložení je asi 80 : 20 ve prospěch nízké intenzity." },
+    { q: "Co je častou chybou amatérských vytrvalců?", o: ["Většinu tréninků jezdí ve středním tempu", "Trénují příliš lehce", "Dělají příliš mnoho regenerace", "Spí příliš dlouho"], why: "Střední tempo unavuje, ale nepřináší maximální podnět – „šedá zóna“." },
+    { q: "Jak poznáš nízkou intenzitu bez měřáku?", o: ["Dá se při ní plynule mluvit", "Nedá se při ní mluvit vůbec", "Tep je nad 180", "Po tréninku zvracíš"], why: "Konverzační test je jednoduchý a dobře koreluje s první ventilační hranicí." }
+  ],
+  cards: [
+    { f: "Polarizovaný trénink – rozložení intenzity?", b: "~80 % nízká intenzita, ~20 % vysoká, minimum „šedé zóny“." },
+    { f: "Proč tolik lehkého tréninku?", b: "Buduje aerobní základ s malou únavou, takže intervaly mohou být opravdu kvalitní." }
+  ]
+},
+{
+  id: "sp2", area: "sport", title: "Pravidlo 10 % a progresivní přetížení",
+  text: [
+    "Aby se tělo zlepšovalo, musí zátěž postupně růst – to je princip progresivního přetížení. Bez něj se výkonnost zastaví, příliš rychlé zvyšování ale vede k přetížení a zranění.",
+    "Mezi běžci se traduje „pravidlo 10 %“: týdenní objem nezvyšovat o víc než 10 %. Randomizovaná studie Buista a kol. (2008) u 532 začínajících běžců ale nenašla rozdíl ve výskytu zranění mezi skupinou, která zvyšovala objem o 10 % týdně, a skupinou s rychlejším nárůstem. Pravidlo je tedy rozumná pomůcka, ne prokázaný zákon.",
+    "Co v praxi dává větší smysl: zvyšovat zátěž postupně, každý 3.–4. týden zařadit lehčí (odlehčovací) týden a sledovat signály – přetrvávající bolest, horší spánek, zvýšený klidový tep. Riziko zranění zvyšují hlavně náhlé skoky, například po nemoci nebo dovolené."
+  ],
+  takeaway: "Zátěž zvyšuj postupně a pravidelně odlehčuj. Pravidlo 10 % je užitečná pomůcka, ale jeho ochranný efekt se v randomizované studii nepotvrdil.",
+  evidence: "střední", evidenceNote: "Princip přetížení je pevně doložený; konkrétní hranice 10 % podporu v randomizované studii nemá.",
+  sources: [{ name: "Buist a kol., No effect of a graded training program on the number of running-related injuries, Am J Sports Med 2008" }],
+  quiz: [
+    { q: "Co zjistila studie Buista (2008) o pravidle 10 %?", o: ["Výskyt zranění se mezi skupinami nelišil", "Pravidlo snížilo zranění na polovinu", "Pravidlo zranění zvýšilo", "Studie se zraněními nezabývala"], why: "Mezi postupným (10 %) a rychlejším nárůstem nebyl rozdíl ve zraněních." },
+    { q: "Co je progresivní přetížení?", o: ["Postupné zvyšování tréninkové zátěže", "Trénink do úplného vyčerpání", "Trénink jen jednou týdně", "Náhlé zdvojnásobení objemu"], why: "Tělo se adaptuje, jen když zátěž postupně roste." },
+    { q: "Jak často se obvykle zařazuje odlehčovací týden?", o: ["Každý 3.–4. týden", "Jednou ročně", "Každý druhý den", "Nikdy"], why: "Odlehčení umožní vstřebat předchozí zátěž." }
+  ],
+  cards: [
+    { f: "Pravidlo 10 % – jak silný je důkaz?", b: "Slabý: v RCT (Buist 2008) nesnížilo výskyt zranění. Je to pomůcka, ne zákon." },
+    { f: "Co nejvíc zvyšuje riziko zranění?", b: "Náhlé skoky v zátěži, např. po pauze nebo nemoci." }
+  ]
+},
+{
+  id: "sp3", area: "sport", title: "Taper: jak se vyladit na závod",
+  text: [
+    "Taper je období před důležitým závodem, kdy se snižuje tréninková zátěž, aby odezněla únava a projevila se nabraná výkonnost.",
+    "Metaanalýza Bosqueta a kol. (2007) shrnula 27 studií: nejlepší výsledek přinesl taper trvající zhruba dva týdny (8–14 dní), při kterém se objem tréninku sníží asi o 41–60 %, ale intenzita i frekvence tréninků zůstanou zachované. Výkon se v průměru zlepšil o 2–3 %, což je na závodní úrovni hodně.",
+    "Nejčastější chyby: snížit i intenzitu (tělo „usne“), nebo v posledních dnech dohánět, co se nestihlo. Během taperu je normální cítit se zvláštně neklidný – energie, která se nemá kam vybít, je spíš dobré znamení."
+  ],
+  takeaway: "Asi 2 týdny před závodem sniž objem o 40–60 %, ale intenzitu a počet tréninků nech. Zlepšení bývá kolem 2–3 %.",
+  evidence: "silné", evidenceNote: "Metaanalýza řady kontrolovaných studií; optimální délka se liší podle sportu a individuálně.",
+  sources: [{ name: "Bosquet a kol., Effects of tapering on performance: a meta-analysis, Med Sci Sports Exerc 2007" }],
+  quiz: [
+    { q: "O kolik se podle metaanalýzy Bosqueta (2007) nejlépe snižuje objem při taperu?", o: ["O 41–60 %", "O 5 %", "O 90–100 %", "Objem se zvyšuje"], why: "Nejlepší efekt mělo snížení objemu o 41–60 %." },
+    { q: "Co se má během taperu zachovat?", o: ["Intenzita a frekvence tréninků", "Celkový objem", "Délka dlouhých běhů", "Nic, má se úplně odpočívat"], why: "Udržení intenzity zabrání ztrátě adaptací." },
+    { q: "Jaké zlepšení výkonu taper v průměru přinesl?", o: ["Asi 2–3 %", "Asi 20–30 %", "Žádné", "Asi 0,1 %"], why: "Na závodní úrovni je 2–3 % velký rozdíl." }
+  ],
+  cards: [
+    { f: "Optimální taper podle Bosqueta (2007)?", b: "~8–14 dní, objem −41–60 %, intenzita a frekvence zachované." },
+    { f: "Nejčastější chyby při taperu?", b: "Snížit i intenzitu, nebo na poslední chvíli dohánět trénink." }
+  ]
+},
+{
+  id: "sp4", area: "sport", title: "Strečink, rozcvička a prevence zranění",
+  text: [
+    "Dlouhé statické protahování těsně před výkonem může krátkodobě snížit sílu a výbušnost. Přehled Behma a kol. (2016) ukázal, že efekt je hlavně u výdrží delších než 60 sekund na sval; kratší výdrže v rámci rozcvičení mají malý nebo žádný negativní dopad.",
+    "Lepší je dynamická rozcvička: postupně zrychlovat, kroužení, výpady, náběhy – připraví svaly, šlachy i nervový systém.",
+    "A co prevence zranění? Metaanalýza Lauersena a kol. (2014) zahrnula 25 randomizovaných studií s více než 26 000 sportovci. Silový trénink snížil počet sportovních zranění na méně než třetinu, proprioceptivní (balanční) trénink přibližně na polovinu – samotný strečink žádný průkazný ochranný efekt neměl."
+  ],
+  takeaway: "Před výkonem dynamická rozcvička místo dlouhého statického strečinku. Nejlepší prevence zranění je silový trénink.",
+  evidence: "silné", evidenceNote: "Systematické přehledy a metaanalýzy randomizovaných studií.",
+  sources: [
+    { name: "Behm a kol., Appl Physiol Nutr Metab 2016 (akutní efekty strečinku)" },
+    { name: "Lauersen a kol., Br J Sports Med 2014", url: "https://doi.org/10.1136/bjsports-2013-092538" }
+  ],
+  quiz: [
+    { q: "Který typ tréninku nejvíc snížil sportovní zranění v metaanalýze Lauersena (2014)?", o: ["Silový trénink", "Statický strečink", "Dlouhé běhy", "Masáže"], why: "Silový trénink snížil zranění na méně než třetinu." },
+    { q: "Kdy statický strečink před výkonem nejvíc snižuje sílu?", o: ["Při výdržích delších než 60 s", "Při výdržích kratších než 10 s", "Nikdy", "Jen ve vodě"], why: "Negativní efekt se projevuje hlavně u dlouhých výdrží." },
+    { q: "Jaký průkazný ochranný efekt měl samotný strečink proti zraněním?", o: ["Žádný průkazný", "Snížil zranění na třetinu", "Zcela je odstranil", "Zranění zdvojnásobil"], why: "Strečink v metaanalýze nevykázal významnou ochranu." }
+  ],
+  cards: [
+    { f: "Nejlepší prevence sportovních zranění (Lauersen 2014)?", b: "Silový trénink – zranění na méně než 1/3; strečink bez průkazného efektu." },
+    { f: "Jakou rozcvičku před výkonem?", b: "Dynamickou; dlouhé statické výdrže (>60 s) mohou krátkodobě snížit sílu." }
+  ]
+},
+{
+  id: "sp5", area: "sport", title: "Sacharidy během vytrvalostního výkonu",
+  text: [
+    "Zásoby glykogenu ve svalech a játrech vystačí při intenzivním vytrvalostním výkonu zhruba na 90–120 minut. Pak hrozí „zeď“ – prudký pokles výkonu.",
+    "Odborná doporučení (ACSM 2016, Jeukendrup 2014) uvádějí: při výkonu kolem 1–2,5 hodiny přijímat 30–60 g sacharidů za hodinu, při delších výkonech až 90 g za hodinu. Vyšších dávek lze dosáhnout jen kombinací glukózy a fruktózy, protože se ve střevě vstřebávají různými přenašeči.",
+    "Střevo je trénovatelné: kdo zkouší vysoký příjem poprvé až na závodě, riskuje žaludeční potíže. Proto se doporučuje závodní výživu vyzkoušet na delších trénincích. U výkonů pod hodinu stačí často jen vypláchnout ústa sacharidovým nápojem – i to v některých studiích zlepšilo výkon."
+  ],
+  takeaway: "1–2,5 h výkonu: 30–60 g sacharidů/h; delší výkony: až 90 g/h (glukóza + fruktóza). Výživu trénuj předem.",
+  evidence: "silné", evidenceNote: "Odborná stanoviska založená na řadě kontrolovaných studií; individuální tolerance se liší.",
+  sources: [
+    { name: "Jeukendrup, A step towards personalized sports nutrition, Sports Med 2014" },
+    { name: "Thomas, Erdman, Burke: ACSM/AND/DC Position Stand, Med Sci Sports Exerc 2016" }
+  ],
+  quiz: [
+    { q: "Kolik sacharidů za hodinu se doporučuje při výkonech delších než ~2,5 h?", o: ["Až 90 g", "Do 10 g", "Přes 300 g", "Žádné"], why: "Až 90 g/h, pokud jde o kombinaci glukózy a fruktózy." },
+    { q: "Proč se pro vysoký příjem kombinuje glukóza s fruktózou?", o: ["Vstřebávají se různými přenašeči", "Fruktóza je sladší", "Glukóza je zakázaná", "Kvůli barvě"], why: "Dva různé přenašeče zvyšují celkovou kapacitu vstřebávání." },
+    { q: "Proč zkoušet závodní výživu předem na tréninku?", o: ["Střevo se dá na vyšší příjem natrénovat", "Kvůli pravidlům závodu", "Aby gely nezvětraly", "Není to potřeba"], why: "Postupný trénink střeva snižuje žaludeční potíže." }
+  ],
+  cards: [
+    { f: "Sacharidy při výkonu 1–2,5 h?", b: "30–60 g/h." },
+    { f: "Sacharidy při výkonu nad 2,5 h?", b: "Až 90 g/h, kombinace glukózy a fruktózy." }
+  ]
+},
+{
+  id: "sp6", area: "sport", title: "Spánek jako legální zlepšovák",
+  text: [
+    "Ve studii Cheri Mah a kol. (2011) prodloužili basketbalisté Stanfordovy univerzity na 5–7 týdnů spánek s cílem 10 hodin v posteli denně. Zrychlil se jim sprint, zlepšila přesnost střelby (trestné hody i trojky zhruba o 9 %) a cítili se lépe fyzicky i psychicky.",
+    "Studie byla malá (11 hráčů) a bez kontrolní skupiny, ale dobře zapadá do širších dat: nedostatek spánku zhoršuje vytrvalost, rozhodování, vnímání námahy a zvyšuje riziko zranění. Například u dospívajících sportovců byl spánek kratší než 8 hodin spojen s vyšším výskytem zranění (Milewski a kol., 2014).",
+    "Prakticky: před důležitým výkonem „nasbírat spánek“ v předchozích dnech pomáhá víc než se snažit vyspat noc před závodem, kdy nervozita spánek často zkracuje. Krátký odpolední spánek (20–30 minut) také může zlepšit výkon i pozornost."
+  ],
+  takeaway: "Víc spánku = lepší výkon. Spánkový „vklad“ v dnech před závodem je důležitější než poslední noc.",
+  evidence: "střední", evidenceNote: "Konzistentní souvislosti a menší intervenční studie; velké randomizované studie chybí.",
+  sources: [
+    { name: "Mah a kol., The effects of sleep extension on the athletic performance of collegiate basketball players, Sleep 2011", url: "https://doi.org/10.5665/SLEEP.1132" },
+    { name: "Milewski a kol., J Pediatr Orthop 2014" }
+  ],
+  quiz: [
+    { q: "O kolik se zhruba zlepšila přesnost střelby basketbalistů po prodloužení spánku?", o: ["Asi o 9 %", "Asi o 90 %", "Vůbec", "Zhoršila se"], why: "Trestné hody i trojky se zlepšily zhruba o 9 procentních bodů." },
+    { q: "Proč je síla důkazů u této studie jen střední?", o: ["Malý vzorek a chybějící kontrolní skupina", "Studie byla zfalšovaná", "Hráči nespali", "Byla provedena na myších"], why: "11 hráčů bez kontrolní skupiny – výsledky jsou spíš ukazatel." },
+    { q: "Kdy je nejdůležitější dobře spát před závodem?", o: ["V dnech před závodem", "Jen noc před závodem", "Den po závodě", "Na tom nezáleží"], why: "Noc před závodem bývá kvůli nervozitě horší; rozhoduje dlouhodobý spánek." }
+  ],
+  cards: [
+    { f: "Studie Mah (2011) – co prodloužení spánku přineslo?", b: "Rychlejší sprint a asi o 9 % přesnější střelbu u basketbalistů." },
+    { f: "Spánek a riziko zranění u mladých sportovců?", b: "Spánek pod 8 h byl spojen s vyšším výskytem zranění (Milewski 2014)." }
+  ]
+},
+
+{
+  id: "pp1", area: "pomoc", title: "Resuscitace: volej a stlačuj",
+  text: [
+    "Když někdo nereaguje, zavolej záchrannou službu 155 (nebo 112) a zapni hlasitý odposlech. Podle doporučení Evropské rady pro resuscitaci (ERC 2025) se má volat u každého člověka, který nereaguje – není potřeba nejdřív složitě ověřovat dýchání. Dispečer tě celou situací provede.",
+    "Pokud postižený nedýchá normálně – a pozor, ojedinělé lapavé nádechy nejsou normální dýchání, ale častý projev zástavy – začni stlačovat hrudník: dlaně doprostřed hrudníku (na dolní polovinu hrudní kosti), propnuté paže, frekvence 100–120 stlačení za minutu, hloubka 5–6 cm, a vždy nech hrudník úplně vrátit.",
+    "Kdo není vyškolený v dýchání z úst do úst, má podle ERC dělat jen nepřerušované stlačování. Vyškolený zachránce střídá 30 stlačení a 2 vdechy. Stlačování je velmi namáhavé – pokud je víc zachránců, střídejte se zhruba každé 2 minuty a nepřerušujte, dokud nepřevezmou záchranáři nebo se člověk neprobere."
+  ],
+  takeaway: "Nereaguje → 155 a hlasitý odposlech. Nedýchá normálně → stlačuj střed hrudníku 100–120×/min do hloubky 5–6 cm, bez přestávek.",
+  evidence: "silné", evidenceNote: "Mezinárodní doporučení ERC 2025 založená na konsenzu ILCOR. Tato lekce nenahrazuje praktický kurz první pomoci.",
+  sources: [{ name: "ERC Guidelines 2025: Adult Basic Life Support, Resuscitation 2025", url: "https://doi.org/10.1016/j.resuscitation.2025.110771" }],
+  quiz: [
+    { q: "Jakou frekvencí se má stlačovat hrudník?", o: ["100–120 za minutu", "30–40 za minutu", "200 za minutu", "Jednou za 10 sekund"], why: "ERC doporučuje 100–120 stlačení za minutu." },
+    { q: "Do jaké hloubky stlačovat hrudník dospělého?", o: ["5–6 cm", "1–2 cm", "10–12 cm", "Jen se dotknout"], why: "Aspoň 5 cm, ale ne víc než 6 cm." },
+    { q: "Jak brát ojedinělé lapavé nádechy u člověka v bezvědomí?", o: ["Jako známku zástavy – začít stlačovat", "Jako normální dýchání", "Jako známku, že spí", "Jako důvod čekat"], why: "Lapavé dýchání je častý projev srdeční zástavy." }
+  ],
+  cards: [
+    { f: "Resuscitace dospělého – frekvence a hloubka?", b: "100–120 stlačení/min, hloubka 5–6 cm, nechat hrudník vrátit." },
+    { f: "Netrénovaný zachránce – stlačování, nebo i dýchání?", b: "Jen nepřerušované stlačování hrudníku; vyškolený 30 : 2." }
+  ]
+},
+{
+  id: "pp2", area: "pomoc", title: "AED: přístroj, který tě navede",
+  text: [
+    "Automatický externí defibrilátor (AED) je přenosný přístroj, který sám vyhodnotí srdeční rytmus a pokud je potřeba, doporučí nebo podá elektrický výboj. Po zapnutí mluví a krok za krokem navádí – kam nalepit elektrody, kdy se postiženého nedotýkat a kdy pokračovat ve stlačování.",
+    "U náhlé srdeční zástavy rozhoduje čas. Šance na přežití klesá s každou minutou bez defibrilace zhruba o 7–10 %, pokud nikdo neresuscituje. Kvalitní stlačování hrudníku tento pokles výrazně zpomaluje – proto se resuscitace a AED kombinují.",
+    "Výboj nelze podat omylem: přístroj ho dovolí jen u rytmu, který se defibrilací léčí. Riziko, že zachránce postiženému ublíží, je podle ERC velmi nízké. V Česku pomáhá najít nejbližší AED aplikace Záchranka, která umí zároveň přivolat pomoc."
+  ],
+  takeaway: "AED tě navede hlasem a výboj podá jen tehdy, když je potřeba. Každá minuta bez defibrilace snižuje šanci na přežití zhruba o 7–10 %.",
+  evidence: "silné", evidenceNote: "Doporučení ERC; procento poklesu za minutu je odhad z observačních dat.",
+  sources: [
+    { name: "ERC Guidelines 2025: Adult Basic Life Support", url: "https://doi.org/10.1016/j.resuscitation.2025.110771" },
+    { name: "Aplikace Záchranka (ČR)" }
+  ],
+  quiz: [
+    { q: "O kolik zhruba klesá šance na přežití s každou minutou bez defibrilace (bez resuscitace)?", o: ["O 7–10 %", "O 0,5 %", "O 50 %", "Neklesá"], why: "Bez resuscitace klesá šance zhruba o 7–10 % za minutu." },
+    { q: "Může AED podat výboj člověku, který ho nepotřebuje?", o: ["Ne, výboj umožní jen u defibrilovatelného rytmu", "Ano, kdykoli se zmáčkne tlačítko", "Ano, vždy po zapnutí", "Jen v noci"], why: "Přístroj sám analyzuje rytmus." },
+    { q: "Co dělat, když AED zrovna analyzuje nebo dává výboj?", o: ["Nedotýkat se postiženého", "Pokračovat ve stlačování", "Odpojit elektrody", "Postiženého otočit"], why: "Během analýzy a výboje se nikdo nesmí postiženého dotýkat." }
+  ],
+  cards: [
+    { f: "Pokles šance na přežití bez defibrilace?", b: "Zhruba 7–10 % za minutu (bez resuscitace)." },
+    { f: "Jak v ČR najít nejbližší AED?", b: "Aplikace Záchranka – ukáže AED a přivolá pomoc." }
+  ]
+},
+{
+  id: "pp3", area: "pomoc", title: "Dušení: záda, pak břicho",
+  text: [
+    "Pokud se člověk dusí, ale dokáže kašlat a mluvit, jde o částečnou obstrukci – povzbuzuj ho ke kašli a nezasahuj. Kašel je nejúčinnější způsob, jak předmět vypudit.",
+    "Pokud kašlat ani mluvit nemůže, postupuje se podle ERC takto: předkloň ho a dej až 5 úderů dlaní mezi lopatky. Když to nepomůže, proveď až 5 stlačení nadbřišku (Heimlichův manévr): stoupni si za něj, sevřenou pěst polož mezi pupek a dolní konec hrudní kosti, druhou rukou ji obejmi a prudce zatlač dovnitř a nahoru. Pak opět 5 úderů do zad – a střídej.",
+    "Když člověk ztratí vědomí, zavolej 155 a začni resuscitaci. Po Heimlichově manévru by měl postiženého vyšetřit lékař, protože může dojít k vnitřnímu poranění. U malých dětí a kojenců se postup liší."
+  ],
+  takeaway: "Kašle → nech ho kašlat. Nemůže kašlat → 5× úder mezi lopatky, 5× stlačení nadbřišku, střídat. Bezvědomí → 155 a resuscitace.",
+  evidence: "silné", evidenceNote: "Doporučení ERC pro dospělé; postup u kojenců je odlišný.",
+  sources: [{ name: "ERC Guidelines 2025: Adult Basic Life Support (obstrukce dýchacích cest cizím tělesem)", url: "https://doi.org/10.1016/j.resuscitation.2025.110771" }],
+  quiz: [
+    { q: "Co dělat, když se dusící se člověk dokáže kašlat?", o: ["Povzbuzovat ho ke kašli", "Hned provést Heimlichův manévr", "Dát mu napít", "Položit ho na záda"], why: "Účinný kašel je nejlepší způsob, jak předmět vypudit." },
+    { q: "Jaký je správný sled u člověka, který nemůže kašlat?", o: ["5 úderů mezi lopatky, pak 5 stlačení nadbřišku, střídat", "Jen stlačení nadbřišku", "Jen čekat na záchranku", "Dýchání z úst do úst"], why: "ERC doporučuje střídat údery do zad a stlačení nadbřišku." },
+    { q: "Proč by měl po Heimlichově manévru postiženého vyšetřit lékař?", o: ["Hrozí vnitřní poranění", "Kvůli pojišťovně", "Není to potřeba", "Aby dostal antibiotika"], why: "Stlačení nadbřišku může poranit vnitřní orgány." }
+  ],
+  cards: [
+    { f: "Dušení dospělého – postup, když nemůže kašlat?", b: "5× úder mezi lopatky → 5× stlačení nadbřišku → střídat; bezvědomí → 155 a KPR." },
+    { f: "Kde přesně při Heimlichově manévru?", b: "Pěst mezi pupek a dolní konec hrudní kosti, tlak dovnitř a nahoru." }
+  ]
+},
+{
+  id: "pp4", area: "pomoc", title: "Mozková mrtvice: čas je mozek",
+  text: [
+    "Mrtvici pomáhá rozpoznat zkratka FAST (v češtině často „Tvář, Ruka, Řeč, Čas“): pokleslý koutek úst, slabost nebo necitlivost jedné ruky, nesrozumitelná nebo zmatená řeč. Pokud se objeví i jen jeden z příznaků, volej okamžitě 155 – i když příznaky odezní.",
+    "Proč spěchat: při typické cévní mozkové příhodě odumírá podle odhadu Savera (2006) zhruba 1,9 milionu neuronů každou minutu. Léčba, která rozpustí sraženinu (trombolýza), se obvykle podává do 4,5 hodiny od začátku příznaků, mechanické odstranění sraženiny (trombektomie) lze u vybraných pacientů provést i později.",
+    "Důležitá informace pro lékaře je čas, kdy příznaky začaly (nebo kdy byl člověk naposledy v pořádku). Postiženému nedávej jíst ani pít – může mít poruchu polykání."
+  ],
+  takeaway: "Pokleslý koutek, slabá ruka, porucha řeči → hned 155 a zapamatuj si čas začátku. Každá minuta znamená miliony neuronů.",
+  evidence: "silné", evidenceNote: "Mezinárodní doporučení; časová okna léčby se u jednotlivých pacientů liší.",
+  sources: [
+    { name: "Saver, Time is brain – quantified, Stroke 2006", url: "https://doi.org/10.1161/01.STR.0000196957.55928.ab" },
+    { name: "European Stroke Organisation – doporučení pro trombolýzu" }
+  ],
+  quiz: [
+    { q: "Co znamená zkratka FAST?", o: ["Tvář, ruka, řeč, čas", "Horečka, alergie, spánek, teplota", "Rychlá pomoc bez volání", "Pády, artróza, svaly, tlak"], why: "Face, Arm, Speech, Time – rozpoznání mrtvice." },
+    { q: "Kolik neuronů podle odhadu odumírá každou minutu neléčené mrtvice?", o: ["Asi 1,9 milionu", "Asi 19", "Asi 1 900", "Žádné"], why: "Saver (2006) odhadl ~1,9 milionu neuronů za minutu." },
+    { q: "Do kolika hodin od začátku příznaků se obvykle podává trombolýza?", o: ["Do 4,5 hodiny", "Do 48 hodin", "Do týdne", "Kdykoli"], why: "Standardní časové okno pro trombolýzu je 4,5 hodiny." }
+  ],
+  cards: [
+    { f: "Příznaky mrtvice (FAST)?", b: "Pokleslý koutek, slabá ruka, porucha řeči → ihned 155." },
+    { f: "Co si zapamatovat pro lékaře u mrtvice?", b: "Čas začátku příznaků (nebo kdy byl naposledy v pořádku)." }
+  ]
+},
+{
+  id: "pp5", area: "pomoc", title: "Silné krvácení",
+  text: [
+    "Život ohrožující krvácení může zabít během několika minut – rychleji, než dorazí záchranka. Prvním krokem je přímý tlak: silně přitlač ránu dlaní, ideálně přes čistou látku nebo obvaz, a nepřestávej. Pak přilož tlakový obvaz. Volej 155.",
+    "Pokud silné krvácení z končetiny nejde zastavit tlakem, doporučuje ERC použít škrtidlo (turniket) – nad ránou, utáhnout, dokud krvácení nepřestane, a zapsat čas přiložení. Improvizované škrtidlo z provázku bývá málo účinné; pokud máš ve výbavě (např. v autě nebo na túry) skutečné škrtidlo, je to výrazně lepší.",
+    "Předměty zaklíněné v ráně nevytahuj – mohou krvácení tlumit. Fixuj je a tlač kolem nich. U podezření na šok uložení postiženého vleže a udržování tepla také pomáhá."
+  ],
+  takeaway: "Silné krvácení: přímý tlak → tlakový obvaz → 155. Nejde zastavit na končetině → škrtidlo nad ránou a zapsat čas.",
+  evidence: "silné", evidenceNote: "Doporučení ERC pro první pomoc. Lekce nenahrazuje praktický kurz.",
+  sources: [{ name: "ERC Guidelines 2025: First Aid", url: "https://www.erc.edu/science-research/" }],
+  quiz: [
+    { q: "Co je první krok u silného krvácení?", o: ["Silný přímý tlak na ránu", "Zvednout nohy a čekat", "Vytáhnout předmět z rány", "Polít ránu alkoholem"], why: "Přímý tlak je nejrychlejší a nejúčinnější první zásah." },
+    { q: "Kdy použít škrtidlo?", o: ["Když krvácení z končetiny nejde zastavit tlakem", "U každého škrábnutí", "Na krk", "Nikdy"], why: "Škrtidlo je pro život ohrožující krvácení z končetin." },
+    { q: "Co udělat se zaklíněným předmětem v ráně?", o: ["Nechat ho tam a fixovat", "Rychle ho vytáhnout", "Zatlačit hlouběji", "Uříznout"], why: "Předmět může krvácení tlumit; vytažení ho může zhoršit." }
+  ],
+  cards: [
+    { f: "Silné krvácení – postup?", b: "Přímý tlak → tlakový obvaz → 155; na končetině při selhání tlaku škrtidlo." },
+    { f: "Co zapsat po přiložení škrtidla?", b: "Čas přiložení." }
+  ]
+},
+{
+  id: "pp6", area: "pomoc", title: "Úpal a podchlazení",
+  text: [
+    "Úpal (přehřátí s teplotou nad 40 °C) je život ohrožující stav. Varovné příznaky: zmatenost, neobvyklé chování, horká kůže, zrychlený tep, až bezvědomí. Může se objevit i u zdravých sportovců při běhu v horku.",
+    "Postup: volej 155, přesuň postiženého do stínu a co nejrychleji ho chlaď. ERC doporučuje jako nejúčinnější ponoření těla až po krk do studené vody; pokud to nejde, polévej ho vodou, ofukuj a přikládej chladné obklady na celé tělo. Rychlost ochlazení rozhoduje o následcích.",
+    "Podchlazení je opačný problém: třes, později zpomalení, zmatenost a ospalost. Zabraň dalším ztrátám tepla – přesun do závětří, izolace od země, suché oblečení, přikrýt hlavu. S podchlazeným člověkem manipuluj šetrně a teplé sladké nápoje dávej jen při plném vědomí. Při zmatenosti nebo bezvědomí volej 155."
+  ],
+  takeaway: "Úpal: 155 a rychle chladit, nejlépe ponořením do studené vody. Podchlazení: zabránit dalším ztrátám tepla, šetrně manipulovat, pít jen při plném vědomí.",
+  evidence: "silné", evidenceNote: "Doporučení ERC pro první pomoc.",
+  sources: [{ name: "ERC Guidelines 2025: First Aid", url: "https://www.erc.edu/science-research/" }],
+  quiz: [
+    { q: "Jaký způsob chlazení u úpalu doporučuje ERC jako nejúčinnější?", o: ["Ponoření těla do studené vody", "Studený obklad jen na čelo", "Pomalé ochlazování v místnosti", "Pití horkého čaje"], why: "Ponoření do studené vody ochladí tělo nejrychleji." },
+    { q: "Který příznak odlišuje úpal od běžného vyčerpání z horka?", o: ["Zmatenost nebo neobvyklé chování", "Žízeň", "Pocení", "Únava"], why: "Porucha vědomí a chování ukazuje na úpal – akutní stav." },
+    { q: "Kdy dát podchlazenému teplý sladký nápoj?", o: ["Jen při plném vědomí", "Vždy, i v bezvědomí", "Nikdy", "Jen alkohol"], why: "Při poruše vědomí hrozí vdechnutí tekutiny." }
+  ],
+  cards: [
+    { f: "Úpal – postup?", b: "155, stín, rychlé chlazení – nejlépe ponoření do studené vody." },
+    { f: "Podchlazení – hlavní zásady?", b: "Zabránit dalším ztrátám tepla, izolace od země, šetrná manipulace, nápoj jen při plném vědomí." }
+  ]
+}
+);
 window.LESSONS = L;

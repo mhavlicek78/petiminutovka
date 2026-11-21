@@ -10,6 +10,14 @@ const AREAS = {
   historie: { name: 'Historie',    color: 'var(--historie)' },
   veda:     { name: 'Věda',        color: 'var(--veda)' },
   cestovani:{ name: 'Cestování',   color: 'var(--cestovani)' },
+  sport:    { name: 'Sportovní věda', color: 'var(--sport)' },
+  pomoc:    { name: 'První pomoc', color: 'var(--pomoc)' },
+  zdravi:   { name: 'Zdraví a prevence', color: 'var(--zdravi)' },
+  tech:     { name: 'Technologie a AI', color: 'var(--tech)' },
+  priroda:  { name: 'Příroda a zvířata', color: 'var(--priroda)' },
+  vynalezy: { name: 'Vynálezy a technika', color: 'var(--vynalezy)' },
+  filozofie:{ name: 'Filozofie', color: 'var(--filozofie)' },
+  svet:     { name: 'Svět a instituce', color: 'var(--svet)' },
 };
 const INTERVAL = [0, 1, 3, 7, 16, 35];   // dny podle přihrádky 1–5
 const REVIEW_LIMIT = 8;
@@ -116,7 +124,7 @@ const GOLD_TEST = {
   zvladnuto50: () => masteredCount() >= 50, perfekt20: () => perfectCount() >= 20,
   sberatel: () => RECORDS.length > 0 && RECORDS.every((r) => ownedAt('r:' + r.id)),
 };
-const goldTest = (g) => g.area ? LESSONS.filter((l) => l.area === g.area).every((l) => state.lessons[l.id]) : (GOLD_TEST[g.id] || (() => false))();
+const goldTest = (g) => g.area ? (((ls_) => ls_.length > 0 && ls_.every((l) => state.lessons[l.id]))(LESSONS.filter((l) => l.area === g.area))) : (GOLD_TEST[g.id] || (() => false))();
 function owedRecords() {
   const t = totals();
   return Math.min(RECORDS.length, Object.values(t.per).reduce((s, x) => s + x.level - 1, 0) + (t.level - 1));
@@ -137,6 +145,9 @@ const EMBLEM = '<svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy
 const ART = {
   hory: '<svg viewBox="0 0 240 130" aria-hidden="true"><path d="M0 130 L70 50 L100 80 L140 14 L190 74 L210 58 L240 90 V130 Z" fill="#5c6f86"/><path d="M140 14 L156 33 L148 30 L140 40 L132 31 L125 36 Z" fill="#fff"/><path d="M70 50 L80 62 L72 60 L64 57 Z" fill="#fff"/></svg>',
   voda: '<svg viewBox="0 0 240 130" aria-hidden="true"><rect width="240" height="130" fill="#1e5f78"/><path d="M0 22 Q30 12 60 22 T120 22 T180 22 T240 22" stroke="#9fd6e8" stroke-width="2.5" fill="none"/><path d="M0 46 Q30 36 60 46 T120 46 T180 46 T240 46" stroke="#9fd6e8" stroke-width="1.5" fill="none" opacity=".6"/><path d="M0 130 L60 104 L95 112 L120 60 L145 110 L180 98 L240 130 Z" fill="#0c2a36"/></svg>',
+  zvirata: '<svg viewBox="0 0 240 130" aria-hidden="true"><rect width="240" height="130" fill="#eef5e2"/><circle cx="196" cy="34" r="16" fill="#f2c14e"/><path d="M0 130 V104 Q60 92 120 102 T240 98 V130 Z" fill="#a3b86c"/><path d="M58 104 V66" stroke="#6b4f2a" stroke-width="5"/><ellipse cx="58" cy="60" rx="34" ry="12" fill="#5f8a1a"/><path d="M150 100 l6-18 h20 l8 18 M160 82 v-10 l8-6" stroke="#6b4f2a" stroke-width="4" fill="none" stroke-linecap="round"/></svg>',
+  vynalezy: '<svg viewBox="0 0 240 130" aria-hidden="true"><rect width="240" height="130" fill="#f4eee7"/><g transform="translate(92 66)" fill="#8a6a4a"><circle r="26"/><g>' + Array.from({ length: 8 }, (_, i) => '<rect x="-6" y="-38" width="12" height="16" rx="2" transform="rotate(' + i * 45 + ')"/>').join('') + '</g><circle r="10" fill="#f4eee7"/></g><g transform="translate(152 84)" fill="#b8936a"><circle r="16"/><g>' + Array.from({ length: 6 }, (_, i) => '<rect x="-4" y="-24" width="8" height="10" rx="2" transform="rotate(' + i * 60 + ')"/>').join('') + '</g><circle r="6" fill="#f4eee7"/></g></svg>',
+  vesmir: '<svg viewBox="0 0 240 130" aria-hidden="true"><rect width="240" height="130" fill="#14163a"/><circle cx="30" cy="22" r="1.5" fill="#fff"/><circle cx="80" cy="46" r="1" fill="#fff"/><circle cx="210" cy="20" r="1.5" fill="#fff"/><circle cx="190" cy="100" r="1" fill="#fff"/><circle cx="50" cy="104" r="1.2" fill="#fff"/><circle cx="130" cy="16" r="1" fill="#fff"/><circle cx="128" cy="68" r="30" fill="#e0b34a"/><ellipse cx="128" cy="68" rx="52" ry="11" fill="none" stroke="#f3dfb2" stroke-width="4" transform="rotate(-14 128 68)"/></svg>',
   extremy: '<svg viewBox="0 0 240 130" aria-hidden="true"><rect width="240" height="130" fill="#f3dfb2"/><circle cx="178" cy="40" r="20" fill="#e0a526"/><path d="M0 130 Q50 84 100 104 T200 92 T240 98 V130 Z" fill="#c8913a"/><path d="M0 130 Q70 108 130 118 T240 112 V130 Z" fill="#a8742a"/></svg>',
 };
 function recordCard(r) {
@@ -216,7 +227,7 @@ function home() {
       + '<p class="muted">Nové lekce se budou přidávat. Mezitím drž znalosti čerstvé opakováním.</p>'
       + '<button class="btn block" data-act="review"' + (due ? '' : ' disabled') + '>' + (due ? 'Opakovat (' + due + ')' : 'Dnes není co opakovat') + '</button></div>';
   }
-  const areas = Object.entries(AREAS).map(([k, a]) => {
+  const areas = Object.entries(AREAS).filter(([k]) => t.per[k].total > 0).map(([k, a]) => {
     const s = t.per[k], lo = levelStart(s.level, AREA_K), hi = levelStart(s.level + 1, AREA_K);
     return '<button class="area" data-area="' + k + '"><b>' + esc(a.name) + '</b><span class="lvl">Úroveň ' + s.level + ' · ' + s.lessons + '/' + s.total + ' lekcí</span>'
       + '<div class="bar"><span style="width:' + pct(s.xp - lo, hi - lo) + '%;background:' + a.color + '"></span></div></button>';
@@ -340,7 +351,7 @@ function finish() {
 
 function stats() {
   const t = totals();
-  const rows = Object.entries(AREAS).map(([k, a]) => {
+  const rows = Object.entries(AREAS).filter(([k]) => t.per[k].total > 0).map(([k, a]) => {
     const s = t.per[k];
     return '<li><span>' + chip(k) + '</span><span class="muted small">úr. ' + s.level + ' · ' + s.xp + ' XP · ' + s.lessons + '/' + s.total + ' lekcí · kvíz ' + (s.qn ? pct(s.qc, s.qn) + ' %' : '–') + ' · ' + s.mastered + '/' + s.cardsN + ' kart.</span></li>';
   }).join('');
