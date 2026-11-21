@@ -95,6 +95,99 @@ function pickLesson(area) {
   return open.find((l) => l.area === areas[0]);
 }
 
+// ---------- bonusové karty ----------
+// Získané karty se ukládají do state.lessons pod klíči „r:…“ a „g:…“ (hodnota = čas získání).
+// Díky tomu je synchronizuje stávající Worker beze změny a slučování bere nejdřívější čas.
+const RECORDS = window.RECORDS || [], GOLD = window.GOLD || [], SERIES = window.RECORD_SERIES || {};
+const recById = Object.fromEntries(RECORDS.map((r) => [r.id, r]));
+const goldById = Object.fromEntries(GOLD.map((g) => [g.id, g]));
+// pevné „náhodné“ pořadí, aby obě zařízení přidělila stejnou kartu za stejný postup
+const REC_ORDER = (() => { const a = RECORDS.map((r) => r.id); let x = 20261121; for (let i = a.length - 1; i > 0; i--) { x = (x * 1103515245 + 12345) % 2147483648; const j = x % (i + 1); [a[i], a[j]] = [a[j], a[i]]; } return a; })();
+const ownedAt = (key) => state.lessons[key];
+function longestRun() {
+  const ds = Object.keys(state.days).sort(); let best = 0, run = 0, prev = null;
+  for (const k of ds) { const t = new Date(k + 'T12:00:00').getTime(); run = prev != null && Math.round((t - prev) / DAY) === 1 ? run + 1 : 1; best = Math.max(best, run); prev = t; }
+  return best;
+}
+const perfectCount = () => LESSONS.filter((l) => state.lessons[l.id] && l.quiz.every((_, i) => (state.quiz[l.id + ':' + i] || {}).c === 1)).length;
+const masteredCount = () => Object.entries(state.cards).filter(([k, c]) => byId[k.split(':')[0]] && c.box >= 4).length;
+const GOLD_TEST = {
+  serie7: () => longestRun() >= 7, serie30: () => longestRun() >= 30, serie100: () => longestRun() >= 100,
+  zvladnuto50: () => masteredCount() >= 50, perfekt20: () => perfectCount() >= 20,
+  sberatel: () => RECORDS.length > 0 && RECORDS.every((r) => ownedAt('r:' + r.id)),
+};
+const goldTest = (g) => g.area ? LESSONS.filter((l) => l.area === g.area).every((l) => state.lessons[l.id]) : (GOLD_TEST[g.id] || (() => false))();
+function owedRecords() {
+  const t = totals();
+  return Math.min(RECORDS.length, Object.values(t.per).reduce((s, x) => s + x.level - 1, 0) + (t.level - 1));
+}
+function checkRewards() {
+  const fresh = [], now = Date.now();
+  let have = RECORDS.filter((r) => ownedAt('r:' + r.id)).length;
+  const owed = owedRecords();
+  for (const id of REC_ORDER) { if (have >= owed) break; if (!ownedAt('r:' + id)) { state.lessons['r:' + id] = now; fresh.push('r:' + id); have++; } }
+  for (const g of GOLD) if (!ownedAt('g:' + g.id) && goldTest(g)) { state.lessons['g:' + g.id] = now; fresh.push('g:' + g.id); }
+  if (fresh.length) save();
+  return fresh;
+}
+const fmtDate = (t) => { const d = new Date(t); return d.getDate() + '. ' + (d.getMonth() + 1) + '. ' + d.getFullYear(); };
+const EMBLEM = '<svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="46" fill="none" stroke="currentColor" stroke-width="2.5" opacity=".7"/>'
+  + [0, 1, 2, 3, 4, 5].map((i) => { const a = (-90 + 60 * i) * Math.PI / 180; return '<circle cx="' + (50 + 23 * Math.cos(a)).toFixed(1) + '" cy="' + (50 + 23 * Math.sin(a)).toFixed(1) + '" r="8.5" fill="currentColor" opacity=".85"/>'; }).join('')
+  + '<circle cx="50" cy="50" r="4" fill="currentColor"/></svg>';
+const ART = {
+  hory: '<svg viewBox="0 0 240 130" aria-hidden="true"><path d="M0 130 L70 50 L100 80 L140 14 L190 74 L210 58 L240 90 V130 Z" fill="#5c6f86"/><path d="M140 14 L156 33 L148 30 L140 40 L132 31 L125 36 Z" fill="#fff"/><path d="M70 50 L80 62 L72 60 L64 57 Z" fill="#fff"/></svg>',
+  voda: '<svg viewBox="0 0 240 130" aria-hidden="true"><rect width="240" height="130" fill="#1e5f78"/><path d="M0 22 Q30 12 60 22 T120 22 T180 22 T240 22" stroke="#9fd6e8" stroke-width="2.5" fill="none"/><path d="M0 46 Q30 36 60 46 T120 46 T180 46 T240 46" stroke="#9fd6e8" stroke-width="1.5" fill="none" opacity=".6"/><path d="M0 130 L60 104 L95 112 L120 60 L145 110 L180 98 L240 130 Z" fill="#0c2a36"/></svg>',
+  extremy: '<svg viewBox="0 0 240 130" aria-hidden="true"><rect width="240" height="130" fill="#f3dfb2"/><circle cx="178" cy="40" r="20" fill="#e0a526"/><path d="M0 130 Q50 84 100 104 T200 92 T240 98 V130 Z" fill="#c8913a"/><path d="M0 130 Q70 108 130 118 T240 112 V130 Z" fill="#a8742a"/></svg>',
+};
+function recordCard(r) {
+  const se = SERIES[r.s], n = RECORDS.filter((x) => x.s === r.s).indexOf(r) + 1, tot = RECORDS.filter((x) => x.s === r.s).length;
+  return '<div class="rc" style="--c:' + se.color + ';--sky:' + se.sky + '"><div class="rc-hd"><span>REKORDY · ' + esc(se.name.toUpperCase()) + '</span><span>' + '★'.repeat(r.stars) + '</span></div>'
+    + '<div class="rc-art">' + ART[r.s] + '</div><div class="rc-bd"><div class="rc-nm">' + esc(r.name) + '</div>'
+    + r.stats.map(([k, v]) => '<div class="rc-row"><span>' + esc(k) + '</span><b>' + esc(v) + '</b></div>').join('')
+    + '<div class="rc-ft">' + n + ' / ' + tot + '</div></div><div class="shine"></div></div>';
+}
+function goldCard(g, at) {
+  return '<div class="gc"><div class="gc-frame"></div><div class="gc-ed">ZLATÁ EDICE</div><div class="gc-em">' + EMBLEM + '</div>'
+    + '<div class="gc-ti">' + esc(g.title) + '</div><div class="gc-sub">' + esc(g.sub) + '</div>'
+    + '<div class="gc-no">č. ' + pad(g.num) + ' / ' + pad(GOLD.length) + '</div><div class="gc-dt">Získáno ' + fmtDate(at) + '</div><div class="shine"></div></div>';
+}
+function lockedCard(label, hint) {
+  return '<div class="lk"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>'
+    + '<div class="lk-l">' + esc(label) + '</div>' + (hint ? '<div class="lk-h">' + esc(hint) + '</div>' : '') + '</div>';
+}
+function cardHtml(key) {
+  const [kind, id] = [key.slice(0, 1), key.slice(2)];
+  if (kind === 'r') return recordCard(recById[id]);
+  return goldCard(goldById[id], ownedAt(key));
+}
+const revealQueue = { list: [], i: 0, after: '' };
+function reveal(list, i, after) {
+  if (i >= list.length) { show(after); return; }
+  revealQueue.list = list; revealQueue.i = i; revealQueue.after = after;
+  const gold = list[i].startsWith('g:');
+  show('<div class="reveal"><p class="eyebrow">' + (gold ? 'Zlatá edice' : 'Nová karta za postup na úroveň') + (list.length > 1 ? ' · ' + (i + 1) + '/' + list.length : '') + '</p>'
+    + '<div class="card-full pop">' + cardHtml(list[i]) + '</div>'
+    + '<button class="btn block" data-reveal-next="1">' + (i + 1 < list.length ? 'Další karta' : 'Pokračovat') + '</button></div>');
+}
+function album() {
+  const recOwned = RECORDS.filter((r) => ownedAt('r:' + r.id)).length, goldOwned = GOLD.filter((g) => ownedAt('g:' + g.id)).length;
+  const owed = owedRecords();
+  const gold = GOLD.map((g) => '<button class="tile" ' + (ownedAt('g:' + g.id) ? 'data-card="g:' + g.id + '">' + goldCard(g, ownedAt('g:' + g.id)) : 'disabled>' + lockedCard('č. ' + pad(g.num), g.title + ': ' + g.sub)) + '</button>').join('');
+  const series = Object.entries(SERIES).map(([sid, se]) => {
+    const list = RECORDS.filter((r) => r.s === sid), have = list.filter((r) => ownedAt('r:' + r.id)).length;
+    return '<h3 class="series"><i style="background:' + se.color + '"></i>' + esc(se.name) + ' <span class="muted small">' + have + '/' + list.length + '</span></h3><div class="album">'
+      + list.map((r) => '<button class="tile" ' + (ownedAt('r:' + r.id) ? 'data-card="r:' + r.id + '">' + recordCard(r) : 'disabled>' + lockedCard('?', '')) + '</button>').join('') + '</div>';
+  }).join('');
+  show('<h1>Sbírka</h1><p class="muted">Karty, které jsi získal. Klepnutím je zvětšíš.</p>'
+    + '<h2>Zlatá edice <span class="muted small">' + goldOwned + '/' + GOLD.length + '</span></h2><p class="muted small">Jen 12 číslovaných karet za velké milníky.</p><div class="album">' + gold + '</div>'
+    + '<h2>Rekordy planety <span class="muted small">' + recOwned + '/' + RECORDS.length + '</span></h2><p class="muted small">Jednu kartu získáš za každý postup na novou úroveň (v oblasti i celkově). Kompletní sada odemyká zlatou kartu Sběratel.</p>'
+    + (recOwned < RECORDS.length ? '<p class="small">Do další karty: postup na další úroveň v kterékoli oblasti.</p>' : '')
+    + series);
+}
+function showCard(key) {
+  show('<div class="reveal"><div class="card-full">' + cardHtml(key) + '</div><button class="btn ghost block" data-go="sbirka">Zpět do sbírky</button></div>');
+}
+
 // ---------- pomocné ----------
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const app = document.getElementById('app');
@@ -229,18 +322,20 @@ function gradeCard(ok) {
 function next() { session.pos++; renderStep(); }
 
 function finish() {
+  const fresh = checkRewards();
   const a = session.before, b = totals(), gained = b.xp - a.xp;
   const ups = Object.keys(AREAS).filter((k) => b.per[k].level > a.per[k].level).map((k) => AREAS[k].name + ' → úroveň ' + b.per[k].level);
   if (b.level > a.level) ups.unshift('Celková úroveň ' + b.level);
   const lesson = session.lessonId ? byId[session.lessonId] : null;
-  show('<div class="card center stack" style="padding:28px 20px"><p class="muted">Hotovo</p><div class="big">+' + gained + ' XP</div>'
+  const summary = '<div class="card center stack" style="padding:28px 20px"><p class="muted">Hotovo</p><div class="big">+' + gained + ' XP</div>'
     + (ups.length ? '<p class="levelup">Nová úroveň: ' + ups.map(esc).join(', ') + '</p>' : '')
     + '<p class="muted small">' + (lesson ? 'Kvíz ' + session.gainedQuiz + '/' + lesson.quiz.length + ' napoprvé správně' : '')
     + (session.cardsTotal ? (lesson ? ' · ' : '') + 'kartičky ' + session.cardsRight + '/' + session.cardsTotal : '') + '</p>'
     + (lesson ? '<p class="small">Kartičky z dnešní lekce se objeví v opakování zítra.</p>' : '')
     + '</div><div class="stack" style="margin-top:16px"><button class="btn block" data-go="home">Zpět na přehled</button>'
-    + (pickLesson() ? '<button class="btn ghost block" data-act="start">Ještě jednu lekci</button>' : '') + '</div>');
+    + (pickLesson() ? '<button class="btn ghost block" data-act="start">Ještě jednu lekci</button>' : '') + '</div>';
   session = null;
+  if (fresh.length) reveal(fresh, 0, summary); else show(summary);
 }
 
 function stats() {
@@ -293,6 +388,7 @@ async function syncNow(mode) {
     const changed = JSON.stringify(merged) !== JSON.stringify(state);
     state = merged; ls.set(STATE_KEY, JSON.stringify(state));
     const d = new Date(); syncState.text = 'synchronizováno v ' + pad(d.getHours()) + ':' + pad(d.getMinutes());
+    if (changed) { const fresh = checkRewards(); if (fresh.length && !session) toast('Nové karty ve Sbírce: ' + fresh.length); }
     if (changed && !session && mode !== 'quiet') rerender();
     return true;
   } catch (e) {
@@ -318,13 +414,15 @@ function settings() {
 
 function rerender() {
   const v = app.dataset.view;
-  if (v === 'stats') stats(); else if (v === 'settings') settings(); else if (v === 'home') home();
+  if (v === 'stats') stats(); else if (v === 'settings') settings(); else if (v === 'sbirka') album(); else if (v === 'home') home();
 }
-function go(view) { app.dataset.view = view; session = null; if (view === 'stats') stats(); else if (view === 'settings') settings(); else home(); }
+function go(view) { app.dataset.view = view; session = null; if (view === 'stats') stats(); else if (view === 'settings') settings(); else if (view === 'sbirka') album(); else home(); }
 
 // ---------- události ----------
 document.addEventListener('click', async (e) => {
-  const t = e.target.closest('button, [data-act], [data-go], [data-area], [data-read]'); if (!t) return;
+  const t = e.target.closest('button, [data-act], [data-go], [data-area], [data-read], [data-card]'); if (!t) return;
+  if (t.dataset.card) { app.dataset.view = 'card'; return showCard(t.dataset.card); }
+  if (t.dataset.revealNext) return reveal(revealQueue.list, revealQueue.i + 1, revealQueue.after);
   if (t.dataset.go) return go(t.dataset.go);
   if (t.dataset.area) { app.dataset.view = 'session'; return areaPick(t.dataset.area); }
   if (t.dataset.read) { app.dataset.view = 'read'; return readLesson(t.dataset.read); }
@@ -359,7 +457,7 @@ document.addEventListener('submit', async (e) => {
 document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') syncNow(); });
 
 app.dataset.view = 'home';
-home();
+{ const fresh = checkRewards(); home(); if (fresh.length) toast('Nové karty ve Sbírce: ' + fresh.length); }
 syncNow();
 if ('serviceWorker' in navigator && location.protocol === 'https:') navigator.serviceWorker.register('sw.js').catch(() => {});
 })();
