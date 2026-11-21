@@ -1037,4 +1037,253 @@ L.push(
   ]
 }
 );
+L.push(
+{
+  id: "zd1", area: "zdravi", title: "Krevní tlak: tichý zabiják",
+  text: [
+    "Vysoký krevní tlak obvykle nebolí, a proto se mu říká tichý zabiják. Dlouhodobě přitom poškozuje cévy, srdce, mozek, ledviny i oči a patří k hlavním rizikovým faktorům infarktu a mrtvice.",
+    "Evropská kardiologická společnost (ESC) v doporučeních z roku 2024 rozlišuje tři pásma: normální tlak pod 120/70 mmHg, zvýšený tlak 120–139/70–89 mmHg a hypertenzi od 140/90 mmHg. U většiny léčených pacientů doporučuje cílit na systolický tlak 120–129 mmHg, pokud ho dobře snášejí.",
+    "Měření v ordinaci může být zkreslené („syndrom bílého pláště“), proto má velkou hodnotu domácí měření: v klidu vsedě, po pěti minutách odpočinku, paže v úrovni srdce, několik dní ráno a večer. Tlak snižuje pravidelný pohyb, méně soli, méně alkoholu, zdravá hmotnost a dostatek spánku."
+  ],
+  takeaway: "Normál pod 120/70, zvýšený 120–139/70–89, hypertenze od 140/90 (ESC 2024). Nebolí, proto ho měř – ideálně i doma.",
+  evidence: "silné", evidenceNote: "Doporučení ESC 2024 založená na velkých randomizovaných studiích a metaanalýzách.",
+  sources: [{ name: "McEvoy a kol., 2024 ESC Guidelines for the management of elevated blood pressure and hypertension, Eur Heart J 2024", url: "https://doi.org/10.1093/eurheartj/ehae178" }],
+  quiz: [
+    { q: "Od jaké hodnoty definuje ESC (2024) hypertenzi?", o: ["Od 140/90 mmHg", "Od 120/80 mmHg", "Od 160/100 mmHg", "Od 100/60 mmHg"], why: "Hypertenze je od 140/90; pásmo 120–139/70–89 je „zvýšený tlak“." },
+    { q: "Proč se vysokému tlaku říká tichý zabiják?", o: ["Obvykle nebolí, ale poškozuje cévy", "Způsobuje ztrátu hlasu", "Projevuje se jen v noci", "Je vždy dědičný"], why: "Většina lidí s vysokým tlakem nemá žádné příznaky." },
+    { q: "Jak správně měřit tlak doma?", o: ["V klidu vsedě po 5 minutách, paže v úrovni srdce", "Hned po běhu", "Vestoje se zvednutou rukou", "Jednou za rok"], why: "Standardizované podmínky dávají spolehlivé hodnoty." }
+  ],
+  cards: [
+    { f: "Pásma krevního tlaku podle ESC 2024?", b: "Normál <120/70 · zvýšený 120–139/70–89 · hypertenze ≥140/90." },
+    { f: "Cílový systolický tlak u léčené hypertenze (ESC 2024)?", b: "120–129 mmHg, pokud ho pacient dobře snáší." }
+  ]
+},
+{
+  id: "zd2", area: "zdravi", title: "LDL cholesterol: příčina, ne jen ukazatel",
+  text: [
+    "Cholesterol v krvi přenášejí lipoproteiny. LDL („zlý“ cholesterol) se ukládá do stěn tepen a tvoří plaky, které mohou prasknout a způsobit infarkt nebo mrtvici.",
+    "Konsenzus Evropské společnosti pro aterosklerózu (Ference a kol., 2017) shrnul data z genetických studií, kohort i randomizovaných studií: LDL není jen ukazatel rizika, ale přímá příčina aterosklerózy. Platí přitom, že rozhoduje celková „dávka“ – jak vysoký LDL je a jak dlouho. Proto má smysl začít s prevencí včas.",
+    "Jaká hodnota je „dobrá“, záleží na celkovém riziku člověka (věk, tlak, kouření, cukrovka, rodinná anamnéza) – u zdravého nízkorizikového člověka platí jiný cíl než po infarktu. LDL snižuje strava s menším podílem nasycených tuků a víc vlákniny, pohyb a zdravá hmotnost; u vyššího rizika i léky."
+  ],
+  takeaway: "LDL cholesterol přímo způsobuje aterosklerózu; rozhoduje jeho výše × doba působení. Cílová hodnota závisí na celkovém riziku.",
+  evidence: "silné", evidenceNote: "Konsenzus založený na genetických, observačních a randomizovaných datech.",
+  sources: [{ name: "Ference a kol., EAS Consensus Statement, Eur Heart J 2017", url: "https://doi.org/10.1093/eurheartj/ehx144" }],
+  quiz: [
+    { q: "Co podle konsenzu EAS (2017) platí o LDL cholesterolu?", o: ["Je přímou příčinou aterosklerózy", "Je jen neškodný ukazatel", "Chrání cévy", "Nemá s infarktem souvislost"], why: "Genetická i intervenční data ukazují příčinnou souvislost." },
+    { q: "Na čem závisí cílová hodnota LDL?", o: ["Na celkovém kardiovaskulárním riziku", "Jen na věku", "Na krevní skupině", "Je pro všechny stejná"], why: "U vysokého rizika jsou cíle přísnější." },
+    { q: "Proč má smysl začít s prevencí včas?", o: ["Rozhoduje výše LDL i doba jeho působení", "Cholesterol se s věkem sám snižuje", "Starší lidé se léčit nemohou", "Nemá smysl"], why: "Kumulativní expozice LDL určuje riziko." }
+  ],
+  cards: [
+    { f: "LDL cholesterol – příčina, nebo ukazatel?", b: "Přímá příčina aterosklerózy (EAS 2017); rozhoduje výše × doba." },
+    { f: "Na čem závisí cílová hodnota LDL?", b: "Na celkovém riziku (věk, tlak, kouření, cukrovka, rodina)." }
+  ]
+},
+{
+  id: "zd3", area: "zdravi", title: "Alkohol: konec „sklenky pro zdraví“?",
+  text: [
+    "Desítky let se tradovalo, že malé množství alkoholu chrání srdce. Vycházelo to z observačních studií, kde mírní pijáci vycházeli lépe než abstinenti (tzv. J-křivka).",
+    "Novější analýzy ale ukazují metodický problém: mezi „abstinenty“ byli často bývalí pijáci, kteří přestali kvůli nemoci, což je dělalo zdánlivě nemocnějšími. Metaanalýza Zhaa a kol. (2023) zahrnující přes 100 studií po korekci těchto chyb ochranný efekt mírného pití nenašla. Světová zdravotnická organizace (WHO) v roce 2023 uvedla, že pro zdraví neexistuje bezpečná míra pití alkoholu.",
+    "Alkohol je navíc prokázaný karcinogen (rakovina úst, jícnu, jater, prsu, tlustého střeva) a riziko roste už od malých dávek. Pro sportovce je důležité i to, že zhoršuje spánek a regeneraci – což se často projeví na nočním HRV."
+  ],
+  takeaway: "Ochranný efekt „sklenky denně“ se po opravě metodických chyb nepotvrdil. Podle WHO neexistuje bezpečná míra; méně je lépe.",
+  evidence: "sporné", evidenceNote: "Škodlivost vyšších dávek je jistá; u velmi malých dávek se odborníci stále přou o velikost rizika.",
+  sources: [
+    { name: "Zhao a kol., JAMA Network Open 2023", url: "https://doi.org/10.1001/jamanetworkopen.2023.6185" },
+    { name: "WHO/Europe: No level of alcohol consumption is safe for our health (2023)" }
+  ],
+  quiz: [
+    { q: "Jaká chyba zkreslovala staré studie o „zdravém“ pití?", o: ["Mezi abstinenty byli bývalí pijáci, kteří přestali kvůli nemoci", "Lidé pili příliš málo vody", "Studie zkoumaly jen víno", "Žádná"], why: "Tento „sick quitter“ efekt dělal abstinenty zdánlivě nemocnějšími." },
+    { q: "Co uvedla WHO v roce 2023?", o: ["Neexistuje bezpečná míra pití alkoholu pro zdraví", "Dvě sklenky denně jsou zdravé", "Pivo je zdravější než voda", "Alkohol chrání před rakovinou"], why: "WHO zdůraznila, že riziko rakoviny roste už od malých dávek." },
+    { q: "Proč je síla důkazů u malých dávek vedena jako „sporná“?", o: ["Velikost rizika u velmi malých dávek se stále diskutuje", "Alkohol nikdo nezkoumal", "Vyšší dávky jsou zdravé", "Studie jsou zakázané"], why: "U vyšších dávek je škodlivost jistá, u velmi malých je debata o velikosti efektu." }
+  ],
+  cards: [
+    { f: "Chrání malé množství alkoholu srdce?", b: "Po korekci metodických chyb ochranný efekt nenalezen (Zhao 2023)." },
+    { f: "Stanovisko WHO k alkoholu (2023)?", b: "Pro zdraví neexistuje bezpečná míra pití." }
+  ]
+},
+{
+  id: "zd4", area: "zdravi", title: "Screening v Česku: co a kdy",
+  text: [
+    "Screening je vyšetření lidí bez příznaků s cílem zachytit nemoc včas, kdy je léčba nejúspěšnější. V Česku hradí pojišťovny několik celopopulačních programů.",
+    "Rakovina tlustého střeva a konečníku: od roku 2026 se hranice posunula a nárok mají lidé od 45 do 74 let – buď test na skryté krvácení ve stolici, nebo rovnou screeningová kolonoskopie. Česko tím patří k zemím s nejnižší věkovou hranicí. Kolonoskopie má výhodu, že při ní lze odstranit polypy dřív, než se z nich stane rakovina.",
+    "Dále funguje screening rakoviny prsu (mamografie od 45 let jednou za dva roky) a děložního hrdla a programy časného záchytu rakoviny plic u dlouholetých kuřáků a rakoviny prostaty. O tom, co se týká právě tebe, je nejlepší mluvit s praktickým lékařem při preventivní prohlídce, na kterou je nárok jednou za dva roky."
+  ],
+  takeaway: "Rakovina tlustého střeva: hrazený screening od 45 do 74 let (od 2026). Preventivní prohlídka u praktika jednou za 2 roky.",
+  evidence: "silné", evidenceNote: "Organizované screeningové programy snižují úmrtnost; konkrétní věkové hranice se v čase mění – ověř si aktuální stav.",
+  sources: [
+    { name: "Ministerstvo zdravotnictví ČR – Screening kolorektálního karcinomu", url: "https://mzd.gov.cz/category/programy-a-strategie/screeningove-programy/screening-kolorektalniho-karcinomu/" },
+    { name: "Národní screeningové centrum ÚZIS ČR" }
+  ],
+  quiz: [
+    { q: "Od kolika let je v Česku od roku 2026 hrazený screening rakoviny tlustého střeva?", o: ["Od 45 let", "Od 60 let", "Od 30 let", "Od 70 let"], why: "Hranice se posunula z 50 na 45 let (do 74 let)." },
+    { q: "Jakou výhodu má screeningová kolonoskopie?", o: ["Lze při ní odstranit polypy dřív, než se z nich stane rakovina", "Je bezbolestná a bez přípravy", "Dělá se doma", "Odhalí všechny nemoci"], why: "Odstranění polypů rakovině přímo předchází." },
+    { q: "Jak často je nárok na preventivní prohlídku u praktického lékaře?", o: ["Jednou za 2 roky", "Jednou za 10 let", "Každý měsíc", "Jen jednou za život"], why: "Dospělí mají nárok na preventivní prohlídku jednou za dva roky." }
+  ],
+  cards: [
+    { f: "Screening rakoviny tlustého střeva v ČR (od 2026)?", b: "45–74 let: test na skryté krvácení, nebo screeningová kolonoskopie." },
+    { f: "Mamografický screening v ČR?", b: "Od 45 let, jednou za dva roky." }
+  ]
+},
+{
+  id: "zd5", area: "zdravi", title: "Vitamín D: komu pomůže",
+  text: [
+    "Vitamín D si tělo vyrábí v kůži působením UVB záření. V Česku (kolem 50° severní šířky) je ale slunce zhruba od října do března tak nízko, že se ho v kůži tvoří jen málo. Nedostatek je proto v zimě častý.",
+    "Velká randomizovaná studie VITAL (Manson a kol., 2019) podávala přes 25 000 lidem 2 000 IU vitamínu D denně po dobu asi 5 let. Ve srovnání s placebem nesnížila výskyt rakoviny ani srdečně-cévních onemocnění. Podobně vyšla i australská studie D-Health.",
+    "To neznamená, že vitamín D nemá smysl: je nezbytný pro kosti a svaly a u lidí s prokázaným nedostatkem doplňování dává smysl. Plošné „zázračné“ účinky u lidí s dostatečnou hladinou se ale nepotvrdily. Hladinu lze zjistit krevním testem (25-OH vitamín D)."
+  ],
+  takeaway: "V zimě se v Česku vitamín D v kůži skoro netvoří. Doplňování pomáhá při nedostatku, ale u lidí s dobrou hladinou rakovině ani infarktům nepředchází.",
+  evidence: "silné", evidenceNote: "Velké randomizované studie (VITAL, D-Health); přínos pro specifické skupiny se dál zkoumá.",
+  sources: [{ name: "Manson a kol., Vitamin D Supplements and Prevention of Cancer and Cardiovascular Disease, NEJM 2019", url: "https://doi.org/10.1056/NEJMoa1809944" }],
+  quiz: [
+    { q: "Co ukázala studie VITAL o vitamínu D?", o: ["Nesnížil výskyt rakoviny ani srdečně-cévních nemocí", "Snížil rakovinu na polovinu", "Zvýšil riziko infarktu", "Vyléčil cukrovku"], why: "Ve srovnání s placebem nebyl rozdíl v hlavních výsledcích." },
+    { q: "Proč je v Česku v zimě nedostatek vitamínu D častý?", o: ["Slunce je nízko a UVB nestačí na tvorbu v kůži", "Lidé jedí méně ryb", "V zimě se vitamín D rozkládá", "Kvůli smogu"], why: "Na 50° s. š. je od října do března UVB záření slabé." },
+    { q: "Jak zjistit hladinu vitamínu D?", o: ["Krevním testem 25-OH vitamínu D", "Podle barvy kůže", "Měřením tlaku", "Nijak"], why: "25-OH vitamín D je standardní ukazatel zásob." }
+  ],
+  cards: [
+    { f: "Studie VITAL – výsledek?", b: "2 000 IU vitamínu D denně nesnížilo rakovinu ani srdečně-cévní nemoci." },
+    { f: "Kdy se v ČR vitamín D v kůži skoro netvoří?", b: "Zhruba od října do března." }
+  ]
+},
+{
+  id: "zd6", area: "zdravi", title: "Kroky: kolik jich opravdu stačí",
+  text: [
+    "Číslo 10 000 kroků denně se rozšířilo s japonským krokoměrem z roku 1965 jako marketingový slogan – nevzniklo z vědeckého výzkumu.",
+    "Metaanalýza Palucha a kol. (2022) zahrnula 15 kohort s téměř 50 000 lidmi. Riziko úmrtí klesalo s přibývajícími kroky, ale u lidí nad 60 let se přínos ustálil zhruba při 6 000–8 000 krocích denně a u mladších dospělých při 8 000–10 000. Už přechod z nejnižší skupiny (kolem 3 500 kroků) do vyšších přinesl velký pokles rizika.",
+    "Prakticky: největší přínos má, když se málo aktivní člověk začne hýbat víc. U trénovaného sportovce, který pravidelně běhá a posiluje, už počet kroků není hlavní ukazatel – důležitější je kondice (VO₂max) a síla."
+  ],
+  takeaway: "10 000 kroků je marketing. Přínos se ustaluje kolem 6–8 tisíc kroků (60+) a 8–10 tisíc (mladší); největší zisk má neaktivní člověk.",
+  evidence: "střední", evidenceNote: "Metaanalýza velkých kohort – souvislost, ne nutně příčina.",
+  sources: [{ name: "Paluch a kol., Daily steps and all-cause mortality, Lancet Public Health 2022", url: "https://doi.org/10.1016/S2468-2667(21)00302-9" }],
+  quiz: [
+    { q: "Odkud pochází číslo 10 000 kroků?", o: ["Z marketingu japonského krokoměru", "Z velké randomizované studie", "Z doporučení WHO", "Z armády"], why: "Šlo o reklamní slogan krokoměru z roku 1965." },
+    { q: "Kde se podle Palucha (2022) ustálil přínos u lidí nad 60 let?", o: ["Kolem 6 000–8 000 kroků", "Kolem 2 000 kroků", "Kolem 20 000 kroků", "Neustálil se"], why: "U starších dospělých další kroky už riziko významně nesnižovaly." },
+    { q: "Kdo má z navýšení kroků největší přínos?", o: ["Málo aktivní lidé", "Maratonci", "Lidé, kteří už chodí 15 000 kroků", "Nikdo"], why: "Největší pokles rizika je při odchodu z nejnižší skupiny." }
+  ],
+  cards: [
+    { f: "Kolik kroků stačí podle metaanalýzy Palucha (2022)?", b: "60+ let: ~6–8 tisíc; mladší: ~8–10 tisíc denně." },
+    { f: "Odkud je číslo 10 000 kroků?", b: "Marketing japonského krokoměru z roku 1965." }
+  ]
+},
+
+{
+  id: "te_ai1", area: "tech", title: "Jak fungují jazykové modely",
+  text: [
+    "Velké jazykové modely (LLM), jako je Claude nebo ChatGPT, se učí na obrovském množství textu. Základní úloha je překvapivě jednoduchá: předpovědět, jaké slovo (přesněji „token“, tedy kousek slova) bude následovat. Opakováním této předpovědi vzniká celá odpověď.",
+    "Po základním tréninku se modely dál dolaďují – učí se na příkladech a na hodnocení od lidí, aby byly užitečné, pravdivé a bezpečné. Díky obrovskému rozsahu tréninku umí shrnovat, překládat, programovat nebo vysvětlovat.",
+    "Slabinou jsou „halucinace“: model může sebejistě napsat něco, co zní věrohodně, ale není pravda – třeba neexistující citaci. Znalosti modelu navíc končí k určitému datu. Proto je u důležitých informací dobré chtít zdroje a ověřovat je – nebo použít model, který umí vyhledávat na webu."
+  ],
+  takeaway: "LLM předpovídají další token textu; umí toho hodně, ale mohou si vymýšlet. U důležitých věcí chtěj zdroje a ověřuj.",
+  evidence: "silné", evidenceNote: "Popis principu je zjednodušený, ale odpovídá tomu, jak modely fungují.",
+  sources: [{ name: "Vaswani a kol., Attention Is All You Need, 2017 (architektura Transformer)", url: "https://arxiv.org/abs/1706.03762" }],
+  quiz: [
+    { q: "Co je základní úloha, na které se jazykový model učí?", o: ["Předpovídat další token textu", "Vyhledávat v databázi odpovědí", "Kopírovat Wikipedii", "Překládat jen z angličtiny"], why: "Generování textu je opakovaná předpověď dalšího tokenu." },
+    { q: "Co jsou „halucinace“ jazykových modelů?", o: ["Věrohodně znějící, ale nepravdivé odpovědi", "Chyby v pravopisu", "Pomalé odpovědi", "Obrázky ve snu"], why: "Model může sebejistě vytvořit neexistující fakta nebo citace." },
+    { q: "Jak se nejlépe bránit halucinacím u důležitých informací?", o: ["Chtít zdroje a ověřovat je", "Ptát se stejnou otázkou desetkrát", "Psát velkými písmeny", "Nijak"], why: "Ověření v kvalitních zdrojích je nejspolehlivější." }
+  ],
+  cards: [
+    { f: "Jak jazykový model vytváří odpověď?", b: "Opakovanou předpovědí dalšího tokenu (kousku slova)." },
+    { f: "Co je halucinace AI?", b: "Sebejistě podaná, věrohodně znějící, ale nepravdivá informace." }
+  ]
+},
+{
+  id: "te_ai2", area: "tech", title: "Phishing a telefonní podvody",
+  text: [
+    "Podvodníci nejčastěji útočí na emoce: spěch („účet bude zablokován“), strach („někdo se pokouší vybrat vaše peníze“) nebo autoritu (banka, policie, nadřízený). Cílem je, abys jednal dřív, než začneš přemýšlet.",
+    "Číslo nebo jméno odesílatele lze podvrhnout – hovor se může tvářit, jako by šel přímo z čísla tvé banky. Nově se objevují i hlasové klony vytvořené umělou inteligencí, které napodobí hlas známého člověka. Banka po tobě nikdy nebude chtít heslo, PIN, kód z SMS ani převod peněz na „bezpečný účet“.",
+    "Obrana: zpomal, zavěs a zavolej zpět na číslo, které znáš (z karty nebo oficiálního webu). Na odkazy v SMS a e-mailech neklikej – do bankovnictví chod přes vlastní aplikaci. Ve firmě se vyplatí pravidlo, že každý neobvyklý požadavek na platbu se ověřuje druhým kanálem."
+  ],
+  takeaway: "Spěch a strach jsou varovné signály. Banka nikdy nechce heslo, kód ani převod na „bezpečný účet“. Zavěs a zavolej zpět na známé číslo.",
+  evidence: "silné", evidenceNote: "Shrnutí doporučení bank, policie a NÚKIB; metody podvodníků se rychle vyvíjejí.",
+  sources: [{ name: "NÚKIB a Policie ČR – doporučení k podvodům; Česká bankovní asociace – kampaně proti podvodům" }],
+  quiz: [
+    { q: "Co banka po klientovi nikdy nechce?", o: ["Heslo, PIN, kód z SMS nebo převod na „bezpečný účet“", "Návštěvu pobočky", "Aktualizaci aplikace", "Kontrolu výpisu"], why: "Tyto požadavky jsou typické znaky podvodu." },
+    { q: "Hovor ukazuje číslo tvé banky. Znamená to, že volá banka?", o: ["Ne, číslo lze podvrhnout", "Ano, vždy", "Ano, pokud je den", "Jen u mobilů"], why: "Podvržení čísla volajícího (spoofing) je běžná technika." },
+    { q: "Jaká je nejlepší reakce na podezřelý hovor?", o: ["Zavěsit a zavolat zpět na známé číslo", "Rychle udělat, co chtějí", "Sdělit jen polovinu kódu", "Poslat jim fotku karty"], why: "Zpětné volání na ověřené číslo odhalí podvod." }
+  ],
+  cards: [
+    { f: "Hlavní znaky podvodu?", b: "Spěch, strach, autorita; požadavek na heslo, kód nebo převod peněz." },
+    { f: "Pravidlo pro neobvyklé platby ve firmě?", b: "Vždy ověřit druhým kanálem (zpětný hovor na známé číslo)." }
+  ]
+},
+{
+  id: "te_ai3", area: "tech", title: "Hesla, správce hesel a dvoufázové ověření",
+  text: [
+    "Americký standardizační institut NIST v doporučeních pro digitální identitu (SP 800-63B) změnil řadu dřívějších zvyklostí: délka hesla je důležitější než složitost, není vhodné nutit uživatele k pravidelné změně hesla (vede to k slabým variantám typu Heslo1, Heslo2) a hesla se mají kontrolovat proti seznamům uniklých hesel.",
+    "Největší riziko je používat stejné heslo na více místech. Když unikne z jedné služby, útočníci ho automaticky zkoušejí jinde. Řešením je správce hesel, který pro každou službu vytvoří a pamatuje si dlouhé jedinečné heslo – stačí si pamatovat jedno silné hlavní heslo.",
+    "Dvoufázové ověření (2FA) přidá druhý krok – kód z aplikace, potvrzení v telefonu nebo bezpečnostní klíč. Výrazně snižuje riziko převzetí účtu i při úniku hesla. Novější „passkeys“ nahrazují hesla úplně a jsou odolné proti phishingu."
+  ],
+  takeaway: "Dlouhá jedinečná hesla ve správci hesel + dvoufázové ověření. Pravidelná vynucená změna hesel se už nedoporučuje.",
+  evidence: "silné", evidenceNote: "Doporučení NIST SP 800-63B a bezpečnostních autorit.",
+  sources: [{ name: "NIST SP 800-63B: Digital Identity Guidelines – Authentication", url: "https://pages.nist.gov/800-63-4/sp800-63b.html" }],
+  quiz: [
+    { q: "Co je podle NIST u hesla důležitější?", o: ["Délka", "Povinné speciální znaky", "Pravidelná změna každý měsíc", "Použití jména"], why: "Delší hesla jsou výrazně odolnější." },
+    { q: "Proč je nebezpečné používat stejné heslo na více službách?", o: ["Únik z jedné služby otevře i ostatní", "Služby to zakazují", "Heslo se opotřebuje", "Není to nebezpečné"], why: "Útočníci uniklá hesla automaticky zkoušejí jinde." },
+    { q: "Co přináší dvoufázové ověření?", o: ["Účet je chráněný i při úniku hesla", "Rychlejší internet", "Nahrazuje antivirus", "Nic"], why: "Útočník potřebuje kromě hesla i druhý faktor." }
+  ],
+  cards: [
+    { f: "Hlavní doporučení NIST pro hesla?", b: "Délka > složitost, bez vynucené pravidelné změny, kontrola proti uniklým heslům." },
+    { f: "Proč správce hesel?", b: "Každá služba má dlouhé jedinečné heslo; pamatuješ si jen jedno hlavní." }
+  ]
+},
+{
+  id: "te_ai4", area: "tech", title: "Mooreův zákon",
+  text: [
+    "V roce 1965 si Gordon Moore, pozdější spoluzakladatel firmy Intel, všiml, že počet tranzistorů na čipu se každý rok zhruba zdvojnásobuje. V roce 1975 odhad upravil na zdvojnásobení zhruba každé dva roky.",
+    "Nejde o přírodní zákon, ale o pozorování, které se zároveň stalo cílem celého odvětví. Platilo pozoruhodně dlouho: od tisíců tranzistorů v prvních mikroprocesorech na začátku 70. let po desítky miliard v dnešních čipech.",
+    "V posledních letech se tempo zpomaluje, protože tranzistory se blíží atomárním rozměrům a výroba je extrémně drahá. Výkon dál roste i jinými cestami – specializovanými čipy (např. pro umělou inteligenci), skládáním čipů na sebe a lepším softwarem."
+  ],
+  takeaway: "Mooreův zákon: počet tranzistorů na čipu se zhruba každé 2 roky zdvojnásobuje (Moore 1965/1975). Tempo dnes zpomaluje.",
+  evidence: "silné", evidenceNote: "Historicky doložené pozorování, ne fyzikální zákon.",
+  sources: [{ name: "Moore, Cramming more components onto integrated circuits, Electronics 1965; Computer History Museum" }],
+  quiz: [
+    { q: "Jak často se podle Mooreova zákona (upraveného 1975) zdvojnásobuje počet tranzistorů na čipu?", o: ["Zhruba každé 2 roky", "Každý den", "Každých 20 let", "Nikdy"], why: "Moore v roce 1975 upravil odhad na zhruba dva roky." },
+    { q: "Co je Mooreův zákon?", o: ["Pozorování a cíl odvětví, ne přírodní zákon", "Fyzikální zákon jako gravitace", "Zákon schválený parlamentem", "Pravidlo pro hesla"], why: "Jde o empirické pozorování trendu." },
+    { q: "Proč tempo Mooreova zákona zpomaluje?", o: ["Tranzistory se blíží atomárním rozměrům", "Nikdo už čipy nepotřebuje", "Byl zakázán", "Kvůli nedostatku písku"], why: "Fyzikální limity a náklady výroby." }
+  ],
+  cards: [
+    { f: "Mooreův zákon?", b: "Počet tranzistorů na čipu se zhruba každé 2 roky zdvojnásobuje (1965, upraveno 1975)." },
+    { f: "Kudy roste výkon, když Mooreův zákon zpomaluje?", b: "Specializované čipy (AI), skládání čipů, lepší software." }
+  ]
+},
+{
+  id: "te_ai5", area: "tech", title: "Zámek v prohlížeči neznamená důvěryhodný web",
+  text: [
+    "Ikona zámku a adresa začínající na https znamenají, že spojení mezi tvým zařízením a webem je šifrované – nikdo po cestě (třeba na veřejné wi-fi) nemůže data číst ani měnit.",
+    "Zámek ale neříká nic o tom, kdo web provozuje a jestli je poctivý. Šifrovací certifikát dnes zdarma a během minut získá kdokoli, včetně podvodníků. Většina phishingových stránek proto zámek má také.",
+    "Důležitější je kontrolovat samotnou adresu: podvodné weby používají podobná jména (ceska-sporitelna-overeni.com), překlepy nebo jiné domény. Nejbezpečnější je do bankovnictví a důležitých služeb chodit přes vlastní záložku nebo aplikaci, ne přes odkaz v e-mailu či SMS."
+  ],
+  takeaway: "Zámek = šifrované spojení, ne poctivý web. Kontroluj adresu a do banky choď přes vlastní záložku nebo aplikaci.",
+  evidence: "silné", evidenceNote: "Technický princip HTTPS; doporučení bezpečnostních autorit.",
+  sources: [{ name: "NÚKIB – doporučení pro bezpečné chování na internetu; Let's Encrypt – o certifikátech" }],
+  quiz: [
+    { q: "Co zaručuje zámek (https) v prohlížeči?", o: ["Šifrované spojení", "Že web je poctivý", "Že web patří bance", "Že web nemá viry"], why: "HTTPS chrání přenos dat, neověřuje poctivost provozovatele." },
+    { q: "Mají podvodné weby zámek?", o: ["Často ano – certifikát lze získat zdarma", "Nikdy", "Jen v noci", "Jen na mobilu"], why: "Certifikát je dostupný komukoli." },
+    { q: "Jak nejbezpečněji otevřít internetové bankovnictví?", o: ["Přes vlastní záložku nebo aplikaci", "Přes odkaz v SMS", "Přes odkaz v e-mailu", "Přes reklamu ve vyhledávači"], why: "Vyhneš se podvrženým odkazům." }
+  ],
+  cards: [
+    { f: "Co znamená zámek v prohlížeči?", b: "Šifrované spojení – ne to, že je web poctivý." },
+    { f: "Na co se dívat místo zámku?", b: "Na přesnou adresu (doménu); do banky přes vlastní záložku/aplikaci." }
+  ]
+},
+{
+  id: "te_ai6", area: "tech", title: "Zálohy: pravidlo 3-2-1",
+  text: [
+    "Data se ztrácejí překvapivě často: porucha disku, ztracený telefon, omylem smazaný soubor, krádež nebo vyděračský software (ransomware), který soubory zašifruje a požaduje výkupné.",
+    "Osvědčené pravidlo 3-2-1 říká: měj 3 kopie dat, na 2 různých typech úložišť a 1 kopii mimo domov či kancelář (například v cloudu). Pokud jedna kopie selže, zbývají další.",
+    "Důležité detaily: synchronizace (třeba sdílená složka) není záloha – smazání nebo zašifrování se zrcadlí všude. Dobrá záloha uchovává starší verze souborů. A zálohu je potřeba občas vyzkoušet obnovit – nevyzkoušená záloha může být nefunkční."
+  ],
+  takeaway: "3 kopie, 2 typy úložiště, 1 mimo místo. Synchronizace není záloha a zálohu je potřeba občas vyzkoušet obnovit.",
+  evidence: "silné", evidenceNote: "Obecně uznávaná praxe v IT (např. doporučení US-CERT/CISA).",
+  sources: [{ name: "CISA – Data Backup Options; NÚKIB – doporučení k zálohování" }],
+  quiz: [
+    { q: "Co znamená pravidlo 3-2-1?", o: ["3 kopie, 2 typy úložiště, 1 mimo místo", "3 hesla, 2 účty, 1 počítač", "Zálohovat 3× ročně", "3 disky v jednom počítači"], why: "Rozložení kopií chrání před většinou typů ztráty." },
+    { q: "Je synchronizovaná složka (např. sdílený disk) záloha?", o: ["Ne, smazání či zašifrování se zrcadlí", "Ano, vždy", "Ano, pokud je v cloudu", "Jen o víkendu"], why: "Synchronizace přenese i chyby a útoky." },
+    { q: "Proč zálohu občas zkoušet obnovit?", o: ["Nevyzkoušená záloha může být nefunkční", "Aby nezastarala", "Je to povinné ze zákona", "Není to potřeba"], why: "Ověří se, že data jdou opravdu obnovit." }
+  ],
+  cards: [
+    { f: "Pravidlo zálohování 3-2-1?", b: "3 kopie dat, 2 různé typy úložiště, 1 kopie mimo místo." },
+    { f: "Proč synchronizace není záloha?", b: "Smazání nebo zašifrování se okamžitě přenese všude." }
+  ]
+}
+);
 window.LESSONS = L;
