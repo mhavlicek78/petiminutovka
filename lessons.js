@@ -1,4 +1,4 @@
-// Knihovna lekcí – první dávka (30 lekcí). Správná odpověď je v datech vždy první, aplikace pořadí míchá.
+// Knihovna lekcí. Správná odpověď je v datech vždy první, aplikace pořadí míchá.
 const L = [];
 // Výživa + Lidské tělo. V kvízu je správná odpověď vždy první (aplikace pořadí míchá).
 L.push(
@@ -625,6 +625,154 @@ L.push(
   cards: [
     { f: "Penicilin – objev a cesta k léku?", b: "Fleming 1928 → Florey a Chain, Oxford ~1940 → masová výroba za války → Nobelova cena 1945." },
     { f: "Ponaučení z příběhu penicilinu?", b: "Objev je jen začátek; k použitelnému výsledku vede týmová a vytrvalá práce." }
+  ]
+}
+);
+L.push(
+{
+  id: "ce1", area: "cestovani", title: "Hlavní města, která zaskočí",
+  text: [
+    "U řady zemí není hlavním městem to největší nebo nejznámější. Austrálie má Canberru, ne Sydney ani Melbourne: obě města se o titul přela, a tak se v roce 1908 vybralo místo mezi nimi a postavilo se zcela nové město. Kanada má Ottawu (ne Toronto) a Turecko Ankaru, kterou Atatürk v roce 1923 záměrně zvolil místo Istanbulu jako symbol nového státu.",
+    "Brazílie si také postavila nové hlavní město: Brasília nahradila Rio de Janeiro v roce 1960, aby se rozvoj přesunul do vnitrozemí.",
+    "Některé země mají dvě „hlavní“ města. V Nizozemsku je ústavním hlavním městem Amsterdam, ale vláda, parlament i král sídlí v Haagu. Bolívie má ústavní hlavní město Sucre a sídlo vlády v La Paz. Švýcarsko oficiální hlavní město vůbec nemá – Bern je „spolkové město“, kde sídlí vláda."
+  ],
+  takeaway: "Největší ≠ hlavní: Canberra, Ottawa, Ankara, Brasília. Nizozemsko a Bolívie mají hlavní město a sídlo vlády odděleně.",
+  evidence: "silné", evidenceNote: "Ověřitelná fakta; u Švýcarska jde o právní detail (Bern je ‚Bundesstadt‘).",
+  sources: [{ name: "CIA World Factbook; Encyclopaedia Britannica (hesla jednotlivých zemí)" }],
+  quiz: [
+    { q: "Které město je hlavním městem Austrálie?", o: ["Canberra", "Sydney", "Melbourne", "Perth"], why: "Canberra vznikla jako kompromis mezi Sydney a Melbourne." },
+    { q: "Kde sídlí nizozemská vláda a parlament?", o: ["V Haagu", "V Amsterdamu", "V Rotterdamu", "V Utrechtu"], why: "Amsterdam je ústavní hlavní město, ale vláda sídlí v Haagu." },
+    { q: "Které město nahradilo v roce 1960 Rio de Janeiro jako hlavní město Brazílie?", o: ["Brasília", "São Paulo", "Salvador", "Manaus"], why: "Brasília byla postavena na zelené louce ve vnitrozemí." }
+  ],
+  cards: [
+    { f: "Hlavní města: Austrálie, Kanada, Turecko?", b: "Canberra, Ottawa, Ankara." },
+    { f: "Které země mají oddělené hlavní město a sídlo vlády?", b: "Nizozemsko (Amsterdam / Haag), Bolívie (Sucre / La Paz)." }
+  ]
+},
+{
+  id: "ce2", area: "cestovani", title: "Nejvyšší hory kontinentů",
+  text: [
+    "„Koruna planety“ (Seven Summits) jsou nejvyšší vrcholy sedmi kontinentů. Nejvyšší je Mount Everest – podle společného čínsko-nepálského měření z roku 2020 má 8 848,86 m.",
+    "Další: Aconcagua v Argentině (6 961 m, nejvyšší hora mimo Asii), Denali na Aljašce (6 190 m), Kilimandžáro v Tanzanii (5 895 m – samostatně stojící sopka), Elbrus na Kavkaze (5 642 m) a Vinsonův masiv v Antarktidě (4 892 m).",
+    "U Austrálie a Oceánie se seznamy liší: buď Puncak Jaya na Nové Guineji (4 884 m), nebo Kosciuszko na australské pevnině (jen 2 228 m). Sporný je i Elbrus – podle toho, kudy vedeme hranici Evropy, může být nejvyšší horou Evropy místo Mont Blancu (4 806 m)."
+  ],
+  takeaway: "Everest 8 849 m, Aconcagua 6 961 m, Denali 6 190 m, Kilimandžáro 5 895 m, Elbrus 5 642 m, Vinson 4 892 m.",
+  evidence: "silné", evidenceNote: "Výšky z oficiálních měření; pořadí v Evropě a Oceánii závisí na definici hranic.",
+  sources: [{ name: "Encyclopaedia Britannica: Seven Summits; Xinhua/Nepal Survey Department – výška Everestu (2020)" }],
+  quiz: [
+    { q: "Jaká je oficiální výška Mount Everestu podle měření z roku 2020?", o: ["8 848,86 m", "8 611 m", "9 012 m", "8 516 m"], why: "Čína a Nepál ji v prosinci 2020 společně oznámily." },
+    { q: "Která hora je nejvyšší mimo Asii?", o: ["Aconcagua", "Denali", "Kilimandžáro", "Mont Blanc"], why: "Aconcagua v Andách měří 6 961 m." },
+    { q: "Proč se někdy uvádí jako nejvyšší hora Evropy Elbrus, a ne Mont Blanc?", o: ["Záleží na tom, kudy vedeme hranici Evropy", "Mont Blanc se zmenšil", "Elbrus je v Alpách", "Mont Blanc je ve Švýcarsku"], why: "Elbrus leží na Kavkaze, který se podle některých definic počítá do Evropy." }
+  ],
+  cards: [
+    { f: "Nejvyšší hora Afriky a její výška?", b: "Kilimandžáro, 5 895 m." },
+    { f: "Nejvyšší hora Jižní a Severní Ameriky?", b: "Aconcagua (6 961 m) a Denali (6 190 m)." }
+  ]
+},
+{
+  id: "ce3", area: "cestovani", title: "Nil, nebo Amazonka?",
+  text: [
+    "Podle většiny referenčních zdrojů (například americké geologické služby USGS) je nejdelší řekou světa Nil s přibližně 6 650 km, těsně před Amazonkou s asi 6 400 km.",
+    "Spor ale není uzavřený. Délka řeky závisí na tom, který přítok považujeme za pramen a kde přesně končí ústí. Brazilští vědci v roce 2007 započítali vzdálenější pramen v peruánských Andách a jižní ústí kolem ostrova Marajó – vyšlo jim, že Amazonka měří asi 6 992 km, a je tedy delší než Nil.",
+    "Nesporné je jiné: Amazonka je největší řekou světa podle průtoku, tedy objemu vody, a to s obrovským náskokem. Třetí nejdelší řekou je čínská Jang-c’-ťiang. Nejdelší řekou Česka je Vltava (430 km)."
+  ],
+  takeaway: "Nil (~6 650 km) je „oficiálně“ nejdelší, ale podle jiných měření vede Amazonka. Ta je nesporně největší podle průtoku.",
+  evidence: "sporné", evidenceNote: "Délka řek závisí na definici pramene a ústí; geografický konsenzus se zatím přiklání k Nilu.",
+  sources: [
+    { name: "Britannica: How long is the Amazon River?", url: "https://www.britannica.com/story/how-long-is-the-amazon-river" },
+    { name: "USGS – délky řek" }
+  ],
+  quiz: [
+    { q: "Proč je spor o nejdelší řeku světa těžké rozhodnout?", o: ["Délka závisí na tom, kde určíme pramen a ústí", "Řeky nikdo neměřil", "Nil teče do kopce", "Amazonka vysychá"], why: "Volba pramene a ústí může délku změnit o stovky kilometrů." },
+    { q: "Ve kterém ukazateli Amazonka nesporně vede?", o: ["Průtok (objem vody)", "Počet mostů", "Teplota vody", "Délka"], why: "Průtokem Amazonka výrazně převyšuje všechny ostatní řeky." },
+    { q: "Jaká je nejdelší řeka Česka?", o: ["Vltava", "Labe", "Morava", "Odra"], why: "Vltava měří 430 km; Labe je delší jen celkově, na českém území je kratší." }
+  ],
+  cards: [
+    { f: "Nil vs. Amazonka – běžně uváděné délky?", b: "Nil ~6 650 km, Amazonka ~6 400 km (jiná měření až ~6 990 km)." },
+    { f: "Největší řeka světa podle průtoku?", b: "Amazonka – s velkým náskokem." }
+  ]
+},
+{
+  id: "ce4", area: "cestovani", title: "Extrémy oceánů a moří",
+  text: [
+    "Tichý oceán je největší – pokrývá zhruba třetinu povrchu Země, víc než všechny pevniny dohromady. Leží v něm i nejhlubší známé místo: Challengerova hlubina v Marianském příkopu. Měření se liší podle metody, ale vycházejí zhruba na 10 900–11 000 m. Mount Everest by se do ní vešel a nad vrcholem by zbyly ještě asi dva kilometry vody.",
+    "Opačný extrém je Mrtvé moře na hranici Izraele a Jordánska. Je to vlastně slané jezero a jeho hladina je nejníže položeným místem souše na Zemi – kolem roku 2025 asi 440 m pod úrovní moře. Ročně klesá o více než metr, protože se odebírá voda z řeky Jordán a těží se z něj minerály.",
+    "Největším jezerem světa je Kaspické moře. Nejhlubším je Bajkal (1 642 m), který obsahuje zhruba pětinu sladké povrchové vody planety."
+  ],
+  takeaway: "Tichý oceán ≈ třetina povrchu Země; Challengerova hlubina ~11 km; hladina Mrtvého moře ~440 m pod mořem a dál klesá.",
+  evidence: "silné", evidenceNote: "Měření; hloubka Challengerovy hlubiny se mezi měřeními liší o desítky metrů.",
+  sources: [
+    { name: "NOAA NCEI: The Mariana Trench", url: "https://www.ncei.noaa.gov/node/239" },
+    { name: "Britannica: Dead Sea", url: "https://www.britannica.com/place/Dead-Sea" }
+  ],
+  quiz: [
+    { q: "Jak hluboká je zhruba Challengerova hlubina?", o: ["Asi 11 km", "Asi 3 km", "Asi 25 km", "Asi 900 m"], why: "Měření se pohybují kolem 10 900–11 000 m." },
+    { q: "Kde je nejníže položené místo souše na Zemi?", o: ["U Mrtvého moře", "V Nizozemsku", "V Death Valley", "U Kaspického moře"], why: "Hladina Mrtvého moře je asi 440 m pod úrovní moře." },
+    { q: "Které jezero je nejhlubší na světě?", o: ["Bajkal", "Kaspické moře", "Tanganika", "Viktoriino jezero"], why: "Bajkal je hluboký 1 642 m." }
+  ],
+  cards: [
+    { f: "Nejhlubší místo oceánu?", b: "Challengerova hlubina v Marianském příkopu, ~11 km." },
+    { f: "Proč Mrtvé moře klesá?", b: "Odběr vody z Jordánu a těžba minerálů; ročně klesá o více než 1 m." }
+  ]
+},
+{
+  id: "ce5", area: "cestovani", title: "Vlajky s příběhem",
+  text: [
+    "Téměř všechny státní vlajky jsou obdélníkové. Výjimkou je Nepál, jehož vlajku tvoří dva nad sebou položené trojúhelníky. Švýcarsko a Vatikán mají vlajky čtvercové (na moři Švýcarsko užívá obdélníkovou verzi).",
+    "Dánská vlajka Dannebrog se tradičně považuje za nejstarší nepřetržitě používanou státní vlajku. Legenda ji spojuje s bitvou roku 1219, doložená je od 14. století. Podle ní vznikl i skandinávský kříž na vlajkách Švédska, Norska, Finska a Islandu.",
+    "Některé vlajky jsou si nebezpečně podobné: Čad a Rumunsko mají téměř shodnou modro-žluto-červenou trikolóru, Indonésie a Monako mají obě červeno-bílou vlajku, liší se jen poměrem stran. Česká vlajka s modrým klínem byla přijata v roce 1920 pro Československo a Česko si ji ponechalo i po roce 1993."
+  ],
+  takeaway: "Nepál = jediná nečtyřúhelníková vlajka; Švýcarsko a Vatikán čtvercové; Dánsko má tradičně nejstarší vlajku.",
+  evidence: "silné", evidenceNote: "Ověřitelná fakta; stáří Dannebrogu se opírá zčásti o legendu.",
+  sources: [{ name: "Encyclopaedia Britannica: Flag of Nepal, Flag of Denmark; Whitney Smith, Flags Through the Ages (1975)" }],
+  quiz: [
+    { q: "Která země má jako jediná státní vlajku, která není čtyřúhelník?", o: ["Nepál", "Bhútán", "Švýcarsko", "Japonsko"], why: "Nepálská vlajka je tvořena dvěma trojúhelníky." },
+    { q: "Které dvě státní vlajky jsou čtvercové?", o: ["Švýcarsko a Vatikán", "Dánsko a Norsko", "Japonsko a Korea", "Čad a Rumunsko"], why: "Švýcarská i vatikánská vlajka mají poměr stran 1 : 1." },
+    { q: "Kdy byla přijata vlajka s modrým klínem?", o: ["V roce 1920", "V roce 1993", "V roce 1848", "V roce 1968"], why: "Přijalo ji Československo; Česko si ji po rozdělení ponechalo." }
+  ],
+  cards: [
+    { f: "Která vlajka se považuje za nejstarší nepřetržitě užívanou?", b: "Dánský Dannebrog (legenda 1219, doložen od 14. století)." },
+    { f: "Které dvojice vlajek si lze snadno splést?", b: "Čad × Rumunsko; Indonésie × Monako." }
+  ]
+},
+{
+  id: "ce6", area: "cestovani", title: "Zvyky, které je dobré znát",
+  text: [
+    "Spropitné: v USA se v restauraci běžně dává 15–20 % a pro obsluhu je to podstatná část mzdy. V Japonsku se naopak spropitné obvykle nedává a může působit rozpačitě – dobrá obsluha se tam považuje za samozřejmost.",
+    "Gesta: v Bulharsku (a zčásti v Albánii) se při „ano“ tradičně kývá hlavou ze strany na stranu a při „ne“ nahoru a dolů – přesně naopak než u nás. V Thajsku se hlava považuje za nejposvátnější část těla, takže se nikoho nedotýkej na hlavě, a mířit na lidi nebo sochy Buddhy chodidly je urážlivé.",
+    "U jídla: v Japonsku i Číně nezapichuj hůlky svisle do misky s rýží – připomíná to pohřební obřad. V Japonsku se také nepředává jídlo z hůlek do hůlek, ze stejného důvodu."
+  ],
+  takeaway: "USA: spropitné 15–20 %, Japonsko: spropitné se nedává. Bulharsko: kývání naopak. Thajsko: nedotýkat se hlavy. Hůlky nezapichovat do rýže.",
+  evidence: "střední", evidenceNote: "Obecně popsané zvyklosti; ve velkých městech a u mladší generace se mohou lišit.",
+  sources: [{ name: "Japan National Tourism Organization – etiketa; Lonely Planet – průvodci po jednotlivých zemích" }],
+  quiz: [
+    { q: "Jak je to se spropitným v Japonsku?", o: ["Obvykle se nedává", "Je povinných 20 %", "Dává se jen v hotovosti v obálce na stole", "Dává se pouze řidičům"], why: "Spropitné v Japonsku není běžné a může působit rozpačitě." },
+    { q: "Co znamená v Bulharsku tradičně kývání hlavou nahoru a dolů?", o: ["Ne", "Ano", "Děkuji", "Pozdrav"], why: "Význam gest pro ano/ne je v Bulharsku opačný než u nás." },
+    { q: "Proč nezapichovat hůlky svisle do rýže?", o: ["Připomíná to pohřební obřad", "Hůlky se zlomí", "Je to znamení, že chceš účet", "Rýže vystydne"], why: "Svisle zapíchnuté hůlky připomínají obětinu za zemřelé." }
+  ],
+  cards: [
+    { f: "Spropitné v USA vs. Japonsku?", b: "USA: běžně 15–20 %; Japonsko: obvykle se nedává." },
+    { f: "Na co dát pozor v Thajsku?", b: "Nedotýkat se hlavy, nemířit na lidi a Buddhu chodidly." }
+  ]
+},
+{
+  id: "ce7", area: "cestovani", title: "Slavní rodáci z nečekaných míst",
+  text: [
+    "Freddie Mercury, frontman skupiny Queen, se narodil v roce 1946 jako Farrokh Bulsara v Kamenném městě na Zanzibaru. Dětství strávil zčásti v Indii a do Anglie se rodina přestěhovala až v roce 1964.",
+    "Napoleon Bonaparte se narodil v roce 1769 na Korsice – jen rok poté, co ostrov získala Francie od Janovské republiky. Kdyby se narodil o něco dřív, narodil by se jako janovský poddaný. Spisovatel Rudyard Kipling, autor Knihy džunglí, se narodil v Bombaji (Mumbaji) a Albert Camus v Alžírsku, tehdy francouzské kolonii.",
+    "Marie Curie-Skłodowská, jediná osoba se dvěma Nobelovými cenami ve dvou různých přírodovědných oborech (fyzika 1903, chemie 1911), se narodila ve Varšavě v tehdy ruské části Polska. Vědeckou kariéru prožila ve Francii."
+  ],
+  takeaway: "Mercury – Zanzibar, Napoleon – Korsika (rok po připojení k Francii), Kipling – Bombaj, Camus – Alžírsko, Curie – Varšava.",
+  evidence: "silné", evidenceNote: "Dobře doložené životopisné údaje.",
+  sources: [{ name: "Encyclopaedia Britannica (životopisná hesla); NobelPrize.org – Marie Curie" }],
+  quiz: [
+    { q: "Kde se narodil Freddie Mercury?", o: ["Na Zanzibaru", "V Londýně", "V Bombaji", "V Teheránu"], why: "Narodil se v roce 1946 v Kamenném městě na Zanzibaru." },
+    { q: "Co je zajímavé na Napoleonově rodišti?", o: ["Korsika patřila Francii teprve od roku před jeho narozením", "Narodil se v Paříži", "Narodil se na lodi", "Narodil se v Itálii po sjednocení"], why: "Francie získala Korsiku od Janova v roce 1768." },
+    { q: "Ve kterých oborech získala Marie Curie Nobelovu cenu?", o: ["Fyzika a chemie", "Medicína a chemie", "Fyzika a literatura", "Jen chemie"], why: "Fyzika 1903 a chemie 1911." }
+  ],
+  cards: [
+    { f: "Rodiště Freddieho Mercuryho a Rudyarda Kiplinga?", b: "Zanzibar (1946) a Bombaj/Mumbaj (1865)." },
+    { f: "Marie Curie – rodiště a Nobelovy ceny?", b: "Varšava; fyzika 1903, chemie 1911." }
   ]
 }
 );

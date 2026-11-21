@@ -9,6 +9,7 @@ const AREAS = {
   ekonomie: { name: 'Ekonomie',    color: 'var(--ekonomie)' },
   historie: { name: 'Historie',    color: 'var(--historie)' },
   veda:     { name: 'Věda',        color: 'var(--veda)' },
+  cestovani:{ name: 'Cestování',   color: 'var(--cestovani)' },
 };
 const INTERVAL = [0, 1, 3, 7, 16, 35];   // dny podle přihrádky 1–5
 const REVIEW_LIMIT = 8;
