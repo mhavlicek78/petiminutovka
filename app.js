@@ -18,6 +18,8 @@ const AREAS = {
   vynalezy: { name: 'Vynálezy a technika', color: 'var(--vynalezy)' },
   filozofie:{ name: 'Filozofie', color: 'var(--filozofie)' },
   svet:     { name: 'Svět a instituce', color: 'var(--svet)' },
+  tipy:     { name: 'Praktické tipy', color: 'var(--tipy)' },
+  rekordy:  { name: 'Sportovní rekordy', color: 'var(--rekordy)' },
 };
 const INTERVAL = [0, 1, 3, 7, 16, 35];   // dny podle přihrádky 1–5
 const REVIEW_LIMIT = 8;
@@ -147,6 +149,7 @@ const ART = {
   voda: '<svg viewBox="0 0 240 130" aria-hidden="true"><rect width="240" height="130" fill="#1e5f78"/><path d="M0 22 Q30 12 60 22 T120 22 T180 22 T240 22" stroke="#9fd6e8" stroke-width="2.5" fill="none"/><path d="M0 46 Q30 36 60 46 T120 46 T180 46 T240 46" stroke="#9fd6e8" stroke-width="1.5" fill="none" opacity=".6"/><path d="M0 130 L60 104 L95 112 L120 60 L145 110 L180 98 L240 130 Z" fill="#0c2a36"/></svg>',
   zvirata: '<svg viewBox="0 0 240 130" aria-hidden="true"><rect width="240" height="130" fill="#eef5e2"/><circle cx="196" cy="34" r="16" fill="#f2c14e"/><path d="M0 130 V104 Q60 92 120 102 T240 98 V130 Z" fill="#a3b86c"/><path d="M58 104 V66" stroke="#6b4f2a" stroke-width="5"/><ellipse cx="58" cy="60" rx="34" ry="12" fill="#5f8a1a"/><path d="M150 100 l6-18 h20 l8 18 M160 82 v-10 l8-6" stroke="#6b4f2a" stroke-width="4" fill="none" stroke-linecap="round"/></svg>',
   vynalezy: '<svg viewBox="0 0 240 130" aria-hidden="true"><rect width="240" height="130" fill="#f4eee7"/><g transform="translate(92 66)" fill="#8a6a4a"><circle r="26"/><g>' + Array.from({ length: 8 }, (_, i) => '<rect x="-6" y="-38" width="12" height="16" rx="2" transform="rotate(' + i * 45 + ')"/>').join('') + '</g><circle r="10" fill="#f4eee7"/></g><g transform="translate(152 84)" fill="#b8936a"><circle r="16"/><g>' + Array.from({ length: 6 }, (_, i) => '<rect x="-4" y="-24" width="8" height="10" rx="2" transform="rotate(' + i * 60 + ')"/>').join('') + '</g><circle r="6" fill="#f4eee7"/></g></svg>',
+  sport: '<svg viewBox="0 0 240 130" aria-hidden="true"><rect width="240" height="130" fill="#c9553a"/><g stroke="#fbeee6" stroke-width="2.5" fill="none"><path d="M-10 130 Q120 20 250 130"/><path d="M10 130 Q120 44 230 130"/><path d="M30 130 Q120 68 210 130"/><path d="M50 130 Q120 92 190 130"/></g><path d="M118 22 V44" stroke="#fbeee6" stroke-width="3"/><path d="M118 22 h16 l-4 5 4 5 h-16" fill="#f2c14e"/></svg>',
   vesmir: '<svg viewBox="0 0 240 130" aria-hidden="true"><rect width="240" height="130" fill="#14163a"/><circle cx="30" cy="22" r="1.5" fill="#fff"/><circle cx="80" cy="46" r="1" fill="#fff"/><circle cx="210" cy="20" r="1.5" fill="#fff"/><circle cx="190" cy="100" r="1" fill="#fff"/><circle cx="50" cy="104" r="1.2" fill="#fff"/><circle cx="130" cy="16" r="1" fill="#fff"/><circle cx="128" cy="68" r="30" fill="#e0b34a"/><ellipse cx="128" cy="68" rx="52" ry="11" fill="none" stroke="#f3dfb2" stroke-width="4" transform="rotate(-14 128 68)"/></svg>',
   extremy: '<svg viewBox="0 0 240 130" aria-hidden="true"><rect width="240" height="130" fill="#f3dfb2"/><circle cx="178" cy="40" r="20" fill="#e0a526"/><path d="M0 130 Q50 84 100 104 T200 92 T240 98 V130 Z" fill="#c8913a"/><path d="M0 130 Q70 108 130 118 T240 112 V130 Z" fill="#a8742a"/></svg>',
 };

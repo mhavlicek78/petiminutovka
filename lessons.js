@@ -1781,4 +1781,273 @@ L.push(
   ]
 }
 );
+L.push(
+{
+  id: "tp1", area: "tipy", title: "Jak rozdělat oheň napoprvé",
+  text: [
+    "Oheň potřebuje tři věci – palivo, kyslík a teplo (tzv. trojúhelník hoření). Nejčastější chyba je přiložit velká polena hned na začátku a oheň udusit.",
+    "Postupuj ve třech vrstvách: dole podpal (suchá tráva, jehličí, papír, ideálně březová kůra – obsahuje oleje a chytne i mírně vlhká), nad něj třísky od tloušťky sirky po tloušťku palce a teprve když se rozhoří, přidávej silnější dřevo. Dřevo skládej do tvaru týpí nebo hranice, aby mezi kusy proudil vzduch. Do ohně spíš foukej zespodu, než abys ho zakrýval.",
+    "Pozor na zákon: v Česku zakazuje lesní zákon rozdělávat oheň v lese a do 50 metrů od jeho okraje (mimo vyhrazená místa). Oheň nikdy nenechávej bez dozoru a před odchodem ho uhas vodou a zasyp, dokud nevychladne."
+  ],
+  takeaway: "Podpal → třísky → silnější dřevo, se vzduchem mezi kusy. Březová kůra chytne i vlhká. V lese a do 50 m od něj oheň nerozdělávej.",
+  evidence: "silné", evidenceNote: "Fyzikální princip hoření; zákaz vychází ze zákona č. 289/1995 Sb., o lesích (§ 20).",
+  sources: [{ name: "Zákon č. 289/1995 Sb., o lesích, § 20; HZS ČR – zásady bezpečného rozdělávání ohně" }],
+  quiz: [
+    { q: "Co tvoří trojúhelník hoření?", o: ["Palivo, kyslík, teplo", "Dřevo, voda, vítr", "Kámen, papír, nůžky", "Uhlí, olej, sůl"], why: "Bez kterékoli z těchto složek oheň zhasne." },
+    { q: "Který přírodní podpal chytne i mírně vlhký?", o: ["Březová kůra", "Zelené listí", "Mokrý mech", "Čerstvé jehličí ze živé větve"], why: "Březová kůra obsahuje hořlavé oleje." },
+    { q: "Jak daleko od okraje lesa je v ČR zakázáno rozdělávat oheň?", o: ["Do 50 metrů", "Do 5 metrů", "Do 500 metrů", "Není to omezeno"], why: "Lesní zákon zakazuje oheň v lese a do 50 m od jeho okraje mimo vyhrazená místa." }
+  ],
+  cards: [
+    { f: "Tři vrstvy při rozdělávání ohně?", b: "Podpal → třísky (sirka až palec) → silnější dřevo; nechat proudit vzduch." },
+    { f: "Oheň a les v ČR?", b: "Zákaz v lese a do 50 m od okraje lesa (mimo vyhrazená místa)." }
+  ]
+},
+{
+  id: "tp2", area: "tipy", title: "Cibule bez slz",
+  text: [
+    "Když krájíš cibuli, poškodíš její buňky. Enzymy při tom přemění sirné látky na plyn (syn-propanthial-S-oxid), který dráždí oči a spouští slzy. Enzym zodpovědný za vznik tohoto plynu popsal japonský tým v časopise Nature v roce 2002.",
+    "Co pomáhá: ostrý nůž – čistě řeže a drtí méně buněk než tupý. Cibule vychlazená v lednici (asi půl hodiny) uvolňuje plyn pomaleji. Pomáhá také krájet u digestoře nebo u ventilátoru, který plyn odfoukne pryč od obličeje.",
+    "Lidové triky jako žvýkání žvýkačky nebo chleba v puse mají slabou podporu. Nejúčinnější „hack“ je prostě rychlost a technika: méně řezů, ostrý nůž a obličej co nejdál od prkénka."
+  ],
+  takeaway: "Ostrý nůž, vychlazená cibule a ventilátor. Plyn vzniká z poškozených buněk – čím méně je drtíš, tím méně slz.",
+  evidence: "střední", evidenceNote: "Mechanismus je dobře popsán (Imai a kol., Nature 2002); účinnost jednotlivých triků je doložená hlavně prakticky.",
+  sources: [{ name: "Imai a kol., An onion enzyme that makes the eyes water, Nature 2002", url: "https://doi.org/10.1038/419685a" }],
+  quiz: [
+    { q: "Proč je ostrý nůž lepší proti slzám?", o: ["Drtí méně buněk", "Je studenější", "Odpuzuje plyn", "Nemá to vliv"], why: "Čistý řez poškodí méně buněk, takže vznikne méně dráždivého plynu." },
+    { q: "Co způsobuje slzení při krájení cibule?", o: ["Plyn vznikající z poškozených buněk", "Cibulová šťáva vystříknutá do očí", "Alergie", "Pach slupky"], why: "Enzymy v poškozených buňkách vytvoří dráždivý plyn." },
+    { q: "Proč pomáhá cibuli předem vychladit?", o: ["Plyn se uvolňuje pomaleji", "Cibule ztvrdne a nedá se krájet", "Zmizí z ní síra", "Nepomáhá"], why: "Nižší teplota zpomaluje reakce i odpařování." }
+  ],
+  cards: [
+    { f: "Tři nejúčinnější triky proti slzám u cibule?", b: "Ostrý nůž, vychlazená cibule, ventilátor nebo digestoř." },
+    { f: "Proč cibule štípe v očích?", b: "Poškozené buňky uvolní enzymy, které vytvoří dráždivý sirný plyn." }
+  ]
+},
+{
+  id: "tp3", area: "tipy", title: "Rozmrazování a pravidlo dvou hodin",
+  text: [
+    "Bakterie se nejrychleji množí zhruba mezi 5 a 60 °C – potravinářská bezpečnost tomu říká „nebezpečná zóna“. Proto se maso nemá rozmrazovat volně na lince: povrch se ohřeje na pokojovou teplotu, zatímco střed je ještě zmrzlý.",
+    "Bezpečné způsoby podle americké agentury USDA: v lednici (nejpomalejší, ale nejbezpečnější – počítej asi den na každé 2 kg masa), ve studené vodě v uzavřeném sáčku (vodu měň každých 30 minut) nebo v mikrovlnce – pak ale jídlo hned uvař.",
+    "S tím souvisí pravidlo dvou hodin: uvařené jídlo nebo zbytky by neměly zůstat při pokojové teplotě déle než 2 hodiny (v horku nad 32 °C jen hodinu). Velké hrnce je lepší rozdělit do menších nádob, aby rychleji vychladly."
+  ],
+  takeaway: "Rozmrazuj v lednici, ve studené vodě nebo v mikrovlnce – ne na lince. Zbytky do lednice do 2 hodin.",
+  evidence: "silné", evidenceNote: "Doporučení úřadů pro bezpečnost potravin (USDA, FSA); teplotní hranice se mezi zeměmi mírně liší.",
+  sources: [{ name: "USDA Food Safety and Inspection Service – The Big Thaw; Leftovers and Food Safety" }],
+  quiz: [
+    { q: "V jakém rozmezí teplot se bakterie nejrychleji množí?", o: ["Zhruba 5–60 °C", "Pod 0 °C", "Nad 100 °C", "Jen kolem 37 °C"], why: "Toto rozmezí se označuje jako nebezpečná zóna." },
+    { q: "Jak často měnit vodu při rozmrazování ve studené vodě?", o: ["Každých 30 minut", "Jednou za den", "Vůbec", "Každých 5 minut"], why: "Voda se postupně ohřívá; výměna ji udrží studenou." },
+    { q: "Jak dlouho mohou zbytky jídla zůstat při pokojové teplotě?", o: ["Nejvýš asi 2 hodiny", "Celý den", "Tři dny", "Klidně týden"], why: "Pak by měly jít do lednice; v horku jen hodinu." }
+  ],
+  cards: [
+    { f: "Tři bezpečné způsoby rozmrazování?", b: "Lednice; studená voda v sáčku (měnit každých 30 min); mikrovlnka a hned uvařit." },
+    { f: "Pravidlo dvou hodin?", b: "Uvařené jídlo nejvýš 2 h při pokojové teplotě (v horku 1 h), pak do lednice." }
+  ]
+},
+{
+  id: "tp4", area: "tipy", title: "Co do lednice nepatří",
+  text: [
+    "Chléb tvrdne hlavně kvůli retrogradaci škrobu – molekuly škrobu se po upečení postupně znovu uspořádávají a vytlačují vodu. Tento proces je nejrychlejší právě při lednicových teplotách, takže chléb v lednici okorá rychleji než při pokojové teplotě. Pokud ho chceš uchovat déle, zamraz ho – mráz retrogradaci prakticky zastaví.",
+    "Rajčata ztrácejí v chladu aroma. Studie Zhanga a kol. (PNAS 2016) ukázala, že skladování při 5 °C snižuje obsah těkavých látek zodpovědných za chuť, a po týdnu v chladu se chuť už úplně neobnoví ani po návratu do pokojové teploty. Zralá rajčata je lepší sníst do pár dní a skladovat mimo lednici.",
+    "Podobně banány v lednici rychle zhnědnou na slupce a avokádo v chladu nedozraje. Naopak už zralé ovoce lze v lednici krátce „zastavit“, pokud ho potřebuješ uchovat o pár dní déle."
+  ],
+  takeaway: "Chléb v lednici okorá rychleji (zamraz ho), rajčata v chladu ztrácejí chuť. Lednice zpomaluje kažení, ale ne vždy prospívá kvalitě.",
+  evidence: "silné", evidenceNote: "Retrogradace škrobu je dobře popsaný jev; vliv chladu na chuť rajčat doložila studie v PNAS.",
+  sources: [{ name: "Zhang a kol., Chilling-induced tomato flavor loss…, PNAS 2016", url: "https://doi.org/10.1073/pnas.1613910113" }],
+  quiz: [
+    { q: "Proč chléb v lednici okorá rychleji?", o: ["Retrogradace škrobu je nejrychlejší při chladu", "Lednice z něj vysaje cukr", "Kvůli světlu v lednici", "Neokorá rychleji"], why: "Krystalizace škrobu je nejrychlejší při teplotách kolem lednicových." },
+    { q: "Jak chléb uchovat nejdéle čerstvý?", o: ["Zamrazit ho", "Dát ho do lednice", "Nechat ho na slunci", "Navlhčit ho"], why: "Mráz retrogradaci prakticky zastaví." },
+    { q: "Co se stane s rajčaty po týdnu v chladu (5 °C)?", o: ["Ztratí část chuti nevratně", "Zesílí se jejich chuť", "Rychleji dozrají", "Nic"], why: "Klesne obsah aromatických látek a plně se už neobnoví." }
+  ],
+  cards: [
+    { f: "Chléb a lednice?", b: "V lednici okorá rychleji (retrogradace škrobu); na delší dobu ho zamraz." },
+    { f: "Rajčata a lednice?", b: "Chlad nevratně snižuje aroma (Zhang 2016); skladovat mimo lednici." }
+  ]
+},
+{
+  id: "tp5", area: "tipy", title: "Power nap a „kávový šlofík“",
+  text: [
+    "Krátký odpolední spánek dokáže obnovit pozornost, ale rozhoduje délka. Studie Brookse a Lacka (2006) srovnala šlofíky o délce 5, 10, 20 a 30 minut: nejlépe vyšel 10minutový spánek, který zlepšil bdělost a výkon okamžitě a efekt vydržel přes dvě hodiny.",
+    "Delší šlofík (20–30 minut a víc) přináší riziko spánkové setrvačnosti – po probuzení se cítíš omámeně, protože tě budík vytrhl z hlubšího spánku. Ideální je tedy krátký spánek, nejlépe brzy odpoledne, aby nenarušil noční spánek.",
+    "Zajímavý trik je „kávový šlofík“: vypiješ kávu a hned si lehneš na 15–20 minut. Kofein začne působit zhruba za 20–30 minut, takže se probudíš právě ve chvíli, kdy nastupuje. Japonská studie Hayashiho a kol. (2003) ukázala, že kombinace kofeinu a krátkého spánku byla proti odpolední ospalosti účinnější než samotný spánek."
+  ],
+  takeaway: "Nejlepší šlofík je krátký – kolem 10 minut. Kávový šlofík: káva a hned 15–20 minut spánku.",
+  evidence: "střední", evidenceNote: "Menší kontrolované laboratorní studie; výsledky dávají smysl s fyziologií spánku.",
+  sources: [
+    { name: "Brooks & Lack, A brief afternoon nap following nocturnal sleep restriction: which nap duration is most recuperative? Sleep 2006" },
+    { name: "Hayashi a kol., Clinical Neurophysiology 2003" }
+  ],
+  quiz: [
+    { q: "Která délka šlofíku vyšla ve studii Brookse a Lacka nejlépe?", o: ["Kolem 10 minut", "2 hodiny", "1 minuta", "45 minut"], why: "10 minut zlepšilo bdělost okamžitě a bez omámení." },
+    { q: "Co je spánková setrvačnost?", o: ["Omámenost po probuzení z hlubšího spánku", "Neschopnost usnout", "Chrápání", "Náměsíčnost"], why: "Hrozí u delších šlofíků." },
+    { q: "Proč funguje „kávový šlofík“?", o: ["Kofein začne působit zhruba v době probuzení", "Káva usnadní usnutí", "Káva prodlouží spánek", "Nefunguje"], why: "Nástup účinku kofeinu trvá asi 20–30 minut." }
+  ],
+  cards: [
+    { f: "Optimální délka power napu?", b: "Kolem 10 minut (Brooks & Lack 2006)." },
+    { f: "Kávový šlofík?", b: "Káva a hned 15–20 min spánku – kofein nastoupí při probuzení." }
+  ]
+},
+{
+  id: "tp6", area: "tipy", title: "Krvácení z nosu: hlavu dopředu",
+  text: [
+    "Rozšířená rada „zakloň hlavu“ je špatně. Krev pak stéká do krku, může se spolknout a vyvolat nevolnost nebo zvracení – a krvácení se tím nezastaví.",
+    "Správný postup (podle britské NHS): posaď se a předkloň hlavu, palcem a ukazovákem pevně stiskni měkkou část nosu nad nosními dírkami a dýchej ústy. Tlak drž nepřetržitě 10–15 minut – nekontroluj každou chvíli, jestli už krvácení přestalo. Pomoci může i studený obklad na kořen nosu.",
+    "Lékaře vyhledej, pokud krvácení trvá déle než 20 minut, vzniklo po úrazu hlavy, je velmi silné, nebo se opakuje často. Opatrnost je na místě i u lidí, kteří užívají léky na ředění krve."
+  ],
+  takeaway: "Předklonit, stisknout měkkou část nosu a držet 10–15 minut bez přerušení. Nezaklánět.",
+  evidence: "silné", evidenceNote: "Doporučení NHS a dalších zdravotnických organizací.",
+  sources: [{ name: "NHS: Nosebleed", url: "https://www.nhs.uk/conditions/nosebleed/" }],
+  quiz: [
+    { q: "Jak držet hlavu při krvácení z nosu?", o: ["Předkloněnou", "Zakloněnou", "Ležet na zádech", "Na tom nezáleží"], why: "Při záklonu krev stéká do krku a může vyvolat zvracení." },
+    { q: "Jak dlouho držet stisk nosu?", o: ["10–15 minut bez přerušení", "10 sekund", "Hodinu", "Vůbec nestiskat"], why: "Častá kontrola přerušuje tvorbu sraženiny." },
+    { q: "Kdy vyhledat lékaře?", o: ["Při krvácení déle než 20 minut nebo po úrazu hlavy", "Při každém krvácení", "Jen pokud krvácí obě nosní dírky", "Nikdy"], why: "Dlouhé krvácení nebo úraz vyžaduje odborné vyšetření." }
+  ],
+  cards: [
+    { f: "Krvácení z nosu – správný postup?", b: "Předklon, stisk měkké části nosu 10–15 min, dýchat ústy." },
+    { f: "Proč nezaklánět hlavu?", b: "Krev stéká do krku, hrozí nevolnost a zvracení." }
+  ]
+},
+{
+  id: "tp7", area: "tipy", title: "Orientace bez mapy a mobilu",
+  text: [
+    "V noci najdeš sever podle Polárky. Nejdřív najdi Velký vůz a prodluž spojnici dvou hvězd na zadní straně jeho „korby“ zhruba pětkrát – tam svítí Polárka. Ta leží téměř přesně nad severním pólem, takže se po obloze skoro nepohybuje.",
+    "Ve dne pomůže Slunce: na severní polokouli je v poledne na jihu. V Česku nastává sluneční poledne kolem 12:00 v zimním čase a kolem 13:00 v letním. S ručičkovými hodinkami: namiř malou ručičku na Slunce – jih leží v polovině úhlu mezi ní a dvanáctkou (v letním čase mezi ní a jedničkou).",
+    "Rada „mech roste na severní straně stromu“ je nespolehlivá. Mech roste tam, kde je vlhko a stín, a to může být v lese na jakékoli straně kmene."
+  ],
+  takeaway: "Noc: Polárka (5× prodloužit zadní hvězdy Velkého vozu). Den: Slunce v poledne na jihu. Mech na stromech jako kompas nefunguje.",
+  evidence: "silné", evidenceNote: "Astronomická fakta; nespolehlivost mechu je dobře známá.",
+  sources: [{ name: "Hvězdárna a planetárium Praha – orientace podle hvězd; National Geographic – navigation basics" }],
+  quiz: [
+    { q: "Jak najít Polárku?", o: ["Prodloužit zadní hvězdy Velkého vozu asi 5×", "Je to nejjasnější hvězda na obloze", "Je vždy přímo nad hlavou", "Je u Měsíce"], why: "Polárka není nejjasnější hvězda, ale leží téměř nad severním pólem." },
+    { q: "Kde je Slunce v poledne na severní polokouli?", o: ["Na jihu", "Na severu", "Na východě", "Na západě"], why: "Na severní polokouli kulminuje Slunce na jihu." },
+    { q: "Je mech na stromech spolehlivý ukazatel severu?", o: ["Ne, roste tam, kde je vlhko a stín", "Ano, vždy", "Jen v zimě", "Jen na smrcích"], why: "V lese může být vlhko a stín na kterékoli straně kmene." }
+  ],
+  cards: [
+    { f: "Jak najít Polárku?", b: "Spojnici dvou zadních hvězd Velkého vozu prodlužit asi 5×." },
+    { f: "Hodinková metoda (zimní čas)?", b: "Malou ručičku na Slunce; jih je v půli úhlu mezi ní a 12 (v letním čase mezi ní a 1)." }
+  ]
+},
+
+{
+  id: "rk1", area: "rekordy", title: "Usain Bolt: 9,58",
+  text: [
+    "Na mistrovství světa v Berlíně 16. srpna 2009 zaběhl Usain Bolt 100 metrů za 9,58 s a o čtyři dny později 200 metrů za 19,19 s. Oba rekordy platí dodnes a patří k nejobdivovanějším výkonům v historii atletiky.",
+    "V nejrychlejším úseku závodu (mezi 60 a 80 metry) dosáhl Bolt rychlosti kolem 44 km/h. Při výšce 195 cm potřeboval na 100 metrů jen asi 41 kroků, zatímco soupeři kolem 45 – výška mu dávala delší krok, přestože se u vysokých sprinterů dlouho předpokládalo, že budou pomalejší na startu.",
+    "Bolt získal 8 olympijských zlatých medailí. Původně jich měl 9, ale o zlato ze štafety v Pekingu 2008 přišel kvůli dopingu spoluběžce Nesty Cartera."
+  ],
+  takeaway: "Bolt: 100 m za 9,58 a 200 m za 19,19 (Berlín 2009) – rekordy platí dodnes. Maximální rychlost kolem 44 km/h.",
+  evidence: "silné", evidenceNote: "Oficiální světové rekordy World Athletics (stav listopad 2026).",
+  sources: [{ name: "World Athletics – World Records", url: "https://worldathletics.org/records/by-category/world-records" }],
+  quiz: [
+    { q: "Jaký je světový rekord Usaina Bolta na 100 m?", o: ["9,58 s", "9,69 s", "9,79 s", "10,01 s"], why: "Berlín, 16. srpna 2009." },
+    { q: "Kolik olympijských zlatých medailí má Bolt?", o: ["8", "9", "12", "5"], why: "Původně 9, jednu ztratil kvůli dopingu spoluběžce ve štafetě." },
+    { q: "Jakou maximální rychlostí Bolt v rekordním běhu zhruba běžel?", o: ["Kolem 44 km/h", "Kolem 25 km/h", "Kolem 70 km/h", "Kolem 100 km/h"], why: "Mezi 60. a 80. metrem." }
+  ],
+  cards: [
+    { f: "Boltovy světové rekordy?", b: "100 m 9,58 s a 200 m 19,19 s, Berlín 2009." },
+    { f: "Proč má Bolt 8, a ne 9 zlatých z OH?", b: "Štafetové zlato z Pekingu 2008 bylo odebráno kvůli dopingu Nesty Cartera." }
+  ]
+},
+{
+  id: "rk2", area: "rekordy", title: "Maraton pod dvě hodiny",
+  text: [
+    "Dne 26. dubna 2026 zaběhl Keňan Sabastian Sawe na Londýnském maratonu 1:59:30 – jako první člověk v historii pokořil dvě hodiny v regulérním závodě. Překonal o 65 sekund rekord 2:00:35 zesnulého Kelvina Kiptuma z Chicaga 2023. World Athletics rekord oficiálně ratifikovala v červenci 2026. Druhý Etiopan Yomif Kejelcha doběhl ve svém maratonském debutu za 1:59:41.",
+    "Eliud Kipchoge sice zaběhl 1:59:40 už v roce 2019 ve Vídni, ale šlo o speciálně připravenou exhibici se střídajícími se vodiči a vozem udávajícím tempo, a proto se jako rekord neuznává.",
+    "U žen drží světový rekord Keňanka Ruth Chepngetich (2:09:56, Chicago 2024). V roce 2025 dostala tříletý zákaz kvůli dopingu, rekord ale zůstal platný, protože byl zaběhnut před pozitivním testem. Rekord v ženském závodě bez mužských vodičů má Tigst Assefa – 2:15:41 (Londýn 2026)."
+  ],
+  takeaway: "Sawe 1:59:30 (Londýn 2026) – první maraton pod 2 hodiny v regulérním závodě. Kipchogeho 1:59:40 z roku 2019 byla neuznaná exhibice.",
+  evidence: "silné", evidenceNote: "Ratifikované rekordy World Athletics (stav listopad 2026). Rekordy se mohou změnit.",
+  sources: [{ name: "World Athletics: Ratified world records for Sawe, Assefa and more (23. 7. 2026)", url: "https://worldathletics.org/news/press-releases/ratified-world-records-sawe-ehammer-charlton-mcrae-yan-duplantis-assefa" }],
+  quiz: [
+    { q: "Kdo jako první zaběhl maraton pod 2 hodiny v regulérním závodě?", o: ["Sabastian Sawe", "Eliud Kipchoge", "Kelvin Kiptum", "Haile Gebrselassie"], why: "1:59:30 na Londýnském maratonu 26. 4. 2026." },
+    { q: "Proč se Kipchogeho 1:59:40 z roku 2019 nepočítá jako rekord?", o: ["Šlo o exhibici se střídajícími se vodiči", "Běžel moc pomalu", "Trať byla kratší", "Byl diskvalifikován za doping"], why: "Podmínky neodpovídaly pravidlům pro rekordy." },
+    { q: "Platí rekord Ruth Chepngetich i po jejím dopingovém trestu?", o: ["Ano, byl zaběhnut před pozitivním testem", "Ne, byl zrušen", "Nikdy nebyl ratifikován", "Ano, ale jen v Keni"], why: "Trest se vztahuje na období po pozitivním testu." }
+  ],
+  cards: [
+    { f: "Světový rekord v maratonu mužů?", b: "1:59:30, Sabastian Sawe, Londýn 26. 4. 2026 (ratifikováno)." },
+    { f: "Světový rekord v maratonu žen?", b: "2:09:56, Ruth Chepngetich, Chicago 2024; ženský závod: Assefa 2:15:41 (2026)." }
+  ]
+},
+{
+  id: "rk3", area: "rekordy", title: "Duplantis: rekord po centimetrech",
+  text: [
+    "Švéd Armand „Mondo“ Duplantis poprvé překonal světový rekord ve skoku o tyči v únoru 2020 výkonem 6,17 m. Od té doby ho zlepšoval znovu a znovu – vždy přesně o jeden centimetr. V březnu 2026 skočil v Uppsale 6,31 m, což byl jeho 15. světový rekord.",
+    "Proč po centimetru? Za každý světový rekord dostávají atleti od pořadatelů a sponzorů prémii, takže se vyplácí rekord zlepšovat po malých krocích. Stejnou strategii kdysi používal Ukrajinec Sergej Bubka, který rekord překonal celkem 35krát (17× venku a 18× v hale).",
+    "Duplantis je dvojnásobný olympijský vítěz (Tokio 2020, Paříž 2024) a vícenásobný mistr světa. Ve skoku o tyči platí jediný světový rekord pro halu i venkovní závody."
+  ],
+  takeaway: "Duplantis zlepšuje rekord vždy o 1 cm – 15. rekord 6,31 m (březen 2026). Bubka to dokázal 35krát.",
+  evidence: "silné", evidenceNote: "Oficiální výsledky (stav k listopadu 2026; Duplantis může rekord dál zlepšovat).",
+  sources: [{ name: "World Athletics: Duplantis breaks world pole vault record in Uppsala (12. 3. 2026)", url: "https://worldathletics.org/news/report/duplantis-breaks-world-pole-vault-record-in-uppsala" }],
+  quiz: [
+    { q: "O kolik Duplantis pokaždé zlepšuje světový rekord?", o: ["O 1 centimetr", "O 10 centimetrů", "O 1 metr", "Pokaždé jinak"], why: "Všech 15 rekordů bylo o minimální centimetr." },
+    { q: "Kolikrát celkem překonal světový rekord Sergej Bubka?", o: ["35krát", "5krát", "100krát", "Nikdy"], why: "17× venku a 18× v hale." },
+    { q: "Jaký byl Duplantisův 15. světový rekord (březen 2026)?", o: ["6,31 m", "6,17 m", "6,50 m", "5,95 m"], why: "Skočil ho na mítinku Mondo Classic v Uppsale." }
+  ],
+  cards: [
+    { f: "Proč se rekord ve skoku o tyči zlepšuje po centimetru?", b: "Za každý rekord je prémie – vyplatí se malé kroky (Duplantis, dříve Bubka)." },
+    { f: "Duplantis – první a 15. světový rekord?", b: "6,17 m (2020) → 6,31 m (březen 2026)." }
+  ]
+},
+{
+  id: "rk4", area: "rekordy", title: "Skok daleký: Beamonův „skok do 21. století“",
+  text: [
+    "Na olympijských hrách v Mexiku 1968 skočil Američan Bob Beamon do dálky 8,90 m – o neuvěřitelných 55 centimetrů dál, než byl tehdejší světový rekord. Komentátoři mluvili o „skoku do 21. století“. Pomohla mu i nadmořská výška Mexika (kolem 2 240 m), kde je řidší vzduch.",
+    "Beamonův rekord vydržel téměř 23 let. Překonal ho až Mike Powell na mistrovství světa v Tokiu 1991 výkonem 8,95 m – v jednom z nejslavnějších soubojů atletiky, kdy porazil Carla Lewise, který tehdy na mistrovstvích světa i olympiádách roky neprohrál.",
+    "Powellův rekord platí dodnes a patří k nejstarším mužským světovým rekordům v atletice. Ukazuje, jak výjimečný byl Beamonův skok: od něj trvalo 23 let, než ho někdo překonal, a to jen o 5 centimetrů."
+  ],
+  takeaway: "Beamon 8,90 m (1968) překonal rekord o 55 cm. Powell 8,95 m (1991) platí dodnes.",
+  evidence: "silné", evidenceNote: "Oficiální historie rekordů World Athletics (stav listopad 2026).",
+  sources: [{ name: "World Athletics – World Records; Olympics.com: Bob Beamon's long jump" }],
+  quiz: [
+    { q: "O kolik Beamon v roce 1968 zlepšil světový rekord ve skoku dalekém?", o: ["O 55 cm", "O 1 cm", "O 5 cm", "O 1,5 m"], why: "Z 8,35 m na 8,90 m." },
+    { q: "Jaký je současný světový rekord ve skoku dalekém mužů?", o: ["8,95 m (Mike Powell, 1991)", "8,90 m (Bob Beamon)", "9,12 m", "8,50 m"], why: "Powellův rekord platí od roku 1991." },
+    { q: "Co Beamonovi v Mexiku pomohlo?", o: ["Řidší vzduch v nadmořské výšce", "Kratší rozběh", "Měkčí doskočiště", "Silný vítr v protisměru"], why: "Mexiko leží kolem 2 240 m n. m." }
+  ],
+  cards: [
+    { f: "Beamonův skok 1968?", b: "8,90 m, OH Mexiko – zlepšení rekordu o 55 cm." },
+    { f: "Současný rekord ve skoku dalekém?", b: "8,95 m, Mike Powell, Tokio 1991." }
+  ]
+},
+{
+  id: "rk5", area: "rekordy", title: "Michael Phelps: 28 olympijských medailí",
+  text: [
+    "Americký plavec Michael Phelps získal na pěti olympijských hrách (2000–2016) celkem 28 medailí, z toho 23 zlatých. Je to nejvíc v historii olympijských her – druhá v pořadí, sovětská gymnastka Larisa Latyninová, má 18 medailí.",
+    "Nejslavnější jsou jeho hry v Pekingu 2008, kde vyhrál všech 8 disciplín, ve kterých startoval, a překonal tak rekord Marka Spitze se 7 zlatými z Mnichova 1972. Jedno vítězství (100 m motýlek) vybojoval o pouhou setinu sekundy.",
+    "Phelps je i příkladem, že na výkonu se podílí stavba těla: rozpětí paží kolem 2 metrů (víc než jeho výška), velká chodidla fungující jako ploutve a relativně krátké nohy vůči trupu – ale hlavně extrémní objem tréninku po mnoho let."
+  ],
+  takeaway: "Phelps: 28 olympijských medailí (23 zlatých), v Pekingu 2008 osm zlatých – víc než Spitz (7, 1972).",
+  evidence: "silné", evidenceNote: "Oficiální olympijské statistiky MOV.",
+  sources: [{ name: "Olympics.com: Michael Phelps – athlete profile" }],
+  quiz: [
+    { q: "Kolik olympijských zlatých medailí má Michael Phelps?", o: ["23", "28", "18", "8"], why: "Celkem 28 medailí, z toho 23 zlatých." },
+    { q: "Kolik zlatých získal Phelps v Pekingu 2008?", o: ["8", "7", "5", "10"], why: "Překonal Spitzových 7 zlatých z roku 1972." },
+    { q: "O kolik Phelps v Pekingu vyhrál závod na 100 m motýlek?", o: ["O setinu sekundy", "O 5 sekund", "O délku bazénu", "Prohrál"], why: "Těsnější vítězství si lze těžko představit." }
+  ],
+  cards: [
+    { f: "Phelpsova olympijská bilance?", b: "28 medailí, 23 zlatých (2000–2016)." },
+    { f: "Peking 2008?", b: "Phelps 8 zlatých z 8 startů – překonal Spitzových 7 (1972)." }
+  ]
+},
+{
+  id: "rk6", area: "rekordy", title: "Čeští světoví rekordmani",
+  text: [
+    "Jarmila Kratochvílová zaběhla 26. července 1983 v Mnichově 800 metrů za 1:53,28. Je to nejstarší platný individuální světový rekord v atletice. Nejblíž se k němu dostala Švýcarka Audrey Werro, která v roce 2026 zaběhla 1:53,70 – nejrychlejší čas za 43 let, přesto o 0,42 s pomalejší. Rekord je spojen i s debatami o dopingu v tehdejší době; Kratochvílová užívání zakázaných látek vždy popírala.",
+    "Oštěp je česká doména: světové rekordy mužů i žen drží Češi. Jan Železný hodil 25. května 1996 v Jeně 98,48 m (nejblíž byl Johannes Vetter s 97,76 m v roce 2020) a Barbora Špotáková 13. září 2008 ve Stuttgartu 72,28 m. Železný je navíc trojnásobný olympijský vítěz.",
+    "A legenda Emil Zátopek dokázal na olympiádě v Helsinkách 1952 něco, co se už nikdy nikomu nepodařilo: vyhrál 5 000 m, 10 000 m i maraton – a maraton tehdy běžel vůbec poprvé v životě."
+  ],
+  takeaway: "Kratochvílová 800 m 1:53,28 (1983) – nejstarší platný rekord. Oštěp: Železný 98,48 m, Špotáková 72,28 m. Zátopek: trojnásobné zlato v Helsinkách 1952.",
+  evidence: "silné", evidenceNote: "Oficiální rekordy World Athletics (stav listopad 2026).",
+  sources: [
+    { name: "Olympics.com: All track and field world records at a glance", url: "https://www.olympics.com/ioc/news/athletics-all-track-and-field-world-records-at-a-glance" },
+    { name: "World Athletics – Women's 800m preview, World Ultimate Championship 2026" }
+  ],
+  quiz: [
+    { q: "Který světový rekord je nejstarším platným individuálním rekordem v atletice?", o: ["800 m žen, Jarmila Kratochvílová (1983)", "100 m mužů, Usain Bolt", "Oštěp mužů, Jan Železný", "Maraton mužů"], why: "1:53,28 z Mnichova 1983." },
+    { q: "Jaký je světový rekord Jana Železného v hodu oštěpem?", o: ["98,48 m", "104,80 m", "90,00 m", "72,28 m"], why: "Jena, 25. května 1996." },
+    { q: "Co dokázal Emil Zátopek v Helsinkách 1952?", o: ["Vyhrál 5 km, 10 km i maraton", "Zaběhl maraton pod 2 hodiny", "Vyhrál sprint na 100 m", "Získal stříbro v oštěpu"], why: "Maraton přitom běžel poprvé v životě." }
+  ],
+  cards: [
+    { f: "Rekord Jarmily Kratochvílové?", b: "800 m 1:53,28, Mnichov 1983 – nejstarší platný individuální rekord v atletice." },
+    { f: "Čeští světoví rekordmani v oštěpu?", b: "Jan Železný 98,48 m (1996), Barbora Špotáková 72,28 m (2008)." }
+  ]
+}
+);
 window.LESSONS = L;

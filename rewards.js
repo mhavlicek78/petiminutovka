@@ -7,6 +7,7 @@ window.RECORD_SERIES = {
   zvirata: { name: 'Zvířata', color: '#5f8a1a', sky: '#eef5e2' },
   vynalezy:{ name: 'Vynálezy', color: '#8a6a4a', sky: '#f4eee7' },
   vesmir:  { name: 'Vesmír',  color: '#3b3f8f', sky: '#e9eaf7' },
+  sport:   { name: 'Sport',   color: '#c95a1e', sky: '#fbeee6' },
 };
 window.RECORDS = [
   { id: 'everest',   s: 'hory', name: 'Mount Everest', stars: 4, stats: [['Výška', '8 849 m'], ['Pohoří', 'Himálaj'], ['První výstup', '1953'], ['Země', 'Nepál / Čína']] },
@@ -50,10 +51,16 @@ window.RECORDS = [
   { id: 'jupiter',  s: 'vesmir', name: 'Jupiter', stars: 3, stats: [['Objem', '~1 300 Zemí'], ['Den', '~10 h'], ['Známá bouře', 'Velká rudá skvrna'], ['Rekord', 'největší planeta']] },
   { id: 'slunce',   s: 'vesmir', name: 'Slunce', stars: 2, stats: [['Podíl hmoty', '~99,86 %'], ['Povrch', '~5 500 °C'], ['Světlo k Zemi', '~8 min 20 s'], ['Stáří', '~4,6 mld. let']] },
   { id: 'mesic',    s: 'vesmir', name: 'Měsíc', stars: 2, stats: [['Vzdálenost', '~384 400 km'], ['Přistání', '20. 7. 1969'], ['Gravitace', '~1/6 Země'], ['Vzdaluje se', '~3,8 cm ročně']] },
+  { id: 'sawe',      s: 'sport', name: 'Maraton pod 2 hodiny', stars: 4, stats: [['Čas', '1:59:30'], ['Kdo', 'Sabastian Sawe'], ['Kde', 'Londýn, 2026'], ['Stav', 'k 11/2026']] },
+  { id: 'kratoch',   s: 'sport', name: '800 m žen', stars: 4, stats: [['Čas', '1:53,28'], ['Kdo', 'J. Kratochvílová'], ['Kde', 'Mnichov, 1983'], ['Rekord', 'nejstarší platný']] },
+  { id: 'bolt',      s: 'sport', name: '100 m mužů', stars: 3, stats: [['Čas', '9,58 s'], ['Kdo', 'Usain Bolt'], ['Kde', 'Berlín, 2009'], ['Max. rychlost', '~44 km/h']] },
+  { id: 'zelezny',   s: 'sport', name: 'Oštěp mužů', stars: 3, stats: [['Hod', '98,48 m'], ['Kdo', 'Jan Železný'], ['Kde', 'Jena, 1996'], ['Zlata z OH', '3']] },
+  { id: 'duplantis', s: 'sport', name: 'Skok o tyči', stars: 2, stats: [['Výška', '6,31 m'], ['Kdo', 'A. Duplantis'], ['Rekordů', '15 (k 3/2026)'], ['Zlepšení', 'vždy o 1 cm']] },
+  { id: 'phelps',    s: 'sport', name: 'Michael Phelps', stars: 2, stats: [['Medaile z OH', '28'], ['Z toho zlatých', '23'], ['Peking 2008', '8 zlatých'], ['Sport', 'plavání']] },
 ];
 const MISTR = [['vyziva', 'Výživy'], ['telo', 'Lidského těla'], ['ekonomie', 'Ekonomie'], ['historie', 'Historie'], ['veda', 'Vědy'], ['cestovani', 'Cestování'],
   ['sport', 'Sportovní vědy'], ['pomoc', 'První pomoci'], ['zdravi', 'Zdraví a prevence'], ['tech', 'Technologií a AI'], ['priroda', 'Přírody a zvířat'],
-  ['vynalezy', 'Vynálezů a techniky'], ['filozofie', 'Filozofie'], ['svet', 'Světa a institucí']];
+  ['vynalezy', 'Vynálezů a techniky'], ['filozofie', 'Filozofie'], ['svet', 'Světa a institucí'], ['tipy', 'Praktických tipů'], ['rekordy', 'Sportovních rekordů']];
 window.GOLD = [
   { id: 'serie7',    title: '7 dní v řadě',   sub: 'Týden bez vynechání' },
   { id: 'serie30',   title: '30 dní v řadě',  sub: 'Ani jeden vynechaný den' },

@@ -1,7 +1,7 @@
 :root {
   --bg: #f6f4ef; --surface: #ffffff; --surface-2: #efece5; --text: #1d1c1a; --muted: #6b6860; --line: #e2ded4;
   --accent: #1f6f5c; --accent-ink: #ffffff; --good: #2f7d4f; --bad: #b4453a;
-  --vyziva: #3d8b4f; --telo: #c2543f; --ekonomie: #b8860b; --historie: #7a5a96; --veda: #2f6fa8; --cestovani: #17837f; --sport: #c95a1e; --pomoc: #b3263e; --zdravi: #b0437a; --tech: #4b55b5; --priroda: #5f8a1a; --vynalezy: #8a6a4a; --filozofie: #5d6d7e; --svet: #1d7f9e;
+  --vyziva: #3d8b4f; --telo: #c2543f; --ekonomie: #b8860b; --historie: #7a5a96; --veda: #2f6fa8; --cestovani: #17837f; --sport: #c95a1e; --pomoc: #b3263e; --zdravi: #b0437a; --tech: #4b55b5; --priroda: #5f8a1a; --vynalezy: #8a6a4a; --filozofie: #5d6d7e; --svet: #1d7f9e; --tipy: #a16207; --rekordy: #7c3aed;
   --radius: 16px; --shadow: 0 1px 2px rgba(0,0,0,.04), 0 4px 16px rgba(0,0,0,.04);
   color-scheme: light dark;
 }
@@ -9,7 +9,7 @@
   :root {
     --bg: #151514; --surface: #1f1f1d; --surface-2: #2a2a27; --text: #ecebe6; --muted: #a09d94; --line: #34332f;
     --accent: #4fb39a; --accent-ink: #0d1f1a; --good: #5cbf83; --bad: #e07a6e;
-    --vyziva: #6cc07e; --telo: #e8826d; --ekonomie: #e0b34a; --historie: #b293cf; --veda: #6ea8dc; --cestovani: #4cc2bd; --sport: #f08a4b; --pomoc: #ee6a80; --zdravi: #e88ab3; --tech: #8f97f0; --priroda: #a3c94a; --vynalezy: #d9a06f; --filozofie: #a9b8c6; --svet: #5fc0dc;
+    --vyziva: #6cc07e; --telo: #e8826d; --ekonomie: #e0b34a; --historie: #b293cf; --veda: #6ea8dc; --cestovani: #4cc2bd; --sport: #f08a4b; --pomoc: #ee6a80; --zdravi: #e88ab3; --tech: #8f97f0; --priroda: #a3c94a; --vynalezy: #d9a06f; --filozofie: #a9b8c6; --svet: #5fc0dc; --tipy: #e5b85c; --rekordy: #b79cf5;
     --shadow: none;
   }
 }
